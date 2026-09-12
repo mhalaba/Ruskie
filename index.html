@@ -80,6 +80,19 @@
         </label>
         <p id="result-count" class="tagline result-count"></p>
 
+        <section class="block osint-box">
+          <h2 data-i18n="osintTitle">Dokładność OSINT</h2>
+          <p class="osint-lead" data-i18n="osintLead">
+            Każdy pin ma klasę pewności i klasę precyzji. Współrzędne GPS to zaokrąglony centroid miejscowości z Nominatim, nie pomiar obiektu ze zdjęcia.
+          </p>
+          <ul class="osint-list">
+            <li data-i18n="osintConf">Pewność: wysoka (≥3 źródła lub instytucja), średnia (2), niska (1), szkic (trop, warstwa wyłączona).</li>
+            <li data-i18n="osintGps">GPS: city ≈ 1 km (2 miejsca dziesiętne); osiedle garnizonowe ≈ 100–1000 m (3 miejsca). Nie uśredniamy rozbieżnych garnizonów.</li>
+            <li data-i18n="osintSat">Zdjęcie satelitarne jest wyłącznie tłem mapy (max. powiększenie 12). Nie jest źródłem współrzędnych pinów.</li>
+            <li data-i18n="osintUav">BSP: miasto garnizonu ośrodka / zakładu. Miejsca startu, pasy i hangary nie są mapowane.</li>
+          </ul>
+        </section>
+
         <section class="block">
           <h2 data-i18n="layers">Warstwy</h2>
           <label><input type="checkbox" data-layer="ground" checked /> <span data-i18n="layer_ground">Wojska Lądowe</span></label>
@@ -131,19 +144,6 @@
             <span data-i18n="rfOnly">Tylko garnizony RF</span>
             <span class="hint" data-i18n="rfHint">(ukrywa Krym, Abchazję, Osetię, Syrię i inne bazy zagraniczne)</span>
           </label>
-        </section>
-
-        <section class="block osint-box">
-          <h2 data-i18n="osintTitle">Dokładność OSINT</h2>
-          <p class="osint-lead" data-i18n="osintLead">
-            Każdy pin ma klasę pewności i klasę precyzji. Współrzędne GPS to zaokrąglony centroid miejscowości z Nominatim, nie pomiar obiektu ze zdjęcia.
-          </p>
-          <ul class="osint-list">
-            <li data-i18n="osintConf">Pewność: wysoka (≥3 źródła lub instytucja), średnia (2), niska (1), szkic (trop, warstwa wyłączona).</li>
-            <li data-i18n="osintGps">GPS: city ≈ 1 km (2 miejsca dziesiętne); osiedle garnizonowe ≈ 100–1000 m (3 miejsca). Nie uśredniamy rozbieżnych garnizonów.</li>
-            <li data-i18n="osintSat">Zdjęcie satelitarne jest wyłącznie tłem mapy (max. powiększenie 12). Nie jest źródłem współrzędnych pinów.</li>
-            <li data-i18n="osintUav">BSP: miasto garnizonu ośrodka / zakładu. Miejsca startu, pasy i hangary nie są mapowane.</li>
-          </ul>
         </section>
 
         <section class="block actions">
