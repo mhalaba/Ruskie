@@ -1,0 +1,50 @@
+{
+  "title": "Schemat rekordu jednostki (Feature.properties + geometria Point)",
+  "geometry": {
+    "type": "Point",
+    "coordinates": ["lon", "lat"],
+    "rounding": {
+      "city": 2,
+      "garrison_town": 3,
+      "public_hq_building": 3
+    }
+  },
+  "required": [
+    "id",
+    "name_pl",
+    "branch",
+    "service_component",
+    "district",
+    "echelon",
+    "garrison_settlement",
+    "garrison_region",
+    "country",
+    "sovereignty_note",
+    "coord_precision",
+    "deployment_status",
+    "formation_status",
+    "confidence",
+    "last_verified",
+    "sources"
+  ],
+  "enums": {
+    "branch": ["ground", "vdv", "naval_infantry", "gru_spetsnaz", "vks", "rvsn", "navy_coastal", "other"],
+    "service_component": ["SV", "VDV", "VMF", "VKS", "RVSN", "GRU"],
+    "district": [
+      "LMD", "MMD", "SMD", "CMD", "EMD",
+      "central_subordination",
+      "fleet_northern", "fleet_baltic", "fleet_black_sea", "fleet_pacific", "caspian"
+    ],
+    "echelon": ["district", "army", "corps", "division", "brigade", "regiment", "base", "other"],
+    "sovereignty_note": ["recognized", "occupied_ukraine", "host_state_consent_disputed"],
+    "coord_precision": ["city", "garrison_town", "public_hq_building"],
+    "deployment_status": ["garrison", "partially_away", "deployed_away", "forming", "disbanded", "unknown"],
+    "formation_status": ["active", "reorganizing", "announced_not_confirmed", "historical"],
+    "confidence": ["high", "medium", "low", "unverified"]
+  },
+  "geo_rules": {
+    "ukraine_1991": "Punkt wewnątrz wielokąta Ukrainy 1991 (data/ukraine-1991.geojson) jest błędem, chyba że leży na Krymie i sovereignty_note=occupied_ukraine.",
+    "no_guess": "Brak źródła garnizonu = rekord unverified albo luka w data/gaps.json. Nigdy fałszywy pin.",
+    "no_average": "Rozbieżność garnizonu: jeden punkt (lepiej potwierdzony) + alt_garrison."
+  }
+}
