@@ -4,19 +4,14 @@ Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe
 
 **To nie jest tracker pola walki. Brak danych o teatrze ukraińskim.**
 
-Języki UI: [polski](https://mhalaba.github.io/Ruskie/) · [English](https://mhalaba.github.io/Ruskie/?lang=en) · [Deutsch](https://mhalaba.github.io/Ruskie/?lang=de). Dokumentacja: [README.en.md](README.en.md), [README.de.md](README.de.md).
+Języki UI: [polski](https://ru.halaba.online/) · [English](https://ru.halaba.online/?lang=en) · [Deutsch](https://ru.halaba.online/?lang=de). Dokumentacja: [README.en.md](README.en.md), [README.de.md](README.de.md).
 
-## GitHub Pages
+## Hosting
 
-Adres po włączeniu hostingu: [https://mhalaba.github.io/Ruskie/](https://mhalaba.github.io/Ruskie/)
+Adres publiczny: [https://ru.halaba.online/](https://ru.halaba.online/)
 
-Gotowa strona jest na gałęzi `gh-pages`. Włączenie (jednorazowo, w ustawieniach repozytorium **Ruskie**):
+Wdrożenie: GitHub Pages ze źródłem **GitHub Actions** — każdy push na `main` uruchamia workflow `.github/workflows/deploy-pages.yml`, który buduje `dist/` i publikuje go. Domenę trzyma plik `public/CNAME`, więc przeżywa kolejne wdrożenia. `vite.config.js` ma `base: "./"`, więc zasoby działają zarówno w rootcie domeny, jak i w podkatalogu.
 
-1. **Settings → Pages**
-2. **Build and deployment → Source:** Deploy from a branch
-3. **Branch:** `gh-pages`, folder `/` (root) → **Save**
-
-Po merżu do `main` ten sam katalog `dist/` wdraża też workflow `.github/workflows/deploy-pages.yml` (wtedy w Pages można przełączyć Source na **GitHub Actions**). `vite.config.js` ma `base: './'`, więc zasoby ładują się z `/Ruskie/`.
 
 ## Zakres
 
