@@ -4,6 +4,12 @@ Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe
 
 **To nie jest tracker pola walki. Brak danych o teatrze ukraińskim.**
 
+## GitHub Pages
+
+Aplikacja (repozytorium **Ruskie**): [https://mhalaba.github.io/Ruskie/](https://mhalaba.github.io/Ruskie/)
+
+Po merżu do `main` wdrożenie idzie automatycznie (Actions → GitHub Pages). `vite.config.js` używa `base: './'`, więc zasoby ładują się względnie z `/Ruskie/`.
+
 ## Zakres
 
 - Garnizony i sztaby na terytorium FR w granicach międzynarodowo uznanych.

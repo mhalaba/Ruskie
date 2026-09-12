@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Weryfikowalny atlas garnizonów Sił Zbrojnych FR — źródła otwarte, szczebel brygada/dywizja, bez teatru ukraińskiego.",
+  "homepage": "https://mhalaba.github.io/Ruskie/",
   "scripts": {
     "dev": "vite",
     "build": "node scripts/build-data.mjs && node scripts/validate-data.mjs && vite build",
