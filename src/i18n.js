@@ -1,5 +1,5 @@
 export const LANGS = ["pl", "en", "de"];
-export const SITE_URL = "https://mhalaba.github.io/Ruskie/";
+export const SITE_URL = "https://ru.halaba.online/";
 export const STORAGE_KEY = "atlas-lang";
 
 export const SEO = {
