@@ -240,9 +240,6 @@ export function detectLang() {
   } catch {
     /* ignore */
   }
-  const nav = (navigator.language || "pl").slice(0, 2).toLowerCase();
-  if (nav === "de") return "de";
-  if (nav === "en") return "en";
   return "pl";
 }
 
