@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas garnizonów SZ FR — źródła otwarte</title>
+    <link rel="icon" href="data:," />
+    <meta
+      name="description"
+      content="Weryfikowalny atlas publicznie znanych garnizonów Sił Zbrojnych Federacji Rosyjskiej. To nie jest tracker pola walki."
+    />
+    <script type="module" crossorigin src="./assets/index-Dvzptk0v.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CYrLMjbI.css">
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar" class="sidebar" aria-label="Panel filtrów i hierarchii">
+        <header class="brand">
+          <h1>Atlas garnizonów SZ FR</h1>
+          <p class="tagline">Źródła otwarte · szczebel brygada / dywizja · bez teatru UA</p>
+        </header>
+
+        <label class="search-wrap">
+          <span class="sr-only">Szukaj</span>
+          <input
+            id="search"
+            type="search"
+            placeholder="Nazwa, numer, miejscowość, w/cz…"
+            autocomplete="off"
+          />
+        </label>
+        <p id="result-count" class="tagline result-count"></p>
+
+        <section class="block">
+          <h2>Warstwy</h2>
+          <label><input type="checkbox" data-layer="ground" checked /> Wojska Lądowe</label>
+          <label><input type="checkbox" data-layer="vdv" checked /> WDW (VDV)</label>
+          <label><input type="checkbox" data-layer="naval_infantry" checked /> Piechota morska / nadbrzeżne</label>
+          <label><input type="checkbox" data-layer="gru" checked /> Spetsnaz GRU</label>
+          <label><input type="checkbox" data-layer="vks" checked /> WKS</label>
+          <label><input type="checkbox" data-layer="rvsn" checked /> WRPS</label>
+          <label><input type="checkbox" data-layer="extraterritorial" /> Zagranica</label>
+          <label><input type="checkbox" data-layer="crimea" /> Krym (okupowany)</label>
+          <label><input type="checkbox" data-layer="sketch" /> Szkic / unverified</label>
+        </section>
+
+        <section class="block">
+          <h2>Filtry</h2>
+          <label>
+            Okręg
+            <select id="filter-district">
+              <option value="">Wszystkie</option>
+            </select>
+          </label>
+          <label>
+            Szczebel
+            <select id="filter-echelon">
+              <option value="">Wszystkie</option>
+            </select>
+          </label>
+          <label>
+            Status formowania
+            <select id="filter-formation">
+              <option value="">Wszystkie</option>
+            </select>
+          </label>
+          <label>
+            Minimalna pewność
+            <select id="filter-confidence">
+              <option value="medium" selected>Średnia i wyższa (domyślnie)</option>
+              <option value="high">Tylko wysoka</option>
+              <option value="low">Niska i wyższa</option>
+              <option value="unverified">Pokaż także szkic</option>
+            </select>
+          </label>
+          <label class="toggle">
+            <input type="checkbox" id="filter-rf-only" />
+            Tylko garnizony RF
+            <span class="hint">(ukrywa Krym, Abchazję, Osetię, Syrię i inne bazy zagraniczne)</span>
+          </label>
+        </section>
+
+        <section class="block actions">
+          <button type="button" id="btn-export">Eksport widoku (GeoJSON)</button>
+          <button type="button" id="btn-theme">Tryb jasny</button>
+        </section>
+
+        <section class="block tree-block">
+          <h2>Hierarchia</h2>
+          <div id="tree" class="tree"></div>
+        </section>
+      </aside>
+
+      <main class="map-wrap">
+        <div id="map" role="application" aria-label="Mapa garnizonów"></div>
+        <button type="button" id="btn-sidebar" class="fab" aria-label="Panel">☰</button>
+      </main>
+
+      <article id="card" class="card hidden" aria-live="polite">
+        <button type="button" id="card-close" aria-label="Zamknij">×</button>
+        <div id="card-body"></div>
+      </article>
+
+      <footer class="disclaimer">
+        Źródła otwarte, stan na <time id="as-of">2026-09-12</time>.
+        To nie jest tracker pola walki. Brak danych o teatrze ukraińskim.
+        © OSM · Leaflet
+      </footer>
+    </div>
+  </body>
+</html>

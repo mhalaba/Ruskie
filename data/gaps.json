@@ -1,0 +1,62 @@
+{
+  "generated": "2026-09-12",
+  "rule": "Jednostki wymienione w źródłach, których nie wolno pinować (Ukraina 1991) albo których garnizon nie jest publicznie ustalony.",
+  "rejected_ukraine_1991": [
+    {
+      "id": "ru-sv-smd-3caa",
+      "name_pl": "3. Gwardyjska Armia Ogólnowojskowa",
+      "reason": "Tabela Wojsk Lądowych podaje HQ Ługańsk — Ukraina 1991. Brak publicznego garnizonu macierzystego w RF. Nie pinowano.",
+      "sources": ["https://en.wikipedia.org/wiki/Russian_Ground_Forces"]
+    },
+    {
+      "id": "ru-sv-smd-51caa",
+      "name_pl": "51. Armia Ogólnowojskowa",
+      "reason": "Tabela Wojsk Lądowych podaje HQ Donieck — Ukraina 1991. Brak publicznego garnizonu macierzystego w RF. Nie pinowano.",
+      "sources": ["https://en.wikipedia.org/wiki/Russian_Ground_Forces"]
+    }
+  ],
+  "mentioned_garrison_unknown": [
+    {
+      "id": "ru-sv-lmd-6caa-1009msr",
+      "name_pl": "1009. Pułk Zmechanizowany",
+      "reason": "Lista LOW wymienia pułk bez miejscowości garnizonowej.",
+      "parent": "ru-sv-lmd-6caa"
+    },
+    {
+      "id": "ru-sv-lmd-11ac-75msr",
+      "name_pl": "75. Pułk Zmechanizowany",
+      "reason": "Raport formowania w Sowiecku (2021) — status i garnizon 2026 niepotwierdzone niezależnie; nie pinowano, by nie zgadywać.",
+      "parent": "ru-sv-lmd-11ac"
+    },
+    {
+      "id": "ru-sv-cmd-25caa",
+      "name_pl": "25. Armia Ogólnowojskowa",
+      "reason": "Wzmiankowana w opracowaniach struktury COW (2024–25) bez ustalonego, zgodnego garnizonu miasta (Luga vs. inny). Luka.",
+      "parent": "ru-sv-cmd"
+    },
+    {
+      "id": "ru-sv-lmd-14ac-104ab",
+      "name_pl": "104. Brygada Artylerii",
+      "reason": "Wymieniona przy 14. KA bez pewnego miasta garnizonowego.",
+      "parent": "ru-sv-lmd-14ac"
+    },
+    {
+      "id": "ru-gru-25bde",
+      "name_pl": "25. Pułk / brygada SpN (Stawropol?)",
+      "reason": "Trop w zestawieniach milblogowych bez dwóch niezależnych źródeł garnizonu.",
+      "parent": "ru-gru"
+    },
+    {
+      "id": "ru-vdv-104div",
+      "name_pl": "104. Dywizja WDW (formowana)",
+      "reason": "Zapowiedź rozwinięcia 31. BDS / 56. BDS — garnizon HQ nieustalony (Uljanowsk vs. Teodozja). Nie pinowano osobno.",
+      "parent": "ru-vdv"
+    }
+  ],
+  "precision_refused": [
+    "Stanowiska dywizjonów S-400 (Zelenogorsk, Gostilitsy, Gwardiejsk itd.) — szczebel poniżej brygady OPL i charakter stanowiska ogniowego.",
+    "Silosy i drogi patrolowe RVSN.",
+    "Poligony Kuzminskij, Kadamowskij, Pogonowo, Mołkino jako cele — tylko miejscowość garnizonowa jednostki.",
+    "Koszary, bramy, składy paliw i amunicji."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "accessed": "2026-09-12",
+  "disclaimer": "Słowniki UI i mapy. Kolory rodzajów sił — nie są oznaczeniami celów.",
+  "districts": {
+    "LMD": { "id": "LMD", "name_pl": "Leningradzki Okręg Wojskowy", "name_ru": "Ленинградский военный округ", "short": "LOW" },
+    "MMD": { "id": "MMD", "name_pl": "Moskiewski Okręg Wojskowy", "name_ru": "Московский военный округ", "short": "MOW" },
+    "SMD": { "id": "SMD", "name_pl": "Południowy Okręg Wojskowy", "name_ru": "Южный военный округ", "short": "POW" },
+    "CMD": { "id": "CMD", "name_pl": "Centralny Okręg Wojskowy", "name_ru": "Центральный военный округ", "short": "COW" },
+    "EMD": { "id": "EMD", "name_pl": "Wschodni Okręg Wojskowy", "name_ru": "Восточный военный округ", "short": "WOW" },
+    "central_subordination": { "id": "central_subordination", "name_pl": "Podległość centralna (SG / rodzaj sił)", "name_ru": "Центральное подчинение", "short": "SG" },
+    "fleet_northern": { "id": "fleet_northern", "name_pl": "Flota Północna (wojska nadbrzeżne / PM)", "name_ru": "Северный флот", "short": "SF" },
+    "fleet_baltic": { "id": "fleet_baltic", "name_pl": "Flota Bałtycka (wojska nadbrzeżne / PM)", "name_ru": "Балтийский флот", "short": "BF" },
+    "fleet_black_sea": { "id": "fleet_black_sea", "name_pl": "Flota Czarnomorska (wojska nadbrzeżne / PM)", "name_ru": "Черноморский флот", "short": "ChF" },
+    "fleet_pacific": { "id": "fleet_pacific", "name_pl": "Flota Pacyfiku (wojska nadbrzeżne / PM)", "name_ru": "Тихоокеанский флот", "short": "TOF" },
+    "caspian": { "id": "caspian", "name_pl": "Flotylla Kaspijska", "name_ru": "Каспийская флотилия", "short": "KFl" }
+  },
+  "branches": {
+    "ground": { "id": "ground", "name_pl": "Wojska Lądowe", "color": "#6b7c3a", "layer": "ground" },
+    "vdv": { "id": "vdv", "name_pl": "Wojska Powietrznodesantowe", "color": "#3d7ea6", "layer": "vdv" },
+    "naval_infantry": { "id": "naval_infantry", "name_pl": "Piechota morska", "color": "#1f4e79", "layer": "naval_infantry" },
+    "navy_coastal": { "id": "navy_coastal", "name_pl": "Wojska nadbrzeżne", "color": "#2a6f7f", "layer": "naval_infantry" },
+    "gru_spetsnaz": { "id": "gru_spetsnaz", "name_pl": "Spetsnaz GRU", "color": "#8a3b32", "layer": "gru" },
+    "vks": { "id": "vks", "name_pl": "Wojska Powietrzno-Kosmiczne", "color": "#5b8def", "layer": "vks" },
+    "rvsn": { "id": "rvsn", "name_pl": "Wojska Rakietowe Przeznaczenia Strategicznego", "color": "#6b4c9a", "layer": "rvsn" },
+    "other": { "id": "other", "name_pl": "Inne / zabezpieczenie", "color": "#6a6e73", "layer": "other" }
+  },
+  "echelons": {
+    "district": { "id": "district", "name_pl": "Okręg", "size": 18, "shape": "square" },
+    "army": { "id": "army", "name_pl": "Armia", "size": 15, "shape": "circle" },
+    "corps": { "id": "corps", "name_pl": "Korpus", "size": 14, "shape": "octagon" },
+    "division": { "id": "division", "name_pl": "Dywizja", "size": 12, "shape": "diamond" },
+    "brigade": { "id": "brigade", "name_pl": "Brygada", "size": 9, "shape": "circle" },
+    "regiment": { "id": "regiment", "name_pl": "Pułk niezależny", "size": 8, "shape": "triangle" },
+    "base": { "id": "base", "name_pl": "Baza / lotnisko", "size": 10, "shape": "square" },
+    "other": { "id": "other", "name_pl": "Inne", "size": 8, "shape": "circle" }
+  },
+  "confidence": {
+    "high": { "id": "high", "name_pl": "Wysoka", "opacity": 1, "score_min": 80 },
+    "medium": { "id": "medium", "name_pl": "Średnia", "opacity": 0.85, "score_min": 50 },
+    "low": { "id": "low", "name_pl": "Niska", "opacity": 0.55, "score_min": 25 },
+    "unverified": { "id": "unverified", "name_pl": "Szkic / niezweryfikowane", "opacity": 0.35, "score_min": 0 }
+  },
+  "formation_status": {
+    "active": "Aktywna",
+    "reorganizing": "Reorganizacja",
+    "announced_not_confirmed": "Zapowiedziana, niepotwierdzona",
+    "historical": "Historyczna"
+  },
+  "deployment_status": {
+    "garrison": "W garnizonie macierzystym (deklaratywnie)",
+    "partially_away": "Część sił poza garnizonem",
+    "deployed_away": "Głównie poza garnizonem (bez lokalizacji teatru)",
+    "forming": "W formowaniu",
+    "disbanded": "Rozformowana",
+    "unknown": "Nieznany"
+  },
+  "coord_precision": {
+    "city": "Centroid miasta (~1 km, 2 miejsca dziesiętne)",
+    "garrison_town": "Centroid osiedla garnizonowego (~100–1000 m, 3 miejsca)",
+    "public_hq_building": "Publiczny adres sztabu (max 3 miejsca dziesiętne)"
+  },
+  "map_colors": {
+    "ground": "#6b7c3a",
+    "vdv": "#3d7ea6",
+    "naval_infantry": "#1f4e79",
+    "navy_coastal": "#2a6f7f",
+    "gru_spetsnaz": "#8a3b32",
+    "vks": "#5b8def",
+    "rvsn": "#6b4c9a",
+    "other": "#6a6e73"
+  }
+}
