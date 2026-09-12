@@ -6,9 +6,15 @@ Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe
 
 ## GitHub Pages
 
-Aplikacja (repozytorium **Ruskie**): [https://mhalaba.github.io/Ruskie/](https://mhalaba.github.io/Ruskie/)
+Adres po włączeniu hostingu: [https://mhalaba.github.io/Ruskie/](https://mhalaba.github.io/Ruskie/)
 
-Po merżu do `main` wdrożenie idzie automatycznie (Actions → GitHub Pages). `vite.config.js` używa `base: './'`, więc zasoby ładują się względnie z `/Ruskie/`.
+Gotowa strona jest na gałęzi `gh-pages`. Włączenie (jednorazowo, w ustawieniach repozytorium **Ruskie**):
+
+1. **Settings → Pages**
+2. **Build and deployment → Source:** Deploy from a branch
+3. **Branch:** `gh-pages`, folder `/` (root) → **Save**
+
+Po merżu do `main` ten sam katalog `dist/` wdraża też workflow `.github/workflows/deploy-pages.yml` (wtedy w Pages można przełączyć Source na **GitHub Actions**). `vite.config.js` ma `base: './'`, więc zasoby ładują się z `/Ruskie/`.
 
 ## Zakres
 
