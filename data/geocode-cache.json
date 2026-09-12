@@ -1,0 +1,1392 @@
+{
+  "Palace Square, Saint Petersburg, Russia": {
+    "lon": 30.3153537,
+    "lat": 59.9390434,
+    "display_name": "Дворцовая площадь, Дворцовый округ, Санкт-Петербург, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1947508,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Agalatovo, Leningrad Oblast, Russia": {
+    "lon": 30.2931287,
+    "lat": 60.2186937,
+    "display_name": "Агалатово, Агалатовское сельское поселение, Всеволожский район, Ленинградская область, Северо-Западный федеральный округ, 188653, Россия",
+    "osm_type": "relation",
+    "osm_id": 15722097,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Strugi Krasnye, Pskov Oblast, Russia": {
+    "lon": 29.1115963,
+    "lat": 58.2693219,
+    "display_name": "Струги Красные, Струго-Красненский муниципальный округ, Псковская область, Северо-Западный федеральный округ, 181110, Россия",
+    "osm_type": "way",
+    "osm_id": 27463233,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kamenka, Vyborgsky District, Leningrad Oblast, Russia": {
+    "lon": 29.0852739,
+    "lat": 60.4455639,
+    "display_name": "Каменка, Полянское сельское поселение, Выборгский район, Ленинградская область, Северо-Западный федеральный округ, 188827, Россия",
+    "osm_type": "relation",
+    "osm_id": 3426679,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Luga, Leningrad Oblast, Russia": {
+    "lon": 29.8475013,
+    "lat": 58.735699,
+    "display_name": "Луга, Лужское городское поселение, Лужский район, Ленинградская область, Северо-Западный федеральный округ, 188230, Россия",
+    "osm_type": "relation",
+    "osm_id": 2705630,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Gorelovo, Saint Petersburg, Russia": {
+    "lon": 30.1398847,
+    "lat": 59.7805181,
+    "display_name": "Горелово, округ Горелово, Санкт-Петербург, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 5936223,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Pushkin, Saint Petersburg, Russia": {
+    "lon": 30.3407143,
+    "lat": 59.6878375,
+    "display_name": "Пушкин, Катлинская дорога, Павловск, Санкт-Петербург, Северо-Западный федеральный округ, 196603, Россия",
+    "osm_type": "relation",
+    "osm_id": 11002405,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Sertolovo, Leningrad Oblast, Russia": {
+    "lon": 30.207806,
+    "lat": 60.143707,
+    "display_name": "Сертолово, Сертоловское городское поселение, Всеволожский район, Ленинградская область, Северо-Западный федеральный округ, 188650, Россия",
+    "osm_type": "relation",
+    "osm_id": 1560826,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Krasnoye Selo, Saint Petersburg, Russia": {
+    "lon": 30.0862455,
+    "lat": 59.7337668,
+    "display_name": "Красное Село, Санкт-Петербург, Северо-Западный федеральный округ, 198320, Россия",
+    "osm_type": "relation",
+    "osm_id": 363092,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Gusev, Kaliningrad Oblast, Russia": {
+    "lon": 22.2014752,
+    "lat": 54.5921685,
+    "display_name": "Гусев, Гусевский городской округ, Калининградская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 19338643,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kaliningrad, Russia": {
+    "lon": 20.5105838,
+    "lat": 54.710128,
+    "display_name": "Калининград, городской округ Калининград, Калининградская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1674442,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Chernyakhovsk, Kaliningrad Oblast, Russia": {
+    "lon": 21.8099822,
+    "lat": 54.635533,
+    "display_name": "Черняховск, Черняховский муниципальный округ, Калининградская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1420221,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Murmansk, Russia": {
+    "lon": 33.07497,
+    "lat": 68.970665,
+    "display_name": "Мурманск, городской округ Мурманск, Мурманская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3374641,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Pechenga, Murmansk Oblast, Russia": {
+    "lon": 31.212254,
+    "lat": 69.547714,
+    "display_name": "Печенга, Печенгский муниципальный округ, Мурманская область, Северо-Западный федеральный округ, 184410, Россия",
+    "osm_type": "relation",
+    "osm_id": 9726781,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Alakurtti, Murmansk Oblast, Russia": {
+    "lon": 30.342424,
+    "lat": 66.964005,
+    "display_name": "Алакуртти, Кандалакшский муниципальный округ, Мурманская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 150494469,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Petrozavodsk, Republic of Karelia, Russia": {
+    "lon": 34.3688041,
+    "lat": 61.789221,
+    "display_name": "Петрозаводск, Петрозаводский городской округ, Карелия, Северо-Западный федеральный округ, 185000, Россия",
+    "osm_type": "relation",
+    "osm_id": 1701311,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Moscow, Russia": {
+    "lon": 37.6063916,
+    "lat": 55.625578,
+    "display_name": "Москва, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 102269,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Odintsovo, Moscow Oblast, Russia": {
+    "lon": 37.2668096,
+    "lat": 55.678223,
+    "display_name": "Одинцово, Одинцовский городской округ, Московская область, Центральный федеральный округ, 143000, Россия",
+    "osm_type": "relation",
+    "osm_id": 1667827,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kalininets, Moscow Oblast, Russia": {
+    "lon": 36.9723013,
+    "lat": 55.5567119,
+    "display_name": "Калининец, Наро-Фоминский городской округ, Московская область, Центральный федеральный округ, 143346, Россия",
+    "osm_type": "relation",
+    "osm_id": 5717060,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Naro-Fominsk, Moscow Oblast, Russia": {
+    "lon": 36.723507,
+    "lat": 55.3842784,
+    "display_name": "Наро-Фоминск, Наро-Фоминский городской округ, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 4208576,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Mulino, Nizhny Novgorod Oblast, Russia": {
+    "lon": 42.951706,
+    "lat": 56.314163,
+    "display_name": "Мулино, Нижегородская область, Приволжский федеральный округ, 606089, Россия",
+    "osm_type": "way",
+    "osm_id": 473715377,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Mosrentgen, Moscow, Russia": {
+    "lon": 37.4727266,
+    "lat": 55.6217029,
+    "display_name": "Мосрентген, Москва, Центральный федеральный округ, 108820, Россия",
+    "osm_type": "relation",
+    "osm_id": 2555062,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Selyatino, Moscow Oblast, Russia": {
+    "lon": 36.98217,
+    "lat": 55.51537,
+    "display_name": "Селятино, Наро-Фоминский городской округ, Московская область, Центральный федеральный округ, 143345, Россия",
+    "osm_type": "way",
+    "osm_id": 37756820,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Voronezh, Russia": {
+    "lon": 39.2005858,
+    "lat": 51.6605982,
+    "display_name": "Воронеж, городской округ Воронеж, Воронежская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3536492,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Valuyki, Belgorod Oblast, Russia": {
+    "lon": 38.100227,
+    "lat": 50.211296,
+    "display_name": "Валуйки, Валуйский муниципальный округ, Белгородская область, Центральный федеральный округ, 309990, Россия",
+    "osm_type": "relation",
+    "osm_id": 1645367,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yelnya, Smolensk Oblast, Russia": {
+    "lon": 33.1891698,
+    "lat": 54.5764954,
+    "display_name": "Ельня, Ельнинский муниципальный округ, Смоленская область, Центральный федеральный округ, 216330, Россия",
+    "osm_type": "relation",
+    "osm_id": 3480659,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kursk, Russia": {
+    "lon": 36.1923123,
+    "lat": 51.7309249,
+    "display_name": "городской округ Курск, Курская область, Центральный федеральный округ, 305000, Россия",
+    "osm_type": "relation",
+    "osm_id": 1646090,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kolomna, Moscow Oblast, Russia": {
+    "lon": 38.7670121,
+    "lat": 55.0938743,
+    "display_name": "Коломна, городской округ Коломна, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1703080,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Tambov, Russia": {
+    "lon": 41.4523988,
+    "lat": 52.7216164,
+    "display_name": "городской округ Тамбов, Тамбовская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1777927,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Shuya, Ivanovo Oblast, Russia": {
+    "lon": 41.3797372,
+    "lat": 56.8562777,
+    "display_name": "городской округ Шуя, Ивановская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 389792,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Rostov-on-Don, Russia": {
+    "lon": 39.7249086,
+    "lat": 47.2610441,
+    "display_name": "городской округ Ростов-на-Дону, Ростовская область, Южный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 964255,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Novocherkassk, Rostov Oblast, Russia": {
+    "lon": 40.101986,
+    "lat": 47.41066,
+    "display_name": "городской округ Новочеркасск, Ростовская область, Южный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1281563,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Persianovka, Rostov Oblast, Russia": {
+    "lon": 39.4094503,
+    "lat": 47.5294635,
+    "display_name": "Персиановка, Большекрепинское сельское поселение, Родионово-Несветайский район, Ростовская область, Южный федеральный округ, 346591, Россия",
+    "osm_type": "relation",
+    "osm_id": 5932297,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Volgograd, Russia": {
+    "lon": 44.5153353,
+    "lat": 48.7081906,
+    "display_name": "Волгоград, городской округ Волгоград, Волгоградская область, Южный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3374767,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Stavropol, Russia": {
+    "lon": 43.4406913,
+    "lat": 44.8632577,
+    "display_name": "Ставропольский край, Северо-Кавказский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 108081,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Budyonnovsk, Stavropol Krai, Russia": {
+    "lon": 44.163357,
+    "lat": 44.780533,
+    "display_name": "Будённовск, Будённовский муниципальный округ, Ставропольский край, Северо-Кавказский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3835684,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Storozhevaya, Karachay-Cherkess Republic, Russia": {
+    "lon": 41.4534086,
+    "lat": 43.888099,
+    "display_name": "Сторожевая, Сторожевское сельское поселение, Зеленчукский район, Карачаево-Черкесия, Северо-Кавказский федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 77181358,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Vladikavkaz, Russia": {
+    "lon": 44.68211,
+    "lat": 43.024593,
+    "display_name": "Владикавказ, городской округ Владикавказ, Северная Осетия — Алания, Северо-Кавказский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 8901223,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Khankala, Chechnya, Russia": {
+    "lon": 45.7776202,
+    "lat": 43.2908849,
+    "display_name": "Ханкала, Байсангуровский район, Грозный, городской округ Грозный, Чечня, Северо-Кавказский федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 130133220,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Buynaksk, Dagestan, Russia": {
+    "lon": 47.1219624,
+    "lat": 42.8260906,
+    "display_name": "Буйнакск, городской округ Буйнакск, Дагестан, Северо-Кавказский федеральный округ, 368222, Россия",
+    "osm_type": "relation",
+    "osm_id": 8039229,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Sevastopol": {
+    "lon": 33.5220842,
+    "lat": 44.6054434,
+    "display_name": "Севастополь, 299000-299699, Україна",
+    "osm_type": "relation",
+    "osm_id": 3030976,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Krasnodar, Russia": {
+    "lon": 38.9772396,
+    "lat": 45.0351532,
+    "display_name": "Краснодар, городской округ Краснодар, Краснодарский край, Южный федеральный округ, 350000, Россия",
+    "osm_type": "relation",
+    "osm_id": 7373058,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yekaterinburg, Russia": {
+    "lon": 60.6007886,
+    "lat": 56.8382071,
+    "display_name": "Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 6564910,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Samara, Russia": {
+    "lon": 50.1014927,
+    "lat": 53.1956255,
+    "display_name": "Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+    "osm_type": "relation",
+    "osm_id": 3368701,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Roshchinsky, Samara Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Totskoye, Orenburg Oblast, Russia": {
+    "lon": 52.748413,
+    "lat": 52.530071,
+    "display_name": "Тоцкое, Тоцкий сельсовет, Тоцкий район, Оренбургская область, Приволжский федеральный округ, 461131, Россия",
+    "osm_type": "way",
+    "osm_id": 96440058,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Leonidovka, Penza Oblast, Russia": {
+    "lon": 45.2378851,
+    "lat": 53.1280345,
+    "display_name": "Администрация пос. Леонидовка, 58Н-292, Леонидовка, Леонидовский сельсовет, Пензенский район, Пензенская область, Приволжский федеральный округ, Россия",
+    "osm_type": "node",
+    "osm_id": 5178922804,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Novosibirsk, Russia": {
+    "lon": 82.9515989,
+    "lat": 54.9678145,
+    "display_name": "Новосибирск, Новосибирская область, Сибирский федеральный округ, 630000, Россия",
+    "osm_type": "relation",
+    "osm_id": 366544,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Aleysk, Altai Krai, Russia": {
+    "lon": 82.7752065,
+    "lat": 52.4986842,
+    "display_name": "Алейск, городской округ Алейск, Алтайский край, Сибирский федеральный округ, 658130, Россия",
+    "osm_type": "relation",
+    "osm_id": 1470598,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yurga, Kemerovo Oblast, Russia": {
+    "lon": 84.934799,
+    "lat": 55.7136,
+    "display_name": "Юрга, Юргинский городской округ, Кемеровская область, Сибирский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3396612,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kyzyl, Tuva, Russia": {
+    "lon": 94.4300679,
+    "lat": 51.719079,
+    "display_name": "Кызыл, городской округ Кызыл, Республика Тыва, Сибирский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3511787,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Elansky, Sverdlovsk Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Biysk, Altai Krai, Russia": {
+    "lon": 85.2148673,
+    "lat": 52.5394905,
+    "display_name": "Бийск, Алтайский край, Сибирский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1437129,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Chebarkul, Chelyabinsk Oblast, Russia": {
+    "lon": 60.368136,
+    "lat": 54.9824363,
+    "display_name": "Чебаркульский городской округ, Челябинская область, Уральский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 398409,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Khabarovsk, Russia": {
+    "lon": 136.121524,
+    "lat": 51.6312684,
+    "display_name": "Хабаровский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 151223,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Ussuriysk, Primorsky Krai, Russia": {
+    "lon": 131.9520752,
+    "lat": 43.7972447,
+    "display_name": "Уссурийск, Уссурийский городской округ, Приморский край, Дальневосточный федеральный округ, 692500, Россия",
+    "osm_type": "way",
+    "osm_id": 55668530,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Sergeyevka, Pogranichny District, Primorsky Krai, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Bikin, Khabarovsk Krai, Russia": {
+    "lon": 134.2581318,
+    "lat": 46.8188381,
+    "display_name": "Бикин, Бикинский муниципальный округ, Хабаровский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 9476835,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Lipovtsy, Primorsky Krai, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Spassk-Dalny, Primorsky Krai, Russia": {
+    "lon": 132.815701,
+    "lat": 44.5980135,
+    "display_name": "Спасск-Дальний, муниципальный округ Спасск-Дальний, Приморский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1723641,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Chita, Russia": {
+    "lon": 113.4050512,
+    "lat": 52.0279939,
+    "display_name": "городской округ Чита, Забайкальский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1846012,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Borzya, Zabaykalsky Krai, Russia": {
+    "lon": 116.5336371,
+    "lat": 50.3864464,
+    "display_name": "Борзя, Борзинский муниципальный округ, Забайкальский край, Дальневосточный федеральный округ, 674601, Россия",
+    "osm_type": "way",
+    "osm_id": 202410236,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Gorny, Zabaykalsky Krai, Russia": {
+    "lon": 113.033165,
+    "lat": 51.55468,
+    "display_name": "ЗАТО Горный, Забайкальский край, Дальневосточный федеральный округ, 672900, Россия",
+    "osm_type": "relation",
+    "osm_id": 2322763,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Belogorsk, Amur Oblast, Russia": {
+    "lon": 128.47287,
+    "lat": 50.921326,
+    "display_name": "Белогорск, городской округ Белогорск, Амурская область, Дальневосточный федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 159194395,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Knyaze-Volkonskoye, Khabarovsk Krai, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Babstovo, Jewish Autonomous Oblast, Russia": {
+    "lon": 132.4749276,
+    "lat": 48.1210685,
+    "display_name": "Бабстово, Бабстовское сельское поселение, Ленинский район, Еврейская автономная область, Дальневосточный федеральный округ, 679363, Россия",
+    "osm_type": "way",
+    "osm_id": 457209128,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Ulan-Ude, Buryatia, Russia": {
+    "lon": 107.5839105,
+    "lat": 51.8357841,
+    "display_name": "Улан-Удэ, городской округ Улан-Удэ, Республика Бурятия, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1979944,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kyakhta, Buryatia, Russia": {
+    "lon": 106.44915,
+    "lat": 50.353176,
+    "display_name": "Кяхта, городское поселение Кяхта, Кяхтинский район, Республика Бурятия, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3907772,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yuzhno-Sakhalinsk, Russia": {
+    "lon": 142.727438,
+    "lat": 46.9574273,
+    "display_name": "Южно-Сахалинск, городской округ Южно-Сахалинск, Сахалинская область, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2048160,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Goryachiye Klyuchi, Sakhalin Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Novorossiysk, Russia": {
+    "lon": 37.7690711,
+    "lat": 44.7239578,
+    "display_name": "Новороссийск, городской округ Новороссийск, Краснодарский край, Южный федеральный округ, 353900, Россия",
+    "osm_type": "relation",
+    "osm_id": 1477110,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Pskov, Russia": {
+    "lon": 28.3343465,
+    "lat": 57.8173923,
+    "display_name": "городской округ Псков, Псковская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1050399,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Ivanovo, Russia": {
+    "lon": 40.9630633,
+    "lat": 57.0088004,
+    "display_name": "городской округ Иваново, Ивановская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 543140,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Tula, Russia": {
+    "lon": 37.61754,
+    "lat": 54.1930321,
+    "display_name": "Тула, городской округ Тула, Тульская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2538203,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Ulyanovsk, Russia": {
+    "lon": 48.403373,
+    "lat": 54.3150278,
+    "display_name": "Ульяновск, городской округ Ульяновск, Ульяновская область, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2049867,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kubinka, Moscow Oblast, Russia": {
+    "lon": 36.6952802,
+    "lat": 55.5755486,
+    "display_name": "Кубинка, Одинцовский городской округ, Московская область, Центральный федеральный округ, 143070, Россия",
+    "osm_type": "relation",
+    "osm_id": 1829018,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Feodosia, Crimea": {
+    "lon": 35.3753628,
+    "lat": 45.033669,
+    "display_name": "Феодосия, Феодосійський район, Автономна Республіка Крим, 298100-298175, Україна",
+    "osm_type": "relation",
+    "osm_id": 2997809,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Medvezhye Ozera, Moscow Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Sputnik, Pechengsky District, Murmansk Oblast, Russia": {
+    "lon": 31.315289,
+    "lat": 69.512024,
+    "display_name": "Спутник, Печенгский муниципальный округ, Мурманская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "node",
+    "osm_id": 303940881,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Snezhnogorsk, Murmansk Oblast, Russia": {
+    "lon": 33.232357,
+    "lat": 69.19191,
+    "display_name": "Снежногорск, ЗАТО Александровск, Мурманская область, Северо-Западный федеральный округ, 184682, Россия",
+    "osm_type": "way",
+    "osm_id": 83366578,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Baltiysk, Kaliningrad Oblast, Russia": {
+    "lon": 19.8941584,
+    "lat": 54.6437214,
+    "display_name": "Балтийск, Балтийский городской округ, Калининградская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 11546739,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Donskoye, Kaliningrad Oblast, Russia": {
+    "lon": 19.9707399,
+    "lat": 54.9364933,
+    "display_name": "Донское, Светлогорский городской округ, Калининградская область, Северо-Западный федеральный округ, 238570, Россия",
+    "osm_type": "relation",
+    "osm_id": 20615938,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Vladivostok, Russia": {
+    "lon": 131.8855768,
+    "lat": 43.1150678,
+    "display_name": "Владивосток, Владивостокский городской округ, Приморский край, Дальневосточный федеральный округ, 690000, Россия",
+    "osm_type": "relation",
+    "osm_id": 1704857,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Petropavlovsk-Kamchatsky, Russia": {
+    "lon": 158.6471356,
+    "lat": 53.0199838,
+    "display_name": "Петропавловск-Камчатский, городской округ Петропавловск-Камчатский, Камчатский край, Дальневосточный федеральный округ, 683000, Россия",
+    "osm_type": "relation",
+    "osm_id": 4139922,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kaspiysk, Dagestan, Russia": {
+    "lon": 47.6372105,
+    "lat": 42.8921817,
+    "display_name": "Каспийск, городской округ Каспийск, Дагестан, Северо-Кавказский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2131434,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Promezhitsy, Pskov Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Tolyatti, Samara Oblast, Russia": {
+    "lon": 49.4189187,
+    "lat": 53.5098845,
+    "display_name": "городской округ Тольятти, Самарская область, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1345135,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Molkino, Krasnodar Krai, Russia": {
+    "lon": 39.2338712,
+    "lat": 44.8037918,
+    "display_name": "Молькино, муниципальный округ Горячий Ключ, Краснодарский край, Южный федеральный округ, 353288, Россия",
+    "osm_type": "way",
+    "osm_id": 46870714,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Stepnoy, Rostov Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Saint Petersburg, Russia": {
+    "lon": 30.1586551,
+    "lat": 59.9606739,
+    "display_name": "Санкт-Петербург, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 337422,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Severomorsk, Murmansk Oblast, Russia": {
+    "lon": 33.4190485,
+    "lat": 69.0759203,
+    "display_name": "Североморск, ЗАТО Североморск, Мурманская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 15401140,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Engels, Saratov Oblast, Russia": {
+    "lon": 46.1233093,
+    "lat": 51.5013775,
+    "display_name": "Энгельс, городское поселение Энгельс, Энгельсский район, Саратовская область, Приволжский федеральный округ, 413100, Россия",
+    "osm_type": "relation",
+    "osm_id": 4869409,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Lipetsk, Russia": {
+    "lon": 39.1122664,
+    "lat": 52.6935178,
+    "display_name": "Липецкая область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 72169,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Krymsk, Krasnodar Krai, Russia": {
+    "lon": 37.9880177,
+    "lat": 44.9295889,
+    "display_name": "Крымск, Крымское городское поселение, Крымский район, Краснодарский край, Южный федеральный округ, 353380, Россия",
+    "osm_type": "relation",
+    "osm_id": 5328559,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Besovets, Republic of Karelia, Russia": {
+    "lon": 34.1469459,
+    "lat": 61.8871903,
+    "display_name": "Петрозаводск, 86К-227, Шуйское сельское поселение, Прионежский район, Карелия, Северо-Западный федеральный округ, 185004, Россия",
+    "osm_type": "relation",
+    "osm_id": 2312672,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Khotilovo, Tver Oblast, Russia": {
+    "lon": 34.0954811,
+    "lat": 57.6579744,
+    "display_name": "Аэродром Хотилово, улица Бабайлова, Бологовский муниципальный округ, Тверская область, Центральный федеральный округ, 171117, Россия",
+    "osm_type": "way",
+    "osm_id": 121848635,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Uglegorsk, Amur Oblast, Russia": {
+    "lon": 128.123428,
+    "lat": 51.764973,
+    "display_name": "ЗАТО Циолковский, Амурская область, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1748666,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Akhtubinsk, Astrakhan Oblast, Russia": {
+    "lon": 46.1643706,
+    "lat": 48.2848132,
+    "display_name": "Ахтубинск, городское поселение Ахтубинск, Ахтубинский район, Астраханская область, Южный федеральный округ, 416500, Россия",
+    "osm_type": "way",
+    "osm_id": 60009841,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Vladimir, Russia": {
+    "lon": 40.4075203,
+    "lat": 56.1288899,
+    "display_name": "Владимир, городской округ Владимир, Владимирская область, Центральный федеральный округ, 600000, Россия",
+    "osm_type": "relation",
+    "osm_id": 1991003,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Orenburg, Russia": {
+    "lon": 55.0978517,
+    "lat": 51.7671248,
+    "display_name": "Оренбург, городской округ Оренбург, Оренбургская область, Приволжский федеральный округ, 460000, Россия",
+    "osm_type": "way",
+    "osm_id": 166155507,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Omsk, Russia": {
+    "lon": 73.371529,
+    "lat": 54.991375,
+    "display_name": "городской округ Омск, Омская область, Сибирский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1558108,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kozelsk, Kaluga Oblast, Russia": {
+    "lon": 35.7926172,
+    "lat": 54.0356339,
+    "display_name": "Козельск, Козельский муниципальный округ, Калужская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 4035446,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Teykovo, Ivanovo Oblast, Russia": {
+    "lon": 40.5414102,
+    "lat": 56.8547831,
+    "display_name": "городской округ Тейково, Ивановская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 389794,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Tatishchevo, Saratov Oblast, Russia": {
+    "lon": 45.5947,
+    "lat": 51.672623,
+    "display_name": "Татищево, Татищевское городское поселение, Татищевский район, Саратовская область, Приволжский федеральный округ, 412170, Россия",
+    "osm_type": "relation",
+    "osm_id": 3149026,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yoshkar-Ola, Russia": {
+    "lon": 47.8868803,
+    "lat": 56.6315556,
+    "display_name": "Йошкар-Ола, городской округ Йошкар-Ола, Марий Эл, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2635526,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Ozerny, Tver Oblast, Russia": {
+    "error": "not_found",
+    "accessed": "2026-09-12"
+  },
+  "Yasny, Orenburg Oblast, Russia": {
+    "lon": 59.873268,
+    "lat": 51.036957,
+    "display_name": "Ясный, Ясненский муниципальный округ, Оренбургская область, Приволжский федеральный округ, 462781, Россия",
+    "osm_type": "relation",
+    "osm_id": 4174801,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Nizhny Tagil, Russia": {
+    "lon": 59.97077,
+    "lat": 57.9076001,
+    "display_name": "Нижний Тагил, муниципальный округ Нижний Тагил, Свердловская область, Уральский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1555410,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yurya, Kirov Oblast, Russia": {
+    "lon": 49.2802038,
+    "lat": 59.0422736,
+    "display_name": "Юрья, Юрьянское городское поселение, Юрьянский район, Кировская область, Приволжский федеральный округ, 613601, Россия",
+    "osm_type": "way",
+    "osm_id": 33429066,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Sibirsky, Altai Krai, Russia": {
+    "lon": 83.838425,
+    "lat": 53.557068,
+    "display_name": "ЗАТО Сибирский, Алтайский край, Сибирский федеральный округ, 658076, Россия",
+    "osm_type": "relation",
+    "osm_id": 1440922,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Irkutsk, Russia": {
+    "lon": 104.279829,
+    "lat": 52.2891225,
+    "display_name": "Иркутск, городской округ Иркутск, Иркутская область, Сибирский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1430614,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Uzhur, Krasnoyarsk Krai, Russia": {
+    "lon": 89.8424197,
+    "lat": 55.3197221,
+    "display_name": "Ужур, Ужурский муниципальный округ, Красноярский край, Сибирский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3634767,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Gyumri, Armenia": {
+    "lon": 43.8416095,
+    "lat": 40.7852085,
+    "display_name": "Գյումրի, Գյումրի-Ախուրյան սահման, Շիրակի մարզ, Հայաստան",
+    "osm_type": "relation",
+    "osm_id": 7814501,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Gudauta, Abkhazia": {
+    "lon": 40.6160485,
+    "lat": 43.1077729,
+    "display_name": "Гəдоуҭа, Сухумское шоссе, Гәдоуҭа, Гәдоуҭа араион, აფხაზეთის ავტონომიური რესპუბლიკა - Аԥснытәи Автономтә Республика, Абхазия - Аԥсны, საქართველო",
+    "osm_type": "node",
+    "osm_id": 506825034,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Tskhinvali": {
+    "lon": 43.9700211,
+    "lat": 42.2256645,
+    "display_name": "Цхинвал, Хуссар Ирыстон - Южная Осетия, საქართველო",
+    "osm_type": "relation",
+    "osm_id": 2027318,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Khmeimim, Latakia, Syria": {
+    "lon": 35.954477,
+    "lat": 35.4119739,
+    "display_name": "قاعدة حميميم الجوية, 1, الشراشير, ناحية مركز جبلة, منطقة جبلة, محافظة اللاذقية, سوريا",
+    "osm_type": "relation",
+    "osm_id": 10689006,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Tartus, Syria": {
+    "lon": 35.885167,
+    "lat": 34.8936225,
+    "display_name": "طرطوس, ناحية مركز طرطوس, منطقة طرطوس, محافظة طرطوس, سوريا",
+    "osm_type": "node",
+    "osm_id": 192296363,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Dushanbe, Tajikistan": {
+    "lon": 68.785433,
+    "lat": 38.5767045,
+    "display_name": "Душанбе, Тоҷикистон",
+    "osm_type": "relation",
+    "osm_id": 7328360,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kant, Kyrgyzstan": {
+    "lon": 74.8545617,
+    "lat": 42.8917615,
+    "display_name": "Кант, Ысык-Ата району, Чүй облусу, Кыргызстан",
+    "osm_type": "relation",
+    "osm_id": 15659936,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Baranavichy, Belarus": {
+    "lon": 26.0184156,
+    "lat": 53.1322925,
+    "display_name": "Баранавічы, Брэсцкая вобласць, Беларусь",
+    "osm_type": "relation",
+    "osm_id": 3629362,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Tiraspol, Moldova": {
+    "lon": 29.6059359,
+    "lat": 46.8566229,
+    "display_name": "Тирасполь, Unitățile administrativ-teritoriale din stînga Nistrului, Нистрения / Приднестровье / Придністров'я, MD-3300, Moldova",
+    "osm_type": "relation",
+    "osm_id": 3031682,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Рощинский, Самарская область": {
+    "lon": 50.492523,
+    "lat": 53.051044,
+    "display_name": "Рощинский, городское поселение Рощинский, Волжский район, Самарская область, Приволжский федеральный округ, 443539, Россия",
+    "osm_type": "way",
+    "osm_id": 295782121,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Еланский, Свердловская область": {
+    "lon": 62.5060434,
+    "lat": 56.8328998,
+    "display_name": "Еланский, Калиновское сельское поселение, Камышловский район, Свердловская область, Уральский федеральный округ, 624860, Россия",
+    "osm_type": "way",
+    "osm_id": 43327997,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Сергеевка, Пограничный район": {
+    "lon": 131.6592724,
+    "lat": 44.3357147,
+    "display_name": "Сергеевка, Пограничный муниципальный округ, Приморский край, Дальневосточный федеральный округ, 692584, Россия",
+    "osm_type": "way",
+    "osm_id": 81048719,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Липовцы, Приморский край": {
+    "lon": 131.7237348,
+    "lat": 44.2002471,
+    "display_name": "Липовцы, Октябрьский муниципальный округ, Приморский край, Дальневосточный федеральный округ, 692567, Россия",
+    "osm_type": "way",
+    "osm_id": 48433478,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Князе-Волконское": {
+    "lon": 135.4542243,
+    "lat": 48.4674107,
+    "display_name": "Князе-Волконское, Князе-Волконское сельское поселение, Хабаровский район, Хабаровский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 282499671,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kurilsk, Sakhalin": {
+    "lon": 147.8751845,
+    "lat": 45.2290413,
+    "display_name": "Курильск, Курильский муниципальный округ, Сахалинская область, Дальневосточный федеральный округ, 694530, Россия",
+    "osm_type": "relation",
+    "osm_id": 4764304,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Медвежьи Озёра": {
+    "lon": 37.9851518,
+    "lat": 55.8627986,
+    "display_name": "Медвежьи Озёра, городской округ Щёлково, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 12896485,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Промежицы, Псков": {
+    "lon": 28.364059,
+    "lat": 57.775253,
+    "display_name": "Промежицы, городской округ Псков, Псковская область, Северо-Западный федеральный округ, 180560, Россия",
+    "osm_type": "node",
+    "osm_id": 1754192848,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Степной, Аксайский район": {
+    "lon": 39.876446,
+    "lat": 47.346981,
+    "display_name": "Степной, Рассветовское сельское поселение, Аксайский район, Ростовская область, Южный федеральный округ, 346735, Россия",
+    "osm_type": "way",
+    "osm_id": 256667508,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Озёрный, Тверская область": {
+    "lon": 33.686657,
+    "lat": 57.868053,
+    "display_name": "ЗАТО Озёрный, Тверская область, Центральный федеральный округ, 171090, Россия",
+    "osm_type": "relation",
+    "osm_id": 1043288,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Rassvet, Aksaysky District, Rostov Oblast, Russia": {
+    "lon": 39.876549,
+    "lat": 47.361141,
+    "display_name": "Рассвет, Рассветовское сельское поселение, Аксайский район, Ростовская область, Южный федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 188756257,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Ostrov, Pskov Oblast, Russia": {
+    "lon": 28.357817,
+    "lat": 57.344631,
+    "display_name": "Остров, Островский муниципальный округ, Псковская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 4498726,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Severomorsk, Russia": {
+    "lon": 33.4190485,
+    "lat": 69.0759203,
+    "display_name": "Североморск, ЗАТО Североморск, Мурманская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 15401140,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Shtykovo, Primorsky Krai, Russia": {
+    "lon": 132.3608956,
+    "lat": 43.3892867,
+    "display_name": "Штыково, Шкотовский муниципальный округ, Приморский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "way",
+    "osm_id": 82586405,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yantarny, Kaliningrad Oblast, Russia": {
+    "lon": 19.939123,
+    "lat": 54.866261,
+    "display_name": "Янтарный, Янтарный городской округ, Калининградская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 18091511,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kurgan, Russia": {
+    "lon": 65.3421169,
+    "lat": 55.4409357,
+    "display_name": "Курган, городской округ Курган, Курганская область, Уральский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 4676636,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Arzamas, Russia": {
+    "lon": 43.8165228,
+    "lat": 55.3857356,
+    "display_name": "Арзамас, городской округ Арзамас, Нижегородская область, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1582236,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Chelyabinsk, Russia": {
+    "lon": 61.4025547,
+    "lat": 55.1598408,
+    "display_name": "Челябинск, Челябинский городской округ, Челябинская область, Уральский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 4442556,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Izhevsk, Russia": {
+    "lon": 53.2103071,
+    "lat": 56.8529729,
+    "display_name": "городской округ Ижевск, Удмуртия, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 954515,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kovrov, Russia": {
+    "lon": 41.3116439,
+    "lat": 56.3743713,
+    "display_name": "Ковров, городской округ Ковров, Владимирская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2350024,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Perm, Russia": {
+    "lon": 56.2318528,
+    "lat": 58.0108531,
+    "display_name": "Пермь, Пермский городской округ, Пермский край, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3437213,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kolomna, Russia": {
+    "lon": 38.7670121,
+    "lat": 55.0938743,
+    "display_name": "Коломна, городской округ Коломна, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1703080,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Votkinsk, Russia": {
+    "lon": 53.990612,
+    "lat": 57.052505,
+    "display_name": "городской округ Воткинск, Удмуртия, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1027529,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Krasnoyarsk, Russia": {
+    "lon": 92.872586,
+    "lat": 56.0091173,
+    "display_name": "Красноярск, городской округ Красноярск, Красноярский край, Сибирский федеральный округ, 660000, Россия",
+    "osm_type": "relation",
+    "osm_id": 1430616,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Miass, Russia": {
+    "lon": 60.1087125,
+    "lat": 55.0505685,
+    "display_name": "Миасс, Миасский городской округ, Челябинская область, Уральский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 18205646,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Reutov, Russia": {
+    "lon": 37.856555,
+    "lat": 55.7622453,
+    "display_name": "Реутов, городской округ Реутов, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2142174,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Khimki, Russia": {
+    "lon": 37.4396994,
+    "lat": 55.8917293,
+    "display_name": "Химки, городской округ Химки, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 181326,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Severodvinsk, Russia": {
+    "lon": 39.823769,
+    "lat": 64.563385,
+    "display_name": "Северодвинск, муниципальный округ Северодвинск, Архангельская область, Северо-Западный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 2064358,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Bolshoy Kamen, Primorsky Krai, Russia": {
+    "lon": 132.3509104,
+    "lat": 43.1121194,
+    "display_name": "Большой Камень, городской округ Большой Камень, Приморский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 6039852,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Komsomolsk-on-Amur, Russia": {
+    "lon": 136.9995057,
+    "lat": 50.561797,
+    "display_name": "городской округ Комсомольск-на-Амуре, Хабаровский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1788811,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Zelenodolsk, Tatarstan, Russia": {
+    "lon": 48.5674201,
+    "lat": 55.8586627,
+    "display_name": "Зеленодольск, Зеленодольский район, Татарстан, Приволжский федеральный округ, 422540-422551, Россия",
+    "osm_type": "relation",
+    "osm_id": 3398075,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Nizhny Novgorod, Russia": {
+    "lon": 44.0051395,
+    "lat": 56.3264816,
+    "display_name": "Нижний Новгород, городской округ Нижний Новгород, Нижегородская область, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1752948,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kazan, Russia": {
+    "lon": 49.1115022,
+    "lat": 55.7946485,
+    "display_name": "Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 3437391,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Arsenyev, Primorsky Krai, Russia": {
+    "lon": 133.2704255,
+    "lat": 44.1644451,
+    "display_name": "Арсеньев, Арсеньевский городской округ, Приморский край, Дальневосточный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 1647182,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Rybinsk, Russia": {
+    "lon": 38.8558908,
+    "lat": 58.0489536,
+    "display_name": "Рыбинск, городской округ Рыбинск, Ярославская область, Центральный федеральный округ, 152900, Россия",
+    "osm_type": "relation",
+    "osm_id": 1432255,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Zhukov, Kaluga Oblast, Russia": {
+    "lon": 36.7489,
+    "lat": 55.0338,
+    "display_name": "Жуков, Жуковский муниципальный округ, Калужская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 17016076,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Kerch, Crimea": {
+    "lon": 36.467061,
+    "lat": 45.3563405,
+    "display_name": "Керчь, городской округ Керчь, Автономна Республіка Крим, 98300-98399, Україна",
+    "osm_type": "relation",
+    "osm_id": 2865045,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Yelabuga, Tatarstan, Russia": {
+    "lon": 52.0539938,
+    "lat": 55.7577131,
+    "display_name": "Елабуга, городское поселение Елабуга, Елабужский район, Татарстан, Приволжский федеральный округ, 423600, Россия",
+    "osm_type": "relation",
+    "osm_id": 1716734,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Dubna, Moscow Oblast, Russia": {
+    "lon": 37.175533,
+    "lat": 56.7417768,
+    "display_name": "городской округ Дубна, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 184745,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  }
+}

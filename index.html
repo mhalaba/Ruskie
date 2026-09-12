@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas garnizonów SZ FR — źródła otwarte | Ruskie</title>
+    <link rel="canonical" href="https://mhalaba.github.io/Ruskie/" />
+    <link rel="alternate" hreflang="pl" href="https://mhalaba.github.io/Ruskie/" />
+    <link rel="alternate" hreflang="en" href="https://mhalaba.github.io/Ruskie/?lang=en" />
+    <link rel="alternate" hreflang="de" href="https://mhalaba.github.io/Ruskie/?lang=de" />
+    <link rel="alternate" hreflang="x-default" href="https://mhalaba.github.io/Ruskie/" />
+    <meta
+      name="description"
+      content="Weryfikowalny atlas publicznie znanych garnizonów Sił Zbrojnych Federacji Rosyjskiej, zakładów zbrojeniowych i ośrodków BSP (centroid miasta) oraz nazwanych systemów WRE. To nie jest tracker pola walki."
+    />
+    <meta
+      name="keywords"
+      content="garnizony Rosja, Siły Zbrojne FR, OSINT, mapa Leaflet, WRE, BSP, Kołomna, Jelabuga, Krasucha, Murmańsk-BN, Uralwagonzawod, okręgi wojskowe"
+    />
+    <meta name="author" content="Ruskie open gazetteer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#12151a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ruskie" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:title" content="Atlas garnizonów SZ FR — źródła otwarte | Ruskie" />
+    <meta
+      property="og:description"
+      content="Weryfikowalny atlas publicznie znanych garnizonów SZ FR. Źródła otwarte. To nie jest tracker pola walki."
+    />
+    <meta property="og:url" content="https://mhalaba.github.io/Ruskie/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Atlas garnizonów SZ FR — źródła otwarte | Ruskie" />
+    <meta
+      name="twitter:description"
+      content="Weryfikowalny atlas publicznie znanych garnizonów SZ FR. Źródła otwarte. To nie jest tracker pola walki."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json" id="jsonld">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Atlas garnizonów SZ FR",
+        "url": "https://mhalaba.github.io/Ruskie/"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#map" data-i18n="skip">Przejdź do mapy</a>
+    <div id="app">
+      <aside id="sidebar" class="sidebar" data-i18n-aria="panelAria" aria-label="Panel filtrów i hierarchii">
+        <header class="brand">
+          <p class="brand-kicker">Ruskie</p>
+          <h1 data-i18n="title">Atlas garnizonów SZ FR</h1>
+          <p class="tagline" data-i18n="tagline">Źródła otwarte · szczebel brygada / dywizja · bez teatru UA</p>
+          <nav class="lang-switch" data-i18n-aria="lang" aria-label="Język">
+            <a href="./" data-lang="pl" hreflang="pl" lang="pl">PL</a>
+            <a href="./?lang=en" data-lang="en" hreflang="en" lang="en">EN</a>
+            <a href="./?lang=de" data-lang="de" hreflang="de" lang="de">DE</a>
+          </nav>
+        </header>
+
+        <label class="search-wrap">
+          <span class="sr-only" data-i18n="search">Szukaj</span>
+          <input
+            id="search"
+            type="search"
+            data-i18n-placeholder="searchPh"
+            placeholder="Nazwa, numer, miejscowość, w/cz, system WRE, BSP…"
+            autocomplete="off"
+          />
+        </label>
+        <p id="result-count" class="tagline result-count"></p>
+
+        <section class="block osint-box">
+          <h2 data-i18n="osintTitle">Dokładność OSINT</h2>
+          <p class="osint-lead" data-i18n="osintLead">
+            Każdy pin ma klasę pewności i klasę precyzji. Współrzędne GPS to zaokrąglony centroid miejscowości z Nominatim, nie pomiar obiektu ze zdjęcia.
+          </p>
+          <ul class="osint-list">
+            <li data-i18n="osintConf">Pewność: wysoka (≥3 źródła lub instytucja), średnia (2), niska (1), szkic (trop, warstwa wyłączona).</li>
+            <li data-i18n="osintGps">GPS: city ≈ 1 km (2 miejsca dziesiętne); osiedle garnizonowe ≈ 100–1000 m (3 miejsca). Nie uśredniamy rozbieżnych garnizonów.</li>
+            <li data-i18n="osintSat">Zdjęcie satelitarne jest wyłącznie tłem mapy (max. powiększenie 12). Nie jest źródłem współrzędnych pinów.</li>
+            <li data-i18n="osintUav">BSP: miasto garnizonu ośrodka / zakładu. Miejsca startu, pasy i hangary nie są mapowane.</li>
+          </ul>
+        </section>
+
+        <section class="block">
+          <h2 data-i18n="layers">Warstwy</h2>
+          <label><input type="checkbox" data-layer="ground" checked /> <span data-i18n="layer_ground">Wojska Lądowe</span></label>
+          <label><input type="checkbox" data-layer="vdv" checked /> <span data-i18n="layer_vdv">WDW (VDV)</span></label>
+          <label><input type="checkbox" data-layer="naval_infantry" checked /> <span data-i18n="layer_naval">Piechota morska / nadbrzeżne</span></label>
+          <label><input type="checkbox" data-layer="gru" checked /> <span data-i18n="layer_gru">Spetsnaz GRU</span></label>
+          <label><input type="checkbox" data-layer="vks" checked /> <span data-i18n="layer_vks">WKS</span></label>
+          <label><input type="checkbox" data-layer="rvsn" checked /> <span data-i18n="layer_rvsn">WRPS</span></label>
+          <label><input type="checkbox" data-layer="ew" checked /> <span data-i18n="layer_ew">Walka radioelektroniczna (WRE)</span></label>
+          <label><input type="checkbox" data-layer="uav" checked /> <span data-i18n="layer_uav">Bezzałogowce (garnizon / zakład)</span></label>
+          <label><input type="checkbox" data-layer="industry" checked /> <span data-i18n="layer_industry">Zakłady zbrojeniowe (miasto)</span></label>
+          <label><input type="checkbox" data-layer="extraterritorial" /> <span data-i18n="layer_extra">Zagranica</span></label>
+          <label><input type="checkbox" data-layer="crimea" /> <span data-i18n="layer_crimea">Krym (okupowany)</span></label>
+          <label><input type="checkbox" data-layer="sketch" /> <span data-i18n="layer_sketch">Szkic / unverified</span></label>
+          <label><input type="checkbox" id="basemap-satellite" /> <span data-i18n="basemap_sat">Podkład satelitarny (tło, zoom max. 12)</span></label>
+        </section>
+
+        <section class="block">
+          <h2 data-i18n="filters">Filtry</h2>
+          <label>
+            <span data-i18n="district">Okręg</span>
+            <select id="filter-district">
+              <option value="" data-i18n="all">Wszystkie</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="echelon">Szczebel</span>
+            <select id="filter-echelon">
+              <option value="" data-i18n="all">Wszystkie</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="formation">Status formowania</span>
+            <select id="filter-formation">
+              <option value="" data-i18n="all">Wszystkie</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="minConf">Minimalna pewność</span>
+            <select id="filter-confidence">
+              <option value="medium" selected data-i18n="conf_medium">Średnia i wyższa (domyślnie)</option>
+              <option value="high" data-i18n="conf_high">Tylko wysoka</option>
+              <option value="low" data-i18n="conf_low">Niska i wyższa</option>
+              <option value="unverified" data-i18n="conf_unverified">Pokaż także szkic</option>
+            </select>
+          </label>
+          <label class="toggle">
+            <input type="checkbox" id="filter-rf-only" />
+            <span data-i18n="rfOnly">Tylko garnizony RF</span>
+            <span class="hint" data-i18n="rfHint">(ukrywa Krym, Abchazję, Osetię, Syrię i inne bazy zagraniczne)</span>
+          </label>
+        </section>
+
+        <section class="block actions">
+          <button type="button" id="btn-export" data-i18n="export">Eksport widoku (GeoJSON)</button>
+          <button type="button" id="btn-theme" data-i18n="themeLight">Tryb jasny</button>
+          <button type="button" id="btn-glossary" data-i18n="glossaryBtn">Słownik WRE</button>
+        </section>
+
+        <section class="block tree-block">
+          <h2 data-i18n="hierarchy">Hierarchia</h2>
+          <div id="tree" class="tree"></div>
+        </section>
+      </aside>
+
+      <main class="map-wrap">
+        <div id="map" role="application" data-i18n-aria="mapAria" aria-label="Mapa garnizonów"></div>
+        <button type="button" id="btn-sidebar" class="fab" data-i18n-aria="sidebar" aria-label="Panel">☰</button>
+      </main>
+
+      <article id="card" class="card hidden" aria-live="polite">
+        <button type="button" id="card-close" data-i18n-aria="close" aria-label="Zamknij">×</button>
+        <div id="card-body"></div>
+      </article>
+
+      <article id="glossary" class="card hidden" aria-live="polite">
+        <button type="button" id="glossary-close" data-i18n-aria="close" aria-label="Zamknij">×</button>
+        <div id="glossary-body"></div>
+      </article>
+
+      <footer class="disclaimer">
+        <span id="footer-text"></span>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

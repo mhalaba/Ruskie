@@ -1,0 +1,1673 @@
+{
+  "accessed": "2026-09-12",
+  "sources": [
+    {
+      "id": "src-kremlin-73569",
+      "title": "Presidential Executive Order approves new military-administrative division of the Russian Federation",
+      "url": "http://en.kremlin.ru/acts/news/73569",
+      "publisher": "President of Russia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-kremlin-decree-pdf",
+      "title": "Decree on the military-administrative division of the Russian Federation (unofficial EN translation)",
+      "url": "https://usnwc.edu/_images/portals/0/NWCDepartments/Russia-Maritime-Studies-Institute/20240226_ENG_RUS_Decree_MilDistricts_FINALba94.pdf",
+      "publisher": "U.S. Naval War College / RMSI (tłumaczenie ukazu)",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-wiki-md-ru",
+      "title": "Military districts of Russia",
+      "url": "https://en.wikipedia.org/wiki/Military_districts_of_Russia",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-wiki-gnd",
+      "title": "Russian Ground Forces",
+      "url": "https://en.wikipedia.org/wiki/Russian_Ground_Forces",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-lmd",
+      "title": "Leningrad Military District",
+      "url": "https://en.wikipedia.org/wiki/Leningrad_Military_District",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-mmd",
+      "title": "Moscow Military District",
+      "url": "https://en.wikipedia.org/wiki/Moscow_Military_District",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-smd",
+      "title": "Southern Military District",
+      "url": "https://en.wikipedia.org/wiki/Southern_Military_District",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-cmd",
+      "title": "Central Military District",
+      "url": "https://en.wikipedia.org/wiki/Central_Military_District",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-emd",
+      "title": "Eastern Military District",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Military_District",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-6caa",
+      "title": "6th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/6th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-11ac",
+      "title": "11th Army Corps (Russian Federation)",
+      "url": "https://en.wikipedia.org/wiki/11th_Army_Corps_(Russian_Federation)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-68msd",
+      "title": "68th Guards Motor Rifle Division",
+      "url": "https://en.wikipedia.org/wiki/68th_Guards_Motor_Rifle_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-69msd",
+      "title": "69th Guards Motor Rifle Division (Russia)",
+      "url": "https://en.wikipedia.org/wiki/69th_Guards_Motor_Rifle_Division_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-1gta",
+      "title": "1st Guards Tank Army",
+      "url": "https://en.wikipedia.org/wiki/1st_Guards_Tank_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-4gtd",
+      "title": "4th Guards Tank Division",
+      "url": "https://en.wikipedia.org/wiki/4th_Guards_Tank_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-2msd",
+      "title": "2nd Guards Motor Rifle Division",
+      "url": "https://en.wikipedia.org/wiki/2nd_Guards_Motor_Rifle_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-20caa",
+      "title": "20th Guards Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/20th_Guards_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-20caa-ru",
+      "title": "20-я гвардейская общевойсковая армия",
+      "url": "https://ru.wikipedia.org/wiki/20-%D1%8F_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D1%89%D0%B5%D0%B2%D0%BE%D0%B9%D1%81%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B0%D1%80%D0%BC%D0%B8%D1%8F",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-3msd",
+      "title": "3rd Motor Rifle Division",
+      "url": "https://en.wikipedia.org/wiki/3rd_Motor_Rifle_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-8caa",
+      "title": "8th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/8th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-150msd",
+      "title": "150th Motor Rifle Division",
+      "url": "https://en.wikipedia.org/wiki/150th_Motor_Rifle_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-globalsec-150",
+      "title": "150th Motorized Rifle Division",
+      "url": "https://www.globalsecurity.org/military/world/russia/150-mrd.htm",
+      "publisher": "GlobalSecurity.org",
+      "accessed": "2026-09-12",
+      "supports": [
+        "garrison",
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-42msd",
+      "title": "42nd Motor Rifle Division",
+      "url": "https://en.wikipedia.org/wiki/42nd_Motor_Rifle_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-41caa",
+      "title": "41st Army (Russia)",
+      "url": "https://en.wikipedia.org/wiki/41st_Army_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-2caa",
+      "title": "2nd Guards Combined Arms Army / 2nd Guards Tank Army (history + reform)",
+      "url": "https://en.wikipedia.org/wiki/2nd_Guards_Tank_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-127msd",
+      "title": "127th Motor Rifle Division (Russia)",
+      "url": "https://en.wikipedia.org/wiki/127th_Motor_Rifle_Division_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-36mrb",
+      "title": "36th Separate Guards Motor Rifle Brigade",
+      "url": "https://en.wikipedia.org/wiki/36th_Separate_Guards_Motor_Rifle_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-vdv",
+      "title": "Russian Airborne Forces",
+      "url": "https://en.wikipedia.org/wiki/Russian_Airborne_Forces",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-7vdv",
+      "title": "7th Guards Mountain Air Assault Division",
+      "url": "https://en.wikipedia.org/wiki/7th_Guards_Airborne_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-76vdv",
+      "title": "76th Guards Air Assault Division",
+      "url": "https://en.wikipedia.org/wiki/76th_Guards_Air_Assault_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-98vdv",
+      "title": "98th Guards Airborne Division",
+      "url": "https://en.wikipedia.org/wiki/98th_Guards_Airborne_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-106vdv",
+      "title": "106th Guards Airborne Division",
+      "url": "https://en.wikipedia.org/wiki/106th_Guards_Airborne_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-gru",
+      "title": "Spetsnaz GRU",
+      "url": "https://en.wikipedia.org/wiki/Spetsnaz_GRU",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-rvsn",
+      "title": "Strategic Rocket Forces",
+      "url": "https://en.wikipedia.org/wiki/Strategic_Rocket_Forces",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-vks",
+      "title": "Russian Aerospace Forces",
+      "url": "https://en.wikipedia.org/wiki/Russian_Aerospace_Forces",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-wiki-6vaa",
+      "title": "6th Air and Air Defence Forces Army",
+      "url": "https://en.wikipedia.org/wiki/6th_Air_and_Air_Defence_Forces_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-4vaa",
+      "title": "4th Air and Air Defence Forces Army",
+      "url": "https://en.wikipedia.org/wiki/4th_Air_and_Air_Defence_Forces_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-11vaa",
+      "title": "11th Air and Air Defence Forces Army",
+      "url": "https://en.wikipedia.org/wiki/11th_Air_and_Air_Defence_Forces_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-14vaa",
+      "title": "14th Air and Air Defence Forces Army",
+      "url": "https://en.wikipedia.org/wiki/14th_Air_and_Air_Defence_Forces_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-ni",
+      "title": "Russian Naval Infantry",
+      "url": "https://en.wikipedia.org/wiki/Russian_Naval_Infantry",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-coastal",
+      "title": "Coastal Troops of the Russian Navy",
+      "url": "https://en.wikipedia.org/wiki/Coastal_Troops_of_the_Russian_Navy",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-102base",
+      "title": "102nd Military Base",
+      "url": "https://en.wikipedia.org/wiki/102nd_Military_Base",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-7base",
+      "title": "7th Military Base",
+      "url": "https://en.wikipedia.org/wiki/7th_Military_Base",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-4base",
+      "title": "4th Guards Military Base",
+      "url": "https://en.wikipedia.org/wiki/4th_Guards_Military_Base",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-hmeimim",
+      "title": "Khmeimim Air Base",
+      "url": "https://en.wikipedia.org/wiki/Khmeimim_Air_Base",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-tartus",
+      "title": "Russian naval facility in Tartus",
+      "url": "https://en.wikipedia.org/wiki/Russian_naval_facility_in_Tartus",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-201base",
+      "title": "201st Military Base",
+      "url": "https://en.wikipedia.org/wiki/201st_Military_Base",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-90td",
+      "title": "90th Guards Tank Division (Russian Federation)",
+      "url": "https://en.wikipedia.org/wiki/90th_Guards_Tank_Division_(Russian_Federation)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-18caa",
+      "title": "18th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/18th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-58caa",
+      "title": "58th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/58th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-49caa",
+      "title": "49th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/49th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-5caa",
+      "title": "5th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/5th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-29caa",
+      "title": "29th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/29th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-35caa",
+      "title": "35th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/35th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-36caa",
+      "title": "36th Combined Arms Army",
+      "url": "https://en.wikipedia.org/wiki/36th_Combined_Arms_Army",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-68ac",
+      "title": "68th Army Corps (Russia)",
+      "url": "https://en.wikipedia.org/wiki/68th_Army_Corps_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-14ac",
+      "title": "14th Army Corps (Russia)",
+      "url": "https://en.wikipedia.org/wiki/14th_Army_Corps_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-cna-wmd-2021",
+      "title": "Russian Forces in the Western Military District",
+      "url": "https://www.cna.org/reports/2021/06/Russian-Forces-in-the-Western-Military-District.pdf",
+      "publisher": "CNA",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-isw-2024-02-26",
+      "title": "Russian Offensive Campaign Assessment, February 26, 2024",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment_26-9/",
+      "publisher": "Institute for the Study of War",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-wiki-144msd",
+      "title": "144th Guards Motor Rifle Division",
+      "url": "https://en.wikipedia.org/wiki/144th_Guards_Motor_Rifle_Division",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-27mrb",
+      "title": "27th Separate Guards Motor Rifle Brigade",
+      "url": "https://en.wikipedia.org/wiki/27th_Separate_Guards_Motor_Rifle_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-47td",
+      "title": "47th Tank Division (Russia)",
+      "url": "https://en.wikipedia.org/wiki/47th_Tank_Division_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-200mrb",
+      "title": "200th Separate Motor Rifle Brigade",
+      "url": "https://en.wikipedia.org/wiki/200th_Separate_Motor_Rifle_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-80mrb",
+      "title": "80th Arctic Motor Rifle Brigade",
+      "url": "https://en.wikipedia.org/wiki/80th_Arctic_Motor_Rifle_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-336ni",
+      "title": "336th Guards Naval Infantry Brigade",
+      "url": "https://en.wikipedia.org/wiki/336th_Guards_Naval_Infantry_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-61ni",
+      "title": "61st Naval Infantry Brigade",
+      "url": "https://en.wikipedia.org/wiki/61st_Naval_Infantry_Brigade_(Russia)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-155ni",
+      "title": "155th Guards Naval Infantry Brigade",
+      "url": "https://en.wikipedia.org/wiki/155th_Naval_Infantry_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-810ni",
+      "title": "810th Naval Infantry Brigade",
+      "url": "https://en.wikipedia.org/wiki/810th_Naval_Infantry_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-40ni",
+      "title": "40th Naval Infantry Brigade",
+      "url": "https://en.wikipedia.org/wiki/40th_Naval_Infantry_Brigade",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-engels",
+      "title": "Engels-2 (air base)",
+      "url": "https://en.wikipedia.org/wiki/Engels-2_(air_base)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kant",
+      "title": "Kant (air base)",
+      "url": "https://en.wikipedia.org/wiki/Kant_(air_base)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-ogrf",
+      "title": "Operational Group of Russian Forces",
+      "url": "https://en.wikipedia.org/wiki/Operational_Group_of_Russian_Forces",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-ew-troops",
+      "title": "Electronic Warfare Troops of the Russian Federation",
+      "url": "https://en.wikipedia.org/wiki/Electronic_Warfare_Troops_of_the_Russian_Federation",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-wiki-ew-troops-ru",
+      "title": "Войска радиоэлектронной борьбы Российской Федерации",
+      "url": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B9%D1%81%D0%BA%D0%B0_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B1%D0%BE%D1%80%D1%8C%D0%B1%D1%8B_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination"
+      ]
+    },
+    {
+      "id": "src-wiki-19ew-ru",
+      "title": "19-я отдельная бригада радиоэлектронной борьбы",
+      "url": "https://ru.wikipedia.org/wiki/19-%D1%8F_%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D0%B0_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B1%D0%BE%D1%80%D1%8C%D0%B1%D1%8B",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-jamestown-ew-2019",
+      "title": "Electronic Warfare in Contemporary Russian Military Thought",
+      "url": "https://jamestown.org/electronic-warfare-in-contemporary-russian-military-thought/",
+      "publisher": "Jamestown Foundation",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-armada-ew-2022",
+      "title": "Rah, Rah, Rash Putin? (Russian EW order of battle, open assessment)",
+      "url": "https://www.armadainternational.com/2022/03/russia-ukraine-invasion-electronic-warfare/",
+      "publisher": "Armada International",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-russiandefpolicy-15ew",
+      "title": "15th Independent EW Brigade",
+      "url": "https://russiandefpolicy.com/tag/15th-independent-ew-brigade/",
+      "publisher": "Russian Defense Policy (blog, open sources)",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-vch-71615",
+      "title": "Войсковая часть 71615 (15-я ОБрРЭБ)",
+      "url": "https://voinskayachast.net/suhoputnie-voyska/specialnie/vch71615",
+      "publisher": "voinskayachast.net",
+      "accessed": "2026-09-12",
+      "supports": [
+        "garrison",
+        "existence"
+      ]
+    },
+    {
+      "id": "src-globalsec-garrisons",
+      "title": "Garrisons — Russian Military Units (Voinskie Chasti)",
+      "url": "https://www.globalsecurity.org/military/world/russia/garrisons.htm",
+      "publisher": "GlobalSecurity.org",
+      "accessed": "2026-09-12",
+      "supports": [
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-planesandstuff-murmansk",
+      "title": "Murmansk-BN HF EW complex (open satellite commentary)",
+      "url": "https://planesandstuff.wordpress.com/2019/09/09/murmansk-bn-hf-ew-complex/",
+      "publisher": "planesandstuff (blog)",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-ruwiki-17ew",
+      "title": "17-я отдельная гвардейская бригада радиоэлектронной борьбы",
+      "url": "https://ru.ruwiki.ru/wiki/17-%D1%8F_%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D0%B0_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B1%D0%BE%D1%80%D1%8C%D0%B1%D1%8B",
+      "publisher": "Рувики / Wikipedia fork",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "subordination",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-krasukha",
+      "title": "Krasukha (electronic warfare system)",
+      "url": "https://en.wikipedia.org/wiki/Krasukha_(electronic_warfare_system)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-murmansk-bn",
+      "title": "Murmansk-BN",
+      "url": "https://en.wikipedia.org/wiki/Murmansk-BN",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-borisoglebsk",
+      "title": "Borisoglebsk-2",
+      "url": "https://en.wikipedia.org/wiki/Borisoglebsk-2",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-leer3",
+      "title": "Leer-3",
+      "url": "https://en.wikipedia.org/wiki/Leer-3",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-moskva1",
+      "title": "Moskva-1",
+      "url": "https://en.wikipedia.org/wiki/Moskva-1",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-rtut",
+      "title": "Rtut-BM",
+      "url": "https://en.wikipedia.org/wiki/Rtut-BM",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-zhitel",
+      "title": "R-330Zh Zhitel",
+      "url": "https://en.wikipedia.org/wiki/R-330Zh",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-uvz",
+      "title": "Uralvagonzavod",
+      "url": "https://en.wikipedia.org/wiki/Uralvagonzavod",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kmz",
+      "title": "Kurganmashzavod",
+      "url": "https://en.wikipedia.org/wiki/Kurganmashzavod",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kalashnikov",
+      "title": "Kalashnikov Concern",
+      "url": "https://en.wikipedia.org/wiki/Kalashnikov_Concern",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kbp",
+      "title": "KBP Instrument Design Bureau",
+      "url": "https://en.wikipedia.org/wiki/KBP_Instrument_Design_Bureau",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-motovilikha",
+      "title": "Motovilikha Plants",
+      "url": "https://en.wikipedia.org/wiki/Motovilikha_Plants",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-sevmash",
+      "title": "Sevmash",
+      "url": "https://en.wikipedia.org/wiki/Sevmash",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-admiralty",
+      "title": "Admiralty Shipyards",
+      "url": "https://en.wikipedia.org/wiki/Admiralty_Shipyards",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-yantar",
+      "title": "Yantar Shipyard",
+      "url": "https://en.wikipedia.org/wiki/Yantar_Shipyard",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-knaapo",
+      "title": "Komsomolsk-on-Amur Aircraft Plant",
+      "url": "https://en.wikipedia.org/wiki/Komsomolsk-on-Amur_Aircraft_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-irkut",
+      "title": "Irkutsk Aviation Plant",
+      "url": "https://en.wikipedia.org/wiki/Irkutsk_Aviation_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-napo",
+      "title": "Novosibirsk Aircraft Production Association",
+      "url": "https://en.wikipedia.org/wiki/Novosibirsk_Aircraft_Production_Association",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kapo",
+      "title": "Kazan Aircraft Production Association",
+      "url": "https://en.wikipedia.org/wiki/Kazan_Aircraft_Production_Association",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-votkinsk",
+      "title": "Votkinsk Plant",
+      "url": "https://en.wikipedia.org/wiki/Votkinsk_Machine_Building_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-krasmash",
+      "title": "Krasnoyarsk Machine-Building Plant",
+      "url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Machine-Building_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-almaz",
+      "title": "Almaz-Antey",
+      "url": "https://en.wikipedia.org/wiki/Almaz-Antey",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-obukhov",
+      "title": "Obukhov State Plant",
+      "url": "https://en.wikipedia.org/wiki/Obukhov_State_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-fakel",
+      "title": "MKB Fakel",
+      "url": "https://en.wikipedia.org/wiki/MKB_Fakel",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-splav",
+      "title": "NPO Splav",
+      "url": "https://en.wikipedia.org/wiki/NPO_Splav",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kbm",
+      "title": "KBM (Kolomna)",
+      "url": "https://en.wikipedia.org/wiki/KBM_(Kolomna)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-amz",
+      "title": "Arzamas Machine-Building Plant",
+      "url": "https://en.wikipedia.org/wiki/Arzamas_Machine-Building_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-chtz",
+      "title": "Chelyabinsk Tractor Plant",
+      "url": "https://en.wikipedia.org/wiki/Chelyabinsk_Tractor_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-omsktransmash",
+      "title": "Omsktransmash",
+      "url": "https://en.wikipedia.org/wiki/Omsktransmash",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-zid",
+      "title": "Degtyaryov Plant",
+      "url": "https://en.wikipedia.org/wiki/Degtyaryov_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-tula-arms",
+      "title": "Tula Arms Plant",
+      "url": "https://en.wikipedia.org/wiki/Tula_Arms_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-progress-arsenyev",
+      "title": "Progress Arsenyev Aviation Company",
+      "url": "https://en.wikipedia.org/wiki/Progress_Arsenyev_Aviation_Company",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-zvezda-dvz",
+      "title": "Zvezda (shipyard) / Bolshoy Kamen",
+      "url": "https://en.wikipedia.org/wiki/Zvezda_(shipyard)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-zelenodolsk",
+      "title": "Zelenodolsk Plant named after A.M. Gorky",
+      "url": "https://en.wikipedia.org/wiki/Zelenodolsk_Plant_named_after_A.M._Gorky",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-sormovo",
+      "title": "Krasnoye Sormovo Factory No. 112",
+      "url": "https://en.wikipedia.org/wiki/Krasnoye_Sormovo_Factory_No._112",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-rostvertol",
+      "title": "Rostvertol",
+      "url": "https://en.wikipedia.org/wiki/Rostvertol",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kazan-hel",
+      "title": "Kazan Helicopters",
+      "url": "https://en.wikipedia.org/wiki/Kazan_Helicopters",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-uec-saturn",
+      "title": "UEC Saturn",
+      "url": "https://en.wikipedia.org/wiki/UEC_Saturn",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-klimov",
+      "title": "Klimov (company)",
+      "url": "https://en.wikipedia.org/wiki/Klimov_(company)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-salyut",
+      "title": "Salyut Machine-Building Association",
+      "url": "https://en.wikipedia.org/wiki/Salyut_Machine-Building_Association",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-npomash",
+      "title": "NPO Mashinostroyeniya",
+      "url": "https://en.wikipedia.org/wiki/NPO_Mashinostroyeniya",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-makeyev",
+      "title": "Makeyev Rocket Design Bureau",
+      "url": "https://en.wikipedia.org/wiki/Makeyev_Rocket_Design_Bureau",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-titan",
+      "title": "Titan-Barrikady",
+      "url": "https://en.wikipedia.org/wiki/Titan-Barrikady",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-sozvezdie",
+      "title": "Sozvezdie",
+      "url": "https://en.wikipedia.org/wiki/Sozvezdie",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kret",
+      "title": "KRET",
+      "url": "https://en.wikipedia.org/wiki/KRET",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kupol",
+      "title": "IEMZ Kupol",
+      "url": "https://en.wikipedia.org/wiki/IEMZ_Kupol",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-uraltransmash",
+      "title": "Uraltransmash",
+      "url": "https://en.wikipedia.org/wiki/Uraltransmash",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-rostec",
+      "title": "Rostec",
+      "url": "https://en.wikipedia.org/wiki/Rostec",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-amur-ship",
+      "title": "Amur Shipbuilding Plant",
+      "url": "https://en.wikipedia.org/wiki/Amur_Shipbuilding_Plant",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-zaliv",
+      "title": "Zaliv Shipbuilding Yard (Kerch)",
+      "url": "https://en.wikipedia.org/wiki/Zaliv_Shipbuilding_Yard",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-knirti",
+      "title": "Kaluga Research Institute of Radio Engineering (KNIRTI)",
+      "url": "https://en.wikipedia.org/wiki/Kaluga_Research_Institute_of_Radio_Engineering",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-palantin",
+      "title": "Palantin (electronic warfare)",
+      "url": "https://en.wikipedia.org/wiki/Palantin",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-pole21",
+      "title": "Pole-21",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D0%B5-21",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-divnomorye",
+      "title": "Divnomorye (electronic warfare)",
+      "url": "https://en.wikipedia.org/wiki/Divnomorye_(electronic_warfare)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-infauna",
+      "title": "Infauna",
+      "url": "https://en.wikipedia.org/wiki/Infauna_(electronic_warfare)",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-ofac-924uav",
+      "title": "924th State Center for UAV Aviation (SDN listing, Kolomna)",
+      "url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=40192",
+      "publisher": "U.S. Treasury OFAC",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-opensanctions-924uav",
+      "title": "924th State Center for Unmanned Aviation",
+      "url": "https://www.opensanctions.org/entities/NK-VC4Fmbtufz9GcajQcuUe6A/",
+      "publisher": "OpenSanctions",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-yelabuga-uav",
+      "title": "Drone factory in Yelabuga",
+      "url": "https://en.wikipedia.org/wiki/Drone_factory_in_Yelabuga",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-alabuga",
+      "title": "Alabuga Special Economic Zone",
+      "url": "https://en.wikipedia.org/wiki/Alabuga_Special_Economic_Zone",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-kronstadt",
+      "title": "Kronshtadt Group",
+      "url": "https://en.wikipedia.org/wiki/Kronshtadt_Group",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-orion",
+      "title": "Kronshtadt Orion",
+      "url": "https://en.wikipedia.org/wiki/Kronshtadt_Orion",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-orlan10",
+      "title": "STC Orlan-10",
+      "url": "https://en.wikipedia.org/wiki/STC_Orlan-10",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-zala",
+      "title": "ZALA Aero Group",
+      "url": "https://en.wikipedia.org/wiki/ZALA_Aero_Group",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    },
+    {
+      "id": "src-wiki-lancet",
+      "title": "ZALA Lancet",
+      "url": "https://en.wikipedia.org/wiki/ZALA_Lancet",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence"
+      ]
+    },
+    {
+      "id": "src-wiki-uzga",
+      "title": "Ural Works of Civil Aviation",
+      "url": "https://en.wikipedia.org/wiki/Ural_Works_of_Civil_Aviation",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-12",
+      "supports": [
+        "existence",
+        "garrison"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "accessed": "2026-09-12",
+  "disclaimer": "Słowniki UI i mapy. Kolory rodzajów sił — nie są oznaczeniami celów.",
+  "districts": {
+    "LMD": {
+      "id": "LMD",
+      "name_pl": "Leningradzki Okręg Wojskowy",
+      "name_en": "Leningrad Military District",
+      "name_de": "Leningrader Militärbezirk",
+      "name_ru": "Ленинградский военный округ",
+      "short": "LOW"
+    },
+    "MMD": {
+      "id": "MMD",
+      "name_pl": "Moskiewski Okręg Wojskowy",
+      "name_en": "Moscow Military District",
+      "name_de": "Moskauer Militärbezirk",
+      "name_ru": "Московский военный округ",
+      "short": "MOW"
+    },
+    "SMD": {
+      "id": "SMD",
+      "name_pl": "Południowy Okręg Wojskowy",
+      "name_en": "Southern Military District",
+      "name_de": "Südlicher Militärbezirk",
+      "name_ru": "Южный военный округ",
+      "short": "POW"
+    },
+    "CMD": {
+      "id": "CMD",
+      "name_pl": "Centralny Okręg Wojskowy",
+      "name_en": "Central Military District",
+      "name_de": "Zentraler Militärbezirk",
+      "name_ru": "Центральный военный округ",
+      "short": "COW"
+    },
+    "EMD": {
+      "id": "EMD",
+      "name_pl": "Wschodni Okręg Wojskowy",
+      "name_en": "Eastern Military District",
+      "name_de": "Östlicher Militärbezirk",
+      "name_ru": "Восточный военный округ",
+      "short": "WOW"
+    },
+    "central_subordination": {
+      "id": "central_subordination",
+      "name_pl": "Podległość centralna (SG / rodzaj sił)",
+      "name_en": "Central subordination (General Staff / service)",
+      "name_de": "Zentrale Unterstellung (Generalstab / Teilstreitkraft)",
+      "name_ru": "Центральное подчинение",
+      "short": "SG"
+    },
+    "fleet_northern": {
+      "id": "fleet_northern",
+      "name_pl": "Flota Północna (wojska nadbrzeżne / PM)",
+      "name_en": "Northern Fleet (coastal troops / naval infantry)",
+      "name_de": "Nordflotte (Küstentruppen / Marineinfanterie)",
+      "name_ru": "Северный флот",
+      "short": "SF"
+    },
+    "fleet_baltic": {
+      "id": "fleet_baltic",
+      "name_pl": "Flota Bałtycka (wojska nadbrzeżne / PM)",
+      "name_en": "Baltic Fleet (coastal troops / naval infantry)",
+      "name_de": "Baltische Flotte (Küstentruppen / Marineinfanterie)",
+      "name_ru": "Балтийский флот",
+      "short": "BF"
+    },
+    "fleet_black_sea": {
+      "id": "fleet_black_sea",
+      "name_pl": "Flota Czarnomorska (wojska nadbrzeżne / PM)",
+      "name_en": "Black Sea Fleet (coastal troops / naval infantry)",
+      "name_de": "Schwarzmeerflotte (Küstentruppen / Marineinfanterie)",
+      "name_ru": "Черноморский флот",
+      "short": "ChF"
+    },
+    "fleet_pacific": {
+      "id": "fleet_pacific",
+      "name_pl": "Flota Pacyfiku (wojska nadbrzeżne / PM)",
+      "name_en": "Pacific Fleet (coastal troops / naval infantry)",
+      "name_de": "Pazifikflotte (Küstentruppen / Marineinfanterie)",
+      "name_ru": "Тихоокеанский флот",
+      "short": "TOF"
+    },
+    "caspian": {
+      "id": "caspian",
+      "name_pl": "Flotylla Kaspijska",
+      "name_en": "Caspian Flotilla",
+      "name_de": "Kaspische Flottille",
+      "name_ru": "Каспийская флотилия",
+      "short": "KFl"
+    }
+  },
+  "branches": {
+    "ground": { "id": "ground", "name_pl": "Wojska Lądowe", "name_en": "Ground Forces", "name_de": "Landstreitkräfte", "color": "#6b7c3a", "layer": "ground" },
+    "vdv": { "id": "vdv", "name_pl": "Wojska Powietrznodesantowe", "name_en": "Airborne Forces", "name_de": "Luftlandetruppen", "color": "#3d7ea6", "layer": "vdv" },
+    "naval_infantry": { "id": "naval_infantry", "name_pl": "Piechota morska", "name_en": "Naval Infantry", "name_de": "Marineinfanterie", "color": "#1f4e79", "layer": "naval_infantry" },
+    "navy_coastal": { "id": "navy_coastal", "name_pl": "Wojska nadbrzeżne", "name_en": "Coastal Troops", "name_de": "Küstentruppen", "color": "#2a6f7f", "layer": "naval_infantry" },
+    "gru_spetsnaz": { "id": "gru_spetsnaz", "name_pl": "Spetsnaz GRU", "name_en": "GRU Spetsnaz", "name_de": "GRU-Spetsnaz", "color": "#8a3b32", "layer": "gru" },
+    "vks": { "id": "vks", "name_pl": "Wojska Powietrzno-Kosmiczne", "name_en": "Aerospace Forces", "name_de": "Luft-Kosmos-Streitkräfte", "color": "#5b8def", "layer": "vks" },
+    "rvsn": { "id": "rvsn", "name_pl": "Wojska Rakietowe Przeznaczenia Strategicznego", "name_en": "Strategic Rocket Forces", "name_de": "Strategische Raketentruppen", "color": "#6b4c9a", "layer": "rvsn" },
+    "ew": { "id": "ew", "name_pl": "Walka radioelektroniczna (WRE)", "name_en": "Electronic warfare troops", "name_de": "Elektronische Kampfführung", "color": "#a8559a", "layer": "ew" },
+    "uav": { "id": "uav", "name_pl": "Bezzałogowce (BSP) — garnizon", "name_en": "Unmanned aviation (home garrison)", "name_de": "Unbemannte Luftfahrt (Stammgarnison)", "color": "#2a9d8f", "layer": "uav" },
+    "defense_industry": { "id": "defense_industry", "name_pl": "Zakłady zbrojeniowe", "name_en": "Defense plants", "name_de": "Rüstungsbetriebe", "color": "#b8862a", "layer": "industry" },
+    "other": { "id": "other", "name_pl": "Inne / zabezpieczenie", "name_en": "Other / support", "name_de": "Sonstige / Unterstützung", "color": "#6a6e73", "layer": "other" }
+  },
+  "echelons": {
+    "district": { "id": "district", "name_pl": "Okręg", "name_en": "District", "name_de": "Militärbezirk", "size": 18, "shape": "square" },
+    "army": { "id": "army", "name_pl": "Armia", "name_en": "Army", "name_de": "Armee", "size": 15, "shape": "circle" },
+    "corps": { "id": "corps", "name_pl": "Korpus", "name_en": "Corps", "name_de": "Korps", "size": 14, "shape": "octagon" },
+    "division": { "id": "division", "name_pl": "Dywizja", "name_en": "Division", "name_de": "Division", "size": 12, "shape": "diamond" },
+    "brigade": { "id": "brigade", "name_pl": "Brygada", "name_en": "Brigade", "name_de": "Brigade", "size": 9, "shape": "circle" },
+    "regiment": { "id": "regiment", "name_pl": "Pułk niezależny", "name_en": "Independent regiment", "name_de": "selbstständiges Regiment", "size": 8, "shape": "triangle" },
+    "base": { "id": "base", "name_pl": "Baza / lotnisko", "name_en": "Base / airfield", "name_de": "Stützpunkt / Flugplatz", "size": 10, "shape": "square" },
+    "plant": { "id": "plant", "name_pl": "Zakład / przedsiębiorstwo", "name_en": "Plant / enterprise", "name_de": "Werk / Unternehmen", "size": 9, "shape": "square" },
+    "other": { "id": "other", "name_pl": "Inne", "name_en": "Other", "name_de": "Sonstige", "size": 8, "shape": "circle" }
+  },
+  "confidence": {
+    "high": { "id": "high", "name_pl": "Wysoka", "name_en": "High", "name_de": "Hoch", "opacity": 1, "score_min": 80 },
+    "medium": { "id": "medium", "name_pl": "Średnia", "name_en": "Medium", "name_de": "Mittel", "opacity": 0.85, "score_min": 50 },
+    "low": { "id": "low", "name_pl": "Niska", "name_en": "Low", "name_de": "Niedrig", "opacity": 0.55, "score_min": 25 },
+    "unverified": { "id": "unverified", "name_pl": "Szkic / niezweryfikowane", "name_en": "Sketch / unverified", "name_de": "Skizze / unbestätigt", "opacity": 0.35, "score_min": 0 }
+  },
+  "formation_status": {
+    "active": { "name_pl": "Aktywna", "name_en": "Active", "name_de": "Aktiv" },
+    "reorganizing": { "name_pl": "Reorganizacja", "name_en": "Reorganizing", "name_de": "Umgliederung" },
+    "announced_not_confirmed": { "name_pl": "Zapowiedziana, niepotwierdzona", "name_en": "Announced, not confirmed", "name_de": "Angekündigt, unbestätigt" },
+    "historical": { "name_pl": "Historyczna", "name_en": "Historical", "name_de": "Historisch" }
+  },
+  "deployment_status": {
+    "garrison": { "name_pl": "W garnizonie macierzystym (deklaratywnie)", "name_en": "At home garrison (declared)", "name_de": "In der Stammgarnison (deklarativ)" },
+    "partially_away": { "name_pl": "Część sił poza garnizonem", "name_en": "Part of the force away from garrison", "name_de": "Teil der Kräfte außerhalb der Garnison" },
+    "deployed_away": { "name_pl": "Głównie poza garnizonem (bez lokalizacji teatru)", "name_en": "Mostly away from garrison (no theater location)", "name_de": "Überwiegend außerhalb der Garnison (ohne Theaterort)" },
+    "forming": { "name_pl": "W formowaniu", "name_en": "Forming", "name_de": "In Aufstellung" },
+    "disbanded": { "name_pl": "Rozformowana", "name_en": "Disbanded", "name_de": "Aufgelöst" },
+    "unknown": { "name_pl": "Nieznany", "name_en": "Unknown", "name_de": "Unbekannt" }
+  },
+  "coord_precision": {
+    "city": { "name_pl": "Centroid miasta (~1 km, 2 miejsca dziesiętne)", "name_en": "City centroid (~1 km, 2 decimal places)", "name_de": "Stadtcentroid (~1 km, 2 Dezimalstellen)" },
+    "garrison_town": { "name_pl": "Centroid osiedla garnizonowego (~100–1000 m, 3 miejsca)", "name_en": "Garrison-town centroid (~100–1000 m, 3 decimals)", "name_de": "Centroid der Garnisonsiedlung (~100–1000 m, 3 Stellen)" },
+    "public_hq_building": { "name_pl": "Publiczny adres sztabu (max 3 miejsca dziesiętne)", "name_en": "Public HQ address (max 3 decimal places)", "name_de": "Öffentliche Stabsadresse (max. 3 Dezimalstellen)" }
+  },
+  "map_colors": {
+    "ground": "#6b7c3a",
+    "vdv": "#3d7ea6",
+    "naval_infantry": "#1f4e79",
+    "navy_coastal": "#2a6f7f",
+    "gru_spetsnaz": "#8a3b32",
+    "vks": "#5b8def",
+    "rvsn": "#6b4c9a",
+    "ew": "#a8559a",
+    "uav": "#2a9d8f",
+    "defense_industry": "#b8862a",
+    "other": "#6a6e73"
+  }
+}
