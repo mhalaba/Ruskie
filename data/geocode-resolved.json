@@ -1196,6 +1196,55 @@
     "geocode_query": "Yantarny, Kaliningrad Oblast, Russia",
     "display_name": "Янтарный, Янтарный городской округ, Калининградская область, Северо-Западный федеральный округ, Россия"
   },
+  "ru-uav": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-uav-924": {
+    "lon": 38.77,
+    "lat": 55.09,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kolomna, Moscow Oblast, Russia",
+    "display_name": "Коломна, городской округ Коломна, Московская область, Центральный федеральный округ, Россия"
+  },
+  "ru-uav-alabuga": {
+    "lon": 52.05,
+    "lat": 55.76,
+    "geocode_source": "nominatim",
+    "geocode_query": "Yelabuga, Tatarstan, Russia",
+    "display_name": "Елабуга, городское поселение Елабуга, Елабужский район, Татарстан, Приволжский федеральный округ, 423600, Россия"
+  },
+  "ru-uav-kronstadt": {
+    "lon": 37.18,
+    "lat": 56.74,
+    "geocode_source": "nominatim",
+    "geocode_query": "Dubna, Moscow Oblast, Russia",
+    "display_name": "городской округ Дубна, Московская область, Центральный федеральный округ, Россия"
+  },
+  "ru-uav-stc": {
+    "lon": 30.16,
+    "lat": 59.96,
+    "geocode_source": "nominatim",
+    "geocode_query": "Saint Petersburg, Russia",
+    "display_name": "Санкт-Петербург, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-uav-zala": {
+    "lon": 53.21,
+    "lat": 56.85,
+    "geocode_source": "nominatim",
+    "geocode_query": "Izhevsk, Russia",
+    "display_name": "городской округ Ижевск, Удмуртия, Приволжский федеральный округ, Россия"
+  },
+  "ru-uav-uzga": {
+    "lon": 60.6,
+    "lat": 56.84,
+    "geocode_source": "nominatim",
+    "geocode_query": "Yekaterinburg, Russia",
+    "display_name": "Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, Россия"
+  },
   "ru-ind": {
     "lon": 37.61,
     "lat": 55.63,

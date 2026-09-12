@@ -15,3 +15,7 @@ Wszystkie poniższe żądania / tropy OSINT zostały **odmówione** i nie trafi�
 | 2026-09-12 | Częstotliwości, maszty i stanowiska zagłuszaczy WRE (pola antenowe) | Dane do namierzania / tracker | Tylko miasto garnizonu jednostki i publiczna nazwa systemu |
 | 2026-09-12 | Bramy, hale, linie produkcyjne zakładów zbrojeniowych | Precyzja poniżej centroidu miasta | Pin wyłącznie miasta siedziby |
 | 2026-09-12 | Zakłady zbrojeniowe w Ukrainie 1991 poza Krymem | Zakaz teatru / terytorium UA 1991 | Nie pinowano |
+| 2026-09-12 | Miejsca startu dronów (Shahed/Geran, pasy przygraniczne, płyty, hangary, katapulty) | Dane do namierzania; `geo_rules.uav` | Odmowa. Warstwa BSP: miasto garnizonu 924. (Kołomna) + centroidy miast zakładów |
+| 2026-09-12 | GPS obiektów ze zdjęć satelitarnych (hale SSE Ałabuga, kampus Kronsztadt, koszary 924.) | Satelita nie jest źródłem współrzędnych pinów; max. zoom 12 | Podkład Esri World Imagery wyłącznie jako tło; piny z Nominatim miejscowości |
+| 2026-09-12 | Geokod ulicy OFAC 924. GTsBA (5 Proezd Artilleristov, Kołomna) | Precyzja poniżej centroidu miasta | Pin Kołomny `city` 2 dp |
+| 2026-09-12 | Adresy uliczne ZALA/CST (Iżewsk) z listingów sankcyjnych | Precyzja poniżej centroidu miasta | Pin Iżewska `city` 2 dp |

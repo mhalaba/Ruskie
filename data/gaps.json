@@ -59,6 +59,27 @@
     "Poligony Kuzminskij, Kadamowskij, Pogonowo, Mołkino jako cele — tylko miejscowość garnizonowa jednostki.",
     "Koszary, bramy, składy paliw i amunicji.",
     "Maszty i stanowiska zagłuszaczy WRE (w tym pola antenowe opisywane w komentarzach satelitarnych).",
-    "Bramy, hale i linie produkcyjne zakładów zbrojeniowych — wyłącznie centroid miasta."
+    "Bramy, hale i linie produkcyjne zakładów zbrojeniowych — wyłącznie centroid miasta.",
+    "Miejsca startu BSP (Shahed/Geran, pasy, hangary, katapulty, płyty opisywane w komentarzach satelitarnych) — dane do namierzania; nie pinowano.",
+    "Adres uliczny 924. centrum BSP w Kołomnie (OFAC: 5 Proezd Artilleristov) — geokod wyłącznie centroidu Kołomny.",
+    "Kampus SSE Ałabuga / hale Jelabugi ze zdjęć satelitarnych — pin wyłącznie centroidu miasta Jelabuga.",
+    "Adresy uliczne ZALA / CST w Iżewsku z listingów sankcyjnych — pin wyłącznie centroidu Iżewska."
+  ],
+  "uav_launch_sites_refused": [
+    {
+      "id": "uav-launch-pads",
+      "name_pl": "Stanowiska startowe BSP / Shahed-Geran",
+      "reason": "Miejsce startu, pas, hangar i płyta to dane do namierzania. Atlas pokazuje tylko miasto garnizonu jednostki (924. — Kołomna) albo centroid miasta zakładu. Współrzędne z satelity obiektów są zakazane (schema.geo_rules.uav / satellite)."
+    },
+    {
+      "id": "uav-924-street",
+      "name_pl": "Adres uliczny 924. GTsBA (Kołomna)",
+      "reason": "OFAC i rejestry podają ulicę. Precyzja atlasu to city (~1 km), nie geokod adresu."
+    },
+    {
+      "id": "uav-alabuga-campus",
+      "name_pl": "Kampus SSE Ałabuga (poza centrum Jelabugi)",
+      "reason": "Źródła otwarte opisują SSE poza miastem. Pin = Nominatim Jelabuga, nie pomiar hal."
+    }
   ]
 }

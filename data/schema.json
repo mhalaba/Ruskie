@@ -37,10 +37,11 @@
       "rvsn",
       "navy_coastal",
       "ew",
+      "uav",
       "defense_industry",
       "other"
     ],
-    "service_component": ["SV", "VDV", "VMF", "VKS", "RVSN", "GRU", "EW", "OPK"],
+    "service_component": ["SV", "VDV", "VMF", "VKS", "RVSN", "GRU", "EW", "UAV", "OPK"],
     "district": [
       "LMD",
       "MMD",
@@ -66,6 +67,8 @@
     "no_guess": "Brak źródła garnizonu = rekord unverified albo luka w data/gaps.json. Nigdy fałszywy pin.",
     "no_average": "Rozbieżność garnizonu: jeden punkt (lepiej potwierdzony) + alt_garrison.",
     "industry": "Zakłady zbrojeniowe: wyłącznie centroid miasta, nigdy brama, hala ani linia produkcyjna.",
-    "ew": "WRE: garnizon miejscowości jednostki. Zakaz częstotliwości, stanowisk zagłuszaczy i śledzenia wozów."
+    "ew": "WRE: garnizon miejscowości jednostki. Zakaz częstotliwości, stanowisk zagłuszaczy i śledzenia wozów.",
+    "uav": "BSP: wyłącznie miasto garnizonu jednostki / zakładu. Zakaz miejsc startu, pasów, hangarów i GPS ze zdjęć satelitarnych obiektów.",
+    "satellite": "Podkład satelitarny jest tłem mapy (max. zoom 12). Nie jest źródłem współrzędnych pinów."
   }
 }

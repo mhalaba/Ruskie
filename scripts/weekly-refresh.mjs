@@ -183,7 +183,8 @@ const report = {
   refused: [
     "No coordinate writes",
     "No Ukraine 1991 pins",
-    "No frequencies / jammer sites / plant gates",
+    "No frequencies / jammer sites / plant gates / UAV launch pads",
+    "No satellite-derived object GPS",
   ],
 };
 

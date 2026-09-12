@@ -100,6 +100,7 @@
     "vks": { "id": "vks", "name_pl": "Wojska Powietrzno-Kosmiczne", "name_en": "Aerospace Forces", "name_de": "Luft-Kosmos-Streitkräfte", "color": "#5b8def", "layer": "vks" },
     "rvsn": { "id": "rvsn", "name_pl": "Wojska Rakietowe Przeznaczenia Strategicznego", "name_en": "Strategic Rocket Forces", "name_de": "Strategische Raketentruppen", "color": "#6b4c9a", "layer": "rvsn" },
     "ew": { "id": "ew", "name_pl": "Walka radioelektroniczna (WRE)", "name_en": "Electronic warfare troops", "name_de": "Elektronische Kampfführung", "color": "#a8559a", "layer": "ew" },
+    "uav": { "id": "uav", "name_pl": "Bezzałogowce (BSP) — garnizon", "name_en": "Unmanned aviation (home garrison)", "name_de": "Unbemannte Luftfahrt (Stammgarnison)", "color": "#2a9d8f", "layer": "uav" },
     "defense_industry": { "id": "defense_industry", "name_pl": "Zakłady zbrojeniowe", "name_en": "Defense plants", "name_de": "Rüstungsbetriebe", "color": "#b8862a", "layer": "industry" },
     "other": { "id": "other", "name_pl": "Inne / zabezpieczenie", "name_en": "Other / support", "name_de": "Sonstige / Unterstützung", "color": "#6a6e73", "layer": "other" }
   },
@@ -148,6 +149,7 @@
     "vks": "#5b8def",
     "rvsn": "#6b4c9a",
     "ew": "#a8559a",
+    "uav": "#2a9d8f",
     "defense_industry": "#b8862a",
     "other": "#6a6e73"
   }

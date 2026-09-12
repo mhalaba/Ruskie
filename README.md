@@ -1,6 +1,6 @@
 # Atlas garnizonów Sił Zbrojnych Federacji Rosyjskiej
 
-Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe / publiczny sztab), **zakładów zbrojeniowych** (centroid miasta) i **nazwanych systemów WRE** oraz statyczna aplikacja mapy. Pracuje wyłącznie na źródłach otwartych.
+Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe / publiczny sztab), **zakładów zbrojeniowych** (centroid miasta), **ośrodków i zakładów BSP** (centroid miasta) i **nazwanych systemów WRE** oraz statyczna aplikacja mapy. Pracuje wyłącznie na źródłach otwartych.
 
 **To nie jest tracker pola walki. Brak danych o teatrze ukraińskim.**
 
@@ -25,11 +25,12 @@ Po merżu do `main` ten sam katalog `dist/` wdraża też workflow `.github/workf
 - Bazy zagraniczne (Armenia, Abchazja, Osetia Południowa, Syria, Białoruś, Tadżykistan, Kirgistan, Naddniestrze): warstwa `extraterritorial`.
 - Szczebel: okręg → armia/korpus → dywizja/brygada/pułk niezależny. Bataliony WRE tylko gdy mają własny, publiczny garnizon miasta.
 - Wojska WRE: garnizon miejscowości jednostki + publiczne nazwy systemów (Krasucha, Murmańsk-BN, Leer-3 itd.). **Bez częstotliwości i stanowisk zagłuszaczy.**
+- Bezzałogowce: 924. centrum (Kołomna) i miasta zakładów (Jelabuga, Dubna, Petersburg, Iżewsk, Jekaterynburg). **Bez miejsc startu, pasów i hangarów.**
 - Zakłady zbrojeniowe: centroid miasta siedziby / zakładu. **Bez bram, hal i linii produkcyjnych.** Zakłady w Ukrainie 1991 poza Krymem nie są pinowane.
 
 ## Czego tu nie ma (zakazy twarde)
 
-Zob. `DISCLAIMER.md` i `data/refusal-log.md`. W skrócie: brak współrzędnych dokładniejszych niż centroid miejscowości, brak PII poniżej dowódcy okręgu/armii, brak silosów i stanowisk startowych, brak mapowania Ukrainy 1991 (poza Krymem jako okupowanym).
+Zob. `DISCLAIMER.md` i `data/refusal-log.md`. W skrócie: brak współrzędnych dokładniejszych niż centroid miejscowości, brak PII poniżej dowódcy okręgu/armii, brak silosów, stanowisk startowych (w tym BSP), brak GPS obiektów ze zdjęć satelitarnych, brak mapowania Ukrainy 1991 (poza Krymem jako okupowanym).
 
 ## Instalacja
 
@@ -64,11 +65,12 @@ Każdy rekord ma `sources[]` z URL, wydawcą i datą dostępu.
 
 ## Metodologia OSINT
 
-1. **Źródła (kolejność wiarygodności):** ukazy/MoD RF → IISS/CRS/ISW (struktura/garnizon, nie odcinek frontu) → Wikipedia/Wikidata z przypisami → milkavkaz/warfare.be/tochnyi jako trop → satelita jawny wyłącznie do potwierdzenia, że w miejscowości jest obiekt wojskowy (bez śledzenia sprzętu).
+1. **Źródła (kolejność wiarygodności):** ukazy/MoD RF → IISS/CRS/ISW (struktura/garnizon, nie odcinek frontu) → Wikipedia/Wikidata z przypisami → milkavkaz/warfare.be/tochnyi jako trop → satelita jawny wyłącznie do potwierdzenia, że w miejscowości jest obiekt wojskowy (bez pomiaru współrzędnych obiektu i bez śledzenia sprzętu).
 2. **Reguła trzech źródeł / instytucja:** `high` = ≥3 niezależne albo 1 instytucjonalne, albo Wikipedia z cytowaniami + 1 potwierdzenie, zgodne co do garnizonu i podporządkowania. `medium` = 2 źródła. `low` = 1 źródło OSINT. `unverified` = trop; warstwa „szkic” wyłączona domyślnie.
-3. **Współrzędne:** Nominatim (OSM) centroid miejscowości z `geocode_query`. Zaokrąglenie: 2 dp (`city`, ~1 km), 3 dp (`garrison_town` / `public_hq_building`, ~100 m). Wikimapia nie jest jedynym źródłem współrzędnych.
+3. **Współrzędne:** Nominatim (OSM) centroid miejscowości z `geocode_query`. Zaokrąglenie: 2 dp (`city`, ~1 km), 3 dp (`garrison_town` / `public_hq_building`, ~100 m). Karta jednostki pokazuje ten GPS WGS84. Wikimapia i zdjęcie satelitarne **nie** są źródłem współrzędnych pinów. Podkład Esri World Imagery: zoom max. 12, tylko tło.
 4. **Rozbieżność garnizonu:** nie uśredniamy. Wybór lepiej potwierdzonego punktu; wariant w `alt_garrison` i `notes_pl`.
 5. **Ukraina:** jeśli jednostka działa poza garnizonem, rekord zachowuje garnizon macierzysty i `deployment_status` (`partially_away` / `deployed_away`) **bez lokalizacji teatru**. Armie z HQ w Doniecku/Ługańsku — lista luk, bez geometrii.
+6. **BSP:** wyłącznie miasto garnizonu ośrodka lub zakładu. Miejsca startu Shahed/Geran, pasy i hangary — `data/gaps.json` / `data/refusal-log.md`.
 
 ## Jak dodać jednostkę
 
@@ -92,7 +94,7 @@ Agent **nie dodaje pinów samodzielnie**. Szczegóły: `data/refresh-policy.md`.
 
 ## Aplikacja
 
-Vite + vanilla JS, Leaflet, OSM, MarkerCluster. Bez backendu, logowania i telemetrii. UI: **PL / EN / DE** (`?lang=en` / `?lang=de`, zapamiętywane w `localStorage`). Filtry: rodzaj sił (w tym WRE i zakłady), okręg, szczebel, status, pewność, „tylko garnizony RF”, wyszukiwarka (także `name_de` i nazwy systemów), drzewo hierarchii, karta ze źródłami, słownik WRE, eksport GeoJSON, tryb ciemny.
+Vite + vanilla JS, Leaflet, OSM (opcjonalnie Esri World Imagery jako tło, zoom max. 12), MarkerCluster. Bez backendu, logowania i telemetrii. UI: **PL / EN / DE** (`?lang=en` / `?lang=de`, zapamiętywane w `localStorage`). Filtry: rodzaj sił (w tym WRE, BSP i zakłady), okręg, szczebel, status, pewność, „tylko garnizony RF”, wyszukiwarka (także `name_de` i nazwy systemów), drzewo hierarchii, karta ze źródłami i GPS centroidu, słownik WRE, eksport GeoJSON, tryb ciemny.
 
 Kolor markera = rodzaj sił. Kształt = szczebel (`plant` = kwadrat). Przezroczystość = pewność. Brak ikon celowniczych i narzędzi pomiaru do celów.
 
@@ -104,4 +106,4 @@ Kod: MIT (`LICENSE`). Dane: zestawienie ze źródeł otwartych; teksty Wikipedii
 
 ## Fazy budowy
 
-Zob. `data/changelog/`. Kolejność: szkielet → LOW, MOW, POW, COW, WOW → WDW → piechota morska → GRU → WKS → WRPS → zagranica → WRE / zakłady / PL-EN-DE.
+Zob. `data/changelog/`. Kolejność: szkielet → LOW, MOW, POW, COW, WOW → WDW → piechota morska → GRU → WKS → WRPS → zagranica → WRE / zakłady / PL-EN-DE → BSP / GPS / podkład satelitarny.

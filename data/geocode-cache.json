@@ -1370,5 +1370,23 @@
     "osm_id": 2865045,
     "source": "nominatim",
     "accessed": "2026-09-12"
+  },
+  "Yelabuga, Tatarstan, Russia": {
+    "lon": 52.0539938,
+    "lat": 55.7577131,
+    "display_name": "Елабуга, городское поселение Елабуга, Елабужский район, Татарстан, Приволжский федеральный округ, 423600, Россия",
+    "osm_type": "relation",
+    "osm_id": 1716734,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
+  },
+  "Dubna, Moscow Oblast, Russia": {
+    "lon": 37.175533,
+    "lat": 56.7417768,
+    "display_name": "городской округ Дубна, Московская область, Центральный федеральный округ, Россия",
+    "osm_type": "relation",
+    "osm_id": 184745,
+    "source": "nominatim",
+    "accessed": "2026-09-12"
   }
 }

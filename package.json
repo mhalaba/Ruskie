@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Open-source gazetteer of publicly known Russian Armed Forces garrison towns, defense plants (city centroids) and named EW systems. PL/EN/DE. Not a battlefield tracker.",
+  "description": "Open-source gazetteer of publicly known Russian Armed Forces garrison towns, defense plants and UAV centres (city centroids) and named EW systems. PL/EN/DE. Not a battlefield tracker.",
   "homepage": "https://mhalaba.github.io/Ruskie/",
   "scripts": {
     "dev": "vite",

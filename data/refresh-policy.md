@@ -18,7 +18,8 @@ The job is the weekly agent: it re-checks open sources, records drift, and opens
 - Move or invent coordinates.
 - Average conflicting garrisons.
 - Add points in Ukraine 1991 (except Crimea with `occupied_ukraine`).
-- Record frequencies, jammer sites, silos, plant gates, or PII below army/district commander.
+- Record frequencies, jammer sites, silos, plant gates, UAV launch pads, or PII below army/district commander.
+- Take pin coordinates from satellite imagery of buildings, hangars, runways, or SEZ campuses.
 - Treat a 404 or infobox change as an automatic catalog edit.
 
 ## Human review

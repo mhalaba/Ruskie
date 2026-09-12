@@ -160,6 +160,34 @@ label input[type="checkbox"] {
   font-size: 0.72rem;
   margin-left: 22px;
 }
+.osint-box {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px 8px;
+}
+.osint-box h2 {
+  color: var(--accent);
+}
+.osint-lead,
+.osint-list {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+.osint-list {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+.osint-list li {
+  margin: 0 0 6px;
+}
+code.gps {
+  font-family: ui-monospace, "IBM Plex Mono", Menlo, monospace;
+  font-size: 0.86rem;
+  letter-spacing: 0.01em;
+}
 .block {
   border-top: 1px solid var(--line);
   padding-top: 12px;

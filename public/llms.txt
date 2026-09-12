@@ -1,6 +1,6 @@
 # Ruskie
 
-> Open-source gazetteer of publicly known Russian Armed Forces garrison towns, defense-plant cities, and named electronic-warfare systems.
+> Open-source gazetteer of publicly known Russian Armed Forces garrison towns, defense-plant cities, UAV centres/plants (city centroids), and named electronic-warfare systems.
 
 - Site: https://mhalaba.github.io/Ruskie/
 - Languages: Polish (default), English (`?lang=en`), German (`?lang=de`)

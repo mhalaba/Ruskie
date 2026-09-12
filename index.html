@@ -11,11 +11,11 @@
     <link rel="alternate" hreflang="x-default" href="https://mhalaba.github.io/Ruskie/" />
     <meta
       name="description"
-      content="Weryfikowalny atlas publicznie znanych garnizonów Sił Zbrojnych Federacji Rosyjskiej, zakładów zbrojeniowych (centroid miasta) i nazwanych systemów WRE. To nie jest tracker pola walki."
+      content="Weryfikowalny atlas publicznie znanych garnizonów Sił Zbrojnych Federacji Rosyjskiej, zakładów zbrojeniowych i ośrodków BSP (centroid miasta) oraz nazwanych systemów WRE. To nie jest tracker pola walki."
     />
     <meta
       name="keywords"
-      content="garnizony Rosja, Siły Zbrojne FR, OSINT, mapa Leaflet, WRE, Krasucha, Murmańsk-BN, Uralwagonzawod, okręgi wojskowe"
+      content="garnizony Rosja, Siły Zbrojne FR, OSINT, mapa Leaflet, WRE, BSP, Kołomna, Jelabuga, Krasucha, Murmańsk-BN, Uralwagonzawod, okręgi wojskowe"
     />
     <meta name="author" content="Ruskie open gazetteer" />
     <meta name="robots" content="index,follow" />
@@ -74,7 +74,7 @@
             id="search"
             type="search"
             data-i18n-placeholder="searchPh"
-            placeholder="Nazwa, numer, miejscowość, w/cz…"
+            placeholder="Nazwa, numer, miejscowość, w/cz, system WRE, BSP…"
             autocomplete="off"
           />
         </label>
@@ -89,10 +89,12 @@
           <label><input type="checkbox" data-layer="vks" checked /> <span data-i18n="layer_vks">WKS</span></label>
           <label><input type="checkbox" data-layer="rvsn" checked /> <span data-i18n="layer_rvsn">WRPS</span></label>
           <label><input type="checkbox" data-layer="ew" checked /> <span data-i18n="layer_ew">Walka radioelektroniczna (WRE)</span></label>
+          <label><input type="checkbox" data-layer="uav" checked /> <span data-i18n="layer_uav">Bezzałogowce (garnizon / zakład)</span></label>
           <label><input type="checkbox" data-layer="industry" checked /> <span data-i18n="layer_industry">Zakłady zbrojeniowe (miasto)</span></label>
           <label><input type="checkbox" data-layer="extraterritorial" /> <span data-i18n="layer_extra">Zagranica</span></label>
           <label><input type="checkbox" data-layer="crimea" /> <span data-i18n="layer_crimea">Krym (okupowany)</span></label>
           <label><input type="checkbox" data-layer="sketch" /> <span data-i18n="layer_sketch">Szkic / unverified</span></label>
+          <label><input type="checkbox" id="basemap-satellite" /> <span data-i18n="basemap_sat">Podkład satelitarny (tło, zoom max. 12)</span></label>
         </section>
 
         <section class="block">
@@ -129,6 +131,19 @@
             <span data-i18n="rfOnly">Tylko garnizony RF</span>
             <span class="hint" data-i18n="rfHint">(ukrywa Krym, Abchazję, Osetię, Syrię i inne bazy zagraniczne)</span>
           </label>
+        </section>
+
+        <section class="block osint-box">
+          <h2 data-i18n="osintTitle">Dokładność OSINT</h2>
+          <p class="osint-lead" data-i18n="osintLead">
+            Każdy pin ma klasę pewności i klasę precyzji. Współrzędne GPS to zaokrąglony centroid miejscowości z Nominatim, nie pomiar obiektu ze zdjęcia.
+          </p>
+          <ul class="osint-list">
+            <li data-i18n="osintConf">Pewność: wysoka (≥3 źródła lub instytucja), średnia (2), niska (1), szkic (trop, warstwa wyłączona).</li>
+            <li data-i18n="osintGps">GPS: city ≈ 1 km (2 miejsca dziesiętne); osiedle garnizonowe ≈ 100–1000 m (3 miejsca). Nie uśredniamy rozbieżnych garnizonów.</li>
+            <li data-i18n="osintSat">Zdjęcie satelitarne jest wyłącznie tłem mapy (max. powiększenie 12). Nie jest źródłem współrzędnych pinów.</li>
+            <li data-i18n="osintUav">BSP: miasto garnizonu ośrodka / zakładu. Miejsca startu, pasy i hangary nie są mapowane.</li>
+          </ul>
         </section>
 
         <section class="block actions">

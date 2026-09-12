@@ -69,6 +69,8 @@ const FALLBACK = {
   "Arsenyev, Primorsky Krai, Russia": ["Арсеньев, Приморский край"],
   "Zelenodolsk, Tatarstan, Russia": ["Зеленодольск, Татарстан"],
   "Ostrov, Pskov Oblast, Russia": ["Остров, Псковская область"],
+  "Yelabuga, Tatarstan, Russia": ["Елабуга, Татарстан", "Yelabuga, Russia"],
+  "Dubna, Moscow Oblast, Russia": ["Дубна, Московская область", "Dubna, Russia"],
 };
 
 async function nominatimWithFallback(query) {

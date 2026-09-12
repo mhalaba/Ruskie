@@ -10,6 +10,7 @@ import { VKS } from "./units-vks.mjs";
 import { RVSN } from "./units-rvsn.mjs";
 import { EXTRA } from "./units-extra.mjs";
 import { EW } from "./units-ew.mjs";
+import { UAV } from "./units-uav.mjs";
 import { INDUSTRY } from "./units-industry.mjs";
 
 export const CATALOG = [
@@ -25,5 +26,6 @@ export const CATALOG = [
   ...RVSN,
   ...EXTRA,
   ...EW,
+  ...UAV,
   ...INDUSTRY,
 ];

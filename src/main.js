@@ -25,6 +25,7 @@ const BRANCH_LAYER = {
   vks: "vks",
   rvsn: "rvsn",
   ew: "ew",
+  uav: "uav",
   defense_industry: "industry",
   other: "ground",
 };
@@ -147,7 +148,30 @@ function sovereigntyLabel(note) {
   return label === key ? note : label;
 }
 
-function renderCard(props, dict, byId) {
+const GPS_DP = { city: 2, garrison_town: 3, public_hq_building: 3 };
+const GPS_BAND = {
+  city: "~1 km",
+  garrison_town: "~100–1000 m",
+  public_hq_building: "~100 m",
+};
+
+function formatGps(lon, lat, precision) {
+  const dp = GPS_DP[precision] ?? 2;
+  const latN = Number(lat).toFixed(dp);
+  const lonN = Number(lon).toFixed(dp);
+  const ns = lat >= 0 ? "N" : "S";
+  const ew = lon >= 0 ? "E" : "W";
+  return {
+    decimal: `${latN}, ${lonN}`,
+    compass: `${Math.abs(lat).toFixed(dp)}° ${ns}, ${Math.abs(lon).toFixed(dp)}° ${ew}`,
+    band: GPS_BAND[precision] ?? "~1 km",
+  };
+}
+
+function renderCard(feat, dict, byId) {
+  const props = feat.properties;
+  const [lon, lat] = feat.geometry.coordinates;
+  const gps = formatGps(lon, lat, props.coord_precision);
   const conf = dictLabel(dict.confidence[props.confidence], lang) || props.confidence;
   const sources = (props.sources || [])
     .map(
@@ -178,7 +202,9 @@ function renderCard(props, dict, byId) {
     <div class="meta">
       <div>${t(lang, "short")}</div><div>${props.short}</div>
       <div>${t(lang, "garrison")}</div><div>${props.garrison_settlement}, ${props.garrison_region} (${props.country})</div>
-      <div>${t(lang, "precision")}</div><div>${dictLabel(dict.coord_precision[props.coord_precision], lang) || props.coord_precision}</div>
+      <div>${t(lang, "gps")}</div><div><code class="gps">${gps.decimal}</code><div class="muted">${gps.compass}</div></div>
+      <div>${t(lang, "precision")}</div><div>${dictLabel(dict.coord_precision[props.coord_precision], lang) || props.coord_precision} (± ${gps.band})</div>
+      <div>${t(lang, "accuracy")}</div><div>${t(lang, "gpsHint")}</div>
       <div>${t(lang, "sovereignty")}</div><div>${sovereigntyLabel(props.sovereignty_note)}</div>
       <div>${t(lang, "formationRow")}</div><div>${dictLabel(dict.formation_status[props.formation_status], lang)}</div>
       <div>${t(lang, "deployment")}</div><div>${dictLabel(dict.deployment_status[props.deployment_status], lang)}</div>
@@ -286,6 +312,7 @@ const state = {
     vks: true,
     rvsn: true,
     ew: true,
+    uav: true,
     industry: true,
     extraterritorial: false,
     crimea: false,
@@ -337,11 +364,21 @@ async function main() {
     attributionControl: true,
   }).setView([56.5, 40], 4);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  const osmLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 12,
     minZoom: 3,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }).addTo(map);
+  });
+  const satLayer = L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    {
+      maxZoom: 12,
+      minZoom: 3,
+      attribution:
+        'Tiles &copy; Esri — satellite backdrop only, not a pin coordinate source',
+    }
+  );
+  osmLayer.addTo(map);
 
   const cluster = L.markerClusterGroup({
     showCoverageOnHover: false,
@@ -359,7 +396,7 @@ async function main() {
     lastCardId = id;
     document.getElementById("glossary").classList.add("hidden");
     const card = document.getElementById("card");
-    document.getElementById("card-body").innerHTML = renderCard(feat.properties, dict, byId);
+    document.getElementById("card-body").innerHTML = renderCard(feat, dict, byId);
     card.classList.remove("hidden");
     const m = markersById.get(id);
     if (m) {
@@ -435,6 +472,18 @@ async function main() {
       rebuild();
     });
   });
+  const satToggle = document.getElementById("basemap-satellite");
+  if (satToggle) {
+    satToggle.addEventListener("change", () => {
+      if (satToggle.checked) {
+        map.removeLayer(osmLayer);
+        satLayer.addTo(map);
+      } else {
+        map.removeLayer(satLayer);
+        osmLayer.addTo(map);
+      }
+    });
+  }
   document.getElementById("filter-district").addEventListener("change", (e) => {
     state.district = e.target.value;
     rebuild();

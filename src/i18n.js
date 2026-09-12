@@ -6,23 +6,23 @@ export const SEO = {
   pl: {
     title: "Atlas garnizonów SZ FR — źródła otwarte | Ruskie",
     description:
-      "Weryfikowalny atlas publicznie znanych garnizonów Sił Zbrojnych Federacji Rosyjskiej, zakładów zbrojeniowych (centroid miasta) i nazwanych systemów WRE. To nie jest tracker pola walki.",
+      "Weryfikowalny atlas publicznie znanych garnizonów Sił Zbrojnych Federacji Rosyjskiej, zakładów zbrojeniowych i ośrodków BSP (centroid miasta) oraz nazwanych systemów WRE. To nie jest tracker pola walki.",
     keywords:
-      "garnizony Rosja, Siły Zbrojne FR, OSINT, mapa Leaflet, WRE, Krasucha, Murmańsk-BN, Uralwagonzawod, okręgi wojskowe",
+      "garnizony Rosja, Siły Zbrojne FR, OSINT, mapa Leaflet, WRE, BSP, Kołomna, Jelabuga, Krasucha, Murmańsk-BN, Uralwagonzawod, okręgi wojskowe",
   },
   en: {
     title: "Russian garrison gazetteer — open sources | Ruskie",
     description:
-      "Verifiable atlas of publicly known Russian Armed Forces garrison towns, defense plants (city centroids) and named electronic-warfare systems. Not a battlefield tracker.",
+      "Verifiable atlas of publicly known Russian Armed Forces garrison towns, defense plants and UAV centres (city centroids) and named electronic-warfare systems. Not a battlefield tracker.",
     keywords:
-      "Russian garrisons, open source intelligence, Leaflet map, electronic warfare, Krasukha, Murmansk-BN, Uralvagonzavod, military districts",
+      "Russian garrisons, open source intelligence, Leaflet map, electronic warfare, UAV, Kolomna, Yelabuga, Krasukha, Murmansk-BN, Uralvagonzavod, military districts",
   },
   de: {
     title: "Garnisonsatlas der Streitkräfte Russlands — offene Quellen | Ruskie",
     description:
-      "Überprüfbarer Atlas öffentlich bekannter Garnisonsstädte der Streitkräfte der Russischen Föderation, Rüstungswerke (Stadtcentroid) und benannter EloKa-Systeme. Kein Gefechtsfeld-Tracker.",
+      "Überprüfbarer Atlas öffentlich bekannter Garnisonsstädte der Streitkräfte der Russischen Föderation, Rüstungswerke und Drohnenzentren (Stadtcentroid) sowie benannter EloKa-Systeme. Kein Gefechtsfeld-Tracker.",
     keywords:
-      "russische Garnisonen, OSINT, Leaflet-Karte, elektronische Kampfführung, Krasucha, Murmansk-BN, Uralwagonsawod, Militärbezirke",
+      "russische Garnisonen, OSINT, Leaflet-Karte, elektronische Kampfführung, Drohnen, Kolomna, Jelabuga, Krasucha, Murmansk-BN, Uralwagonsawod, Militärbezirke",
   },
 };
 
@@ -31,7 +31,7 @@ export const I18N = {
     title: "Atlas garnizonów SZ FR",
     tagline: "Źródła otwarte · szczebel brygada / dywizja · bez teatru UA",
     search: "Szukaj",
-    searchPh: "Nazwa, numer, miejscowość, w/cz, system WRE…",
+    searchPh: "Nazwa, numer, miejscowość, w/cz, system WRE, BSP…",
     layers: "Warstwy",
     layer_ground: "Wojska Lądowe",
     layer_vdv: "WDW (VDV)",
@@ -40,10 +40,23 @@ export const I18N = {
     layer_vks: "WKS",
     layer_rvsn: "WRPS",
     layer_ew: "Walka radioelektroniczna (WRE)",
+    layer_uav: "Bezzałogowce (garnizon / zakład)",
     layer_industry: "Zakłady zbrojeniowe (miasto)",
     layer_extra: "Zagranica",
     layer_crimea: "Krym (okupowany)",
     layer_sketch: "Szkic / unverified",
+    basemap_sat: "Podkład satelitarny (tło, zoom max. 12)",
+    osintTitle: "Dokładność OSINT",
+    osintLead:
+      "Każdy pin ma klasę pewności i klasę precyzji. Współrzędne GPS to zaokrąglony centroid miejscowości z Nominatim, nie pomiar obiektu ze zdjęcia.",
+    osintConf:
+      "Pewność: wysoka (≥3 źródła lub instytucja), średnia (2), niska (1), szkic (trop, warstwa wyłączona).",
+    osintGps:
+      "GPS: city ≈ 1 km (2 miejsca dziesiętne); osiedle garnizonowe ≈ 100–1000 m (3 miejsca). Nie uśredniamy rozbieżnych garnizonów.",
+    osintSat:
+      "Zdjęcie satelitarne jest wyłącznie tłem mapy (max. powiększenie 12). Nie jest źródłem współrzędnych pinów.",
+    osintUav:
+      "BSP: miasto garnizonu ośrodka / zakładu. Miejsca startu, pasy i hangary nie są mapowane.",
     filters: "Filtry",
     district: "Okręg",
     echelon: "Szczebel",
@@ -82,6 +95,9 @@ export const I18N = {
     commander: "Dowódca",
     verified: "Weryfikacja",
     geocode: "Geokod",
+    gps: "GPS (WGS84)",
+    gpsHint: "Zaokrąglony centroid Nominatim. Nie pomiar płyty/hangaru ze zdjęcia satelitarnego.",
+    accuracy: "Dokładność",
     sources: "Źródła",
     equipment: "Sprzęt / systemy (publiczne nazwy)",
     confidence: "Pewność",
@@ -98,7 +114,7 @@ export const I18N = {
     title: "RF garrison gazetteer",
     tagline: "Open sources · brigade / division echelon · no UA theater",
     search: "Search",
-    searchPh: "Name, number, town, unit number, EW system…",
+    searchPh: "Name, number, town, unit number, EW system, UAV…",
     layers: "Layers",
     layer_ground: "Ground Forces",
     layer_vdv: "Airborne (VDV)",
@@ -107,10 +123,23 @@ export const I18N = {
     layer_vks: "Aerospace Forces",
     layer_rvsn: "Strategic Rocket Forces",
     layer_ew: "Electronic warfare",
+    layer_uav: "Unmanned aviation (garrison / plant)",
     layer_industry: "Defense plants (city)",
     layer_extra: "Abroad",
     layer_crimea: "Crimea (occupied)",
     layer_sketch: "Sketch / unverified",
+    basemap_sat: "Satellite backdrop (visual only, max zoom 12)",
+    osintTitle: "OSINT accuracy",
+    osintLead:
+      "Every pin has a confidence class and a precision class. GPS is a rounded Nominatim settlement centroid, not an object measured from imagery.",
+    osintConf:
+      "Confidence: high (≥3 sources or an institution), medium (2), low (1), sketch (lead; layer off).",
+    osintGps:
+      "GPS: city ≈ 1 km (2 decimal places); garrison town ≈ 100–1000 m (3 places). Conflicting garrisons are never averaged.",
+    osintSat:
+      "Satellite imagery is a map backdrop only (max zoom 12). It is not a source of pin coordinates.",
+    osintUav:
+      "UAVs: home-garrison / plant town only. Launch pads, runways and hangars are not mapped.",
     filters: "Filters",
     district: "District",
     echelon: "Echelon",
@@ -149,6 +178,9 @@ export const I18N = {
     commander: "Commander",
     verified: "Last verified",
     geocode: "Geocode",
+    gps: "GPS (WGS84)",
+    gpsHint: "Rounded Nominatim centroid. Not a pad/hangar measurement from satellite imagery.",
+    accuracy: "Accuracy",
     sources: "Sources",
     equipment: "Equipment / systems (public names)",
     confidence: "Confidence",
@@ -165,7 +197,7 @@ export const I18N = {
     title: "Garnisonsatlas der RF-Streitkräfte",
     tagline: "Offene Quellen · Brigade / Division · kein UA-Theater",
     search: "Suche",
-    searchPh: "Name, Nummer, Ort, Truppenteil, EloKa-System…",
+    searchPh: "Name, Nummer, Ort, Truppenteil, EloKa-System, Drohne…",
     layers: "Ebenen",
     layer_ground: "Landstreitkräfte",
     layer_vdv: "Luftlandetruppen (VDV)",
@@ -174,10 +206,23 @@ export const I18N = {
     layer_vks: "Luft-Kosmos-Streitkräfte",
     layer_rvsn: "Strategische Raketentruppen",
     layer_ew: "Elektronische Kampfführung",
+    layer_uav: "Unbemannte Luftfahrt (Garnison / Werk)",
     layer_industry: "Rüstungswerke (Stadt)",
     layer_extra: "Ausland",
     layer_crimea: "Krim (besetzt)",
     layer_sketch: "Skizze / unbestätigt",
+    basemap_sat: "Satellitenhintergrund (nur Bild, Zoom max. 12)",
+    osintTitle: "OSINT-Genauigkeit",
+    osintLead:
+      "Jeder Pin hat eine Sicherheits- und eine Präzisionsklasse. GPS ist ein gerundeter Nominatim-Siedlungscentroid, keine Objektmessung aus Bildern.",
+    osintConf:
+      "Sicherheit: hoch (≥3 Quellen oder Institution), mittel (2), niedrig (1), Skizze (Hinweis; Ebene aus).",
+    osintGps:
+      "GPS: Stadt ≈ 1 km (2 Dezimalstellen); Garnisonsiedlung ≈ 100–1000 m (3 Stellen). Abweichende Garnisonen werden nicht gemittelt.",
+    osintSat:
+      "Satellitenbilder sind nur Kartenhintergrund (Zoom höchstens 12). Sie sind keine Quelle für Pin-Koordinaten.",
+    osintUav:
+      "Drohnen: nur Stammgarnison / Werksstadt. Startplätze, Pisten und Hangars werden nicht kartiert.",
     filters: "Filter",
     district: "Militärbezirk",
     echelon: "Ebene",
@@ -216,6 +261,9 @@ export const I18N = {
     commander: "Kommandeur",
     verified: "Geprüft",
     geocode: "Geokodierung",
+    gps: "GPS (WGS84)",
+    gpsHint: "Gerundeter Nominatim-Centroid. Keine Platten-/Hangarmessung aus Satellitenbildern.",
+    accuracy: "Genauigkeit",
     sources: "Quellen",
     equipment: "Gerät / Systeme (öffentliche Namen)",
     confidence: "Sicherheit",
