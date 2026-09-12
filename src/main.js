@@ -50,11 +50,12 @@ function iconFor(props, dict) {
   const opacity =
     dict.confidence[props.confidence]?.opacity ?? (props.confidence === "high" ? 1 : 0.7);
   const html = `<div class="garrison-mark ${shape}" style="width:${size}px;height:${size}px;background:${color};opacity:${opacity};color:${color}"></div>`;
+  const hit = Math.max(size + 10, 18);
   return L.divIcon({
     className: "garrison-icon",
     html,
-    iconSize: [size + 4, size + 4],
-    iconAnchor: [size / 2 + 2, size / 2 + 2],
+    iconSize: [hit, hit],
+    iconAnchor: [hit / 2, hit / 2],
   });
 }
 
@@ -285,6 +286,8 @@ async function main() {
     }
   }
 
+  let initial = true;
+
   function rebuild() {
     cluster.clearLayers();
     markersById.clear();
@@ -298,7 +301,18 @@ async function main() {
       markersById.set(f.properties.id, m);
     }
     document.getElementById("as-of").textContent = geojson.metadata?.generated || "2026-09-12";
+    const countEl = document.getElementById("result-count");
+    if (countEl) {
+      countEl.textContent = `Widoczne: ${filtered.length} z ${geojson.features.length}`;
+    }
     window.__filtered = filtered;
+    if (!initial && state.query.trim() && filtered.length > 0) {
+      const bounds = cluster.getBounds();
+      if (bounds.isValid()) {
+        map.fitBounds(bounds, { maxZoom: 8, padding: [48, 48] });
+      }
+    }
+    initial = false;
   }
 
   document.querySelectorAll("[data-layer]").forEach((el) => {

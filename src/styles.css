@@ -64,6 +64,9 @@ body {
   font-size: 0.78rem;
   line-height: 1.35;
 }
+.result-count {
+  white-space: nowrap;
+}
 
 .search-wrap input,
 select,
@@ -267,12 +270,18 @@ label input[type="checkbox"] {
   z-index: 800;
 }
 
+.garrison-icon {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+}
 .garrison-mark {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid rgba(255, 255, 255, 0.85);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
 }
 .garrison-mark.square {
   border-radius: 3px;
