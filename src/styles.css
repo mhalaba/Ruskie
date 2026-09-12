@@ -58,6 +58,68 @@ body {
   letter-spacing: 0.01em;
   margin: 0 0 6px;
 }
+.brand-kicker {
+  margin: 0 0 2px;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+.lang-switch a {
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+}
+.lang-switch a.is-active,
+.lang-switch a[aria-current="page"] {
+  color: var(--text);
+  border-color: var(--accent);
+}
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  z-index: 2000;
+  background: var(--panel);
+  color: var(--text);
+  padding: 8px 12px;
+}
+.skip-link:focus {
+  left: 8px;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.chip {
+  font-size: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: var(--panel-2);
+}
+.glossary-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+.glossary-list li {
+  margin: 0 0 12px;
+  font-size: 0.86rem;
+}
+.muted {
+  color: var(--muted);
+}
 .tagline {
   margin: 0 0 14px;
   color: var(--muted);

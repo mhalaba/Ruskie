@@ -5,6 +5,7 @@
 Atlas garnizonów Sił Zbrojnych Federacji Rosyjskiej na podstawie **wyłącznie źródeł otwartych**.
 Rekordy opisują **publicznie podawane miejsca stałej dyslokacji** (miasto / osiedle wojskowe /
 publiczny adres sztabu), podporządkowanie i status formowania.
+Warstwa zakładów zbrojeniowych to **miasta siedzib** znanych przedsiębiorstw. Warstwa WRE to **garnizony jednostek** oraz **publiczne nazwy** systemów.
 
 ## Czym ten zbiór nie jest
 
@@ -14,6 +15,7 @@ publiczny adres sztabu), podporządkowanie i status formowania.
 - Brak składów amunicji, paliw, silosów, stanowisk startowych, koszar wewnętrznych, bram i dróg technicznych.
 - Brak danych osobowych żołnierzy i oficerów poniżej szczebla dowódcy okręgu/armii/rodzaju sił podanego w źródłach instytucjonalnych.
 - Brak częstotliwości, sieci, haseł, numerów paszportów i kont prywatnych.
+- Brak stanowisk zagłuszaczy, masztów WRE, bram i hal zakładów oraz linii produkcyjnych.
 
 ## Ukraina
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Weryfikowalny atlas garnizonów Sił Zbrojnych FR — źródła otwarte, szczebel brygada/dywizja, bez teatru ukraińskiego.",
+  "description": "Open-source gazetteer of publicly known Russian Armed Forces garrison towns, defense plants (city centroids) and named EW systems. PL/EN/DE. Not a battlefield tracker.",
   "homepage": "https://mhalaba.github.io/Ruskie/",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,7 @@
     "validate": "node scripts/validate-data.mjs",
     "build-data": "node scripts/build-data.mjs",
     "geocode": "node scripts/geocode.mjs",
+    "refresh": "node scripts/weekly-refresh.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

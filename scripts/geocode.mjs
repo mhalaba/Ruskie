@@ -55,6 +55,34 @@ async function nominatim(query) {
   };
 }
 
+/** Alternative settlement strings when the English query is missing from Nominatim. */
+const FALLBACK = {
+  "Rassvet, Aksaysky District, Rostov Oblast, Russia": [
+    "Рассвет, Аксайский район, Ростовская область",
+    "Rassvet, Rostov Oblast, Russia",
+  ],
+  "Shtykovo, Primorsky Krai, Russia": ["Штыково, Приморский край"],
+  "Yantarny, Kaliningrad Oblast, Russia": ["Янтарный, Калининградская область"],
+  "Zhukov, Kaluga Oblast, Russia": ["Жуков, Калужская область"],
+  "Kerch, Crimea": ["Kerch", "Керчь"],
+  "Bolshoy Kamen, Primorsky Krai, Russia": ["Большой Камень, Приморский край"],
+  "Arsenyev, Primorsky Krai, Russia": ["Арсеньев, Приморский край"],
+  "Zelenodolsk, Tatarstan, Russia": ["Зеленодольск, Татарстан"],
+  "Ostrov, Pskov Oblast, Russia": ["Остров, Псковская область"],
+};
+
+async function nominatimWithFallback(query) {
+  const hit = await nominatim(query);
+  if (hit) return hit;
+  for (const alt of FALLBACK[query] || []) {
+    await sleep(1100);
+    process.stderr.write(`geocode fallback: ${alt}\n`);
+    const again = await nominatim(alt);
+    if (again) return again;
+  }
+  return null;
+}
+
 const cache = loadCache();
 const unique = [...new Set(CATALOG.map((u) => u.geocode_query))];
 let fetched = 0;
@@ -64,7 +92,7 @@ for (const q of unique) {
   if (cache[q]?.lon != null) continue;
   process.stderr.write(`geocode: ${q}\n`);
   try {
-    const hit = await nominatim(q);
+    const hit = await nominatimWithFallback(q);
     await sleep(1100);
     if (!hit) {
       missing.push(q);

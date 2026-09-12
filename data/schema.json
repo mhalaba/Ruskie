@@ -28,14 +28,33 @@
     "sources"
   ],
   "enums": {
-    "branch": ["ground", "vdv", "naval_infantry", "gru_spetsnaz", "vks", "rvsn", "navy_coastal", "other"],
-    "service_component": ["SV", "VDV", "VMF", "VKS", "RVSN", "GRU"],
-    "district": [
-      "LMD", "MMD", "SMD", "CMD", "EMD",
-      "central_subordination",
-      "fleet_northern", "fleet_baltic", "fleet_black_sea", "fleet_pacific", "caspian"
+    "branch": [
+      "ground",
+      "vdv",
+      "naval_infantry",
+      "gru_spetsnaz",
+      "vks",
+      "rvsn",
+      "navy_coastal",
+      "ew",
+      "defense_industry",
+      "other"
     ],
-    "echelon": ["district", "army", "corps", "division", "brigade", "regiment", "base", "other"],
+    "service_component": ["SV", "VDV", "VMF", "VKS", "RVSN", "GRU", "EW", "OPK"],
+    "district": [
+      "LMD",
+      "MMD",
+      "SMD",
+      "CMD",
+      "EMD",
+      "central_subordination",
+      "fleet_northern",
+      "fleet_baltic",
+      "fleet_black_sea",
+      "fleet_pacific",
+      "caspian"
+    ],
+    "echelon": ["district", "army", "corps", "division", "brigade", "regiment", "base", "plant", "other"],
     "sovereignty_note": ["recognized", "occupied_ukraine", "host_state_consent_disputed"],
     "coord_precision": ["city", "garrison_town", "public_hq_building"],
     "deployment_status": ["garrison", "partially_away", "deployed_away", "forming", "disbanded", "unknown"],
@@ -45,6 +64,8 @@
   "geo_rules": {
     "ukraine_1991": "Punkt wewnątrz wielokąta Ukrainy 1991 (data/ukraine-1991.geojson) jest błędem, chyba że leży na Krymie i sovereignty_note=occupied_ukraine.",
     "no_guess": "Brak źródła garnizonu = rekord unverified albo luka w data/gaps.json. Nigdy fałszywy pin.",
-    "no_average": "Rozbieżność garnizonu: jeden punkt (lepiej potwierdzony) + alt_garrison."
+    "no_average": "Rozbieżność garnizonu: jeden punkt (lepiej potwierdzony) + alt_garrison.",
+    "industry": "Zakłady zbrojeniowe: wyłącznie centroid miasta, nigdy brama, hala ani linia produkcyjna.",
+    "ew": "WRE: garnizon miejscowości jednostki. Zakaz częstotliwości, stanowisk zagłuszaczy i śledzenia wozów."
   }
 }

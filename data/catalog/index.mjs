@@ -9,6 +9,8 @@ import { GRU } from "./units-gru.mjs";
 import { VKS } from "./units-vks.mjs";
 import { RVSN } from "./units-rvsn.mjs";
 import { EXTRA } from "./units-extra.mjs";
+import { EW } from "./units-ew.mjs";
+import { INDUSTRY } from "./units-industry.mjs";
 
 export const CATALOG = [
   ...LMD,
@@ -22,4 +24,6 @@ export const CATALOG = [
   ...VKS,
   ...RVSN,
   ...EXTRA,
+  ...EW,
+  ...INDUSTRY,
 ];

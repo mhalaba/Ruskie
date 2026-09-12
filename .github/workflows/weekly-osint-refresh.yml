@@ -1,0 +1,51 @@
+name: Weekly OSINT refresh agent
+
+on:
+  schedule:
+    - cron: "15 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-osint
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - name: Re-check open sources
+        run: node scripts/weekly-refresh.mjs
+        env:
+          WEEKLY_USER_AGENT: "ru-garrison-atlas-weekly/0.1 (+https://github.com/mhalaba/Ruskie)"
+      - name: Geocode new settlement queries only
+        run: npm run geocode
+      - name: Build catalog, validate, bundle app
+        run: npm run build
+      - name: Open review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: weekly OSINT source refresh"
+          title: "Weekly OSINT refresh"
+          body-path: data/refresh-report.md
+          branch: cursor/weekly-osint-refresh
+          delete-branch: true
+          add-paths: |
+            data/last-refresh.json
+            data/refresh-report.md
+            data/source-snapshots.json
+            data/geocode-cache.json
+            data/units.geojson
+            data/units.json
+            data/hierarchy.json
+            data/sources.json
+            public/data/

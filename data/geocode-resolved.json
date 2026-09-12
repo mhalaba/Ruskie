@@ -1104,5 +1104,411 @@
     "geocode_source": "nominatim",
     "geocode_query": "Tiraspol, Moldova",
     "display_name": "Тирасполь, Unitățile administrativ-teritoriale din stînga Nistrului, Нистрения / Приднестровье / Придністров'я, MD-3300, Moldova"
+  },
+  "ru-ew": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-ew-15bde": {
+    "lon": 41.45,
+    "lat": 52.72,
+    "geocode_source": "nominatim",
+    "geocode_query": "Tambov, Russia",
+    "display_name": "городской округ Тамбов, Тамбовская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ew-16bde": {
+    "lon": 36.19,
+    "lat": 51.73,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kursk, Russia",
+    "display_name": "городской округ Курск, Курская область, Центральный федеральный округ, 305000, Россия"
+  },
+  "ru-ew-17bde": {
+    "lon": 136.12,
+    "lat": 51.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Khabarovsk, Russia",
+    "display_name": "Хабаровский край, Дальневосточный федеральный округ, Россия"
+  },
+  "ru-ew-18bde": {
+    "lon": 60.6,
+    "lat": 56.84,
+    "geocode_source": "nominatim",
+    "geocode_query": "Yekaterinburg, Russia",
+    "display_name": "Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, Россия"
+  },
+  "ru-ew-19bde": {
+    "lon": 39.877,
+    "lat": 47.361,
+    "geocode_source": "nominatim",
+    "geocode_query": "Rassvet, Aksaysky District, Rostov Oblast, Russia",
+    "display_name": "Рассвет, Рассветовское сельское поселение, Аксайский район, Ростовская область, Южный федеральный округ, Россия"
+  },
+  "ru-ew-49bn": {
+    "lon": 28.36,
+    "lat": 57.34,
+    "geocode_source": "nominatim",
+    "geocode_query": "Ostrov, Pskov Oblast, Russia",
+    "display_name": "Остров, Островский муниципальный округ, Псковская область, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ew-142bn": {
+    "lon": 20.51,
+    "lat": 54.71,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kaliningrad, Russia",
+    "display_name": "Калининград, городской округ Калининград, Калининградская область, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ew-186ctr": {
+    "lon": 33.42,
+    "lat": 69.08,
+    "geocode_source": "nominatim",
+    "geocode_query": "Severomorsk, Russia",
+    "display_name": "Североморск, ЗАТО Североморск, Мурманская область, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ew-471ctr": {
+    "lon": 158.65,
+    "lat": 53.02,
+    "geocode_source": "nominatim",
+    "geocode_query": "Petropavlovsk-Kamchatsky, Russia",
+    "display_name": "Петропавловск-Камчатский, городской округ Петропавловск-Камчатский, Камчатский край, Дальневосточный федеральный округ, 683000, Россия"
+  },
+  "ru-ew-474ctr": {
+    "lon": 132.361,
+    "lat": 43.389,
+    "geocode_source": "nominatim",
+    "geocode_query": "Shtykovo, Primorsky Krai, Russia",
+    "display_name": "Штыково, Шкотовский муниципальный округ, Приморский край, Дальневосточный федеральный округ, Россия"
+  },
+  "ru-ew-475ctr": {
+    "lon": 33.52,
+    "lat": 44.61,
+    "geocode_source": "nominatim",
+    "geocode_query": "Sevastopol",
+    "display_name": "Севастополь, 299000-299699, Україна"
+  },
+  "ru-ew-841ctr": {
+    "lon": 19.94,
+    "lat": 54.87,
+    "geocode_source": "nominatim",
+    "geocode_query": "Yantarny, Kaliningrad Oblast, Russia",
+    "display_name": "Янтарный, Янтарный городской округ, Калининградская область, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ind": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-rostec": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-uvz": {
+    "lon": 59.97,
+    "lat": 57.91,
+    "geocode_source": "nominatim",
+    "geocode_query": "Nizhny Tagil, Russia",
+    "display_name": "Нижний Тагил, муниципальный округ Нижний Тагил, Свердловская область, Уральский федеральный округ, Россия"
+  },
+  "ru-ind-uraltransmash": {
+    "lon": 60.6,
+    "lat": 56.84,
+    "geocode_source": "nominatim",
+    "geocode_query": "Yekaterinburg, Russia",
+    "display_name": "Екатеринбург, городской округ Екатеринбург, Свердловская область, Уральский федеральный округ, Россия"
+  },
+  "ru-ind-kmz": {
+    "lon": 65.34,
+    "lat": 55.44,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kurgan, Russia",
+    "display_name": "Курган, городской округ Курган, Курганская область, Уральский федеральный округ, Россия"
+  },
+  "ru-ind-amz": {
+    "lon": 43.82,
+    "lat": 55.39,
+    "geocode_source": "nominatim",
+    "geocode_query": "Arzamas, Russia",
+    "display_name": "Арзамас, городской округ Арзамас, Нижегородская область, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-chtz": {
+    "lon": 61.4,
+    "lat": 55.16,
+    "geocode_source": "nominatim",
+    "geocode_query": "Chelyabinsk, Russia",
+    "display_name": "Челябинск, Челябинский городской округ, Челябинская область, Уральский федеральный округ, Россия"
+  },
+  "ru-ind-omsktransmash": {
+    "lon": 73.37,
+    "lat": 54.99,
+    "geocode_source": "nominatim",
+    "geocode_query": "Omsk, Russia",
+    "display_name": "городской округ Омск, Омская область, Сибирский федеральный округ, Россия"
+  },
+  "ru-ind-kalashnikov": {
+    "lon": 53.21,
+    "lat": 56.85,
+    "geocode_source": "nominatim",
+    "geocode_query": "Izhevsk, Russia",
+    "display_name": "городской округ Ижевск, Удмуртия, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-zid": {
+    "lon": 41.31,
+    "lat": 56.37,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kovrov, Russia",
+    "display_name": "Ковров, городской округ Ковров, Владимирская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-kbp": {
+    "lon": 37.62,
+    "lat": 54.19,
+    "geocode_source": "nominatim",
+    "geocode_query": "Tula, Russia",
+    "display_name": "Тула, городской округ Тула, Тульская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-tula-arms": {
+    "lon": 37.62,
+    "lat": 54.19,
+    "geocode_source": "nominatim",
+    "geocode_query": "Tula, Russia",
+    "display_name": "Тула, городской округ Тула, Тульская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-splav": {
+    "lon": 37.62,
+    "lat": 54.19,
+    "geocode_source": "nominatim",
+    "geocode_query": "Tula, Russia",
+    "display_name": "Тула, городской округ Тула, Тульская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-motovilikha": {
+    "lon": 56.23,
+    "lat": 58.01,
+    "geocode_source": "nominatim",
+    "geocode_query": "Perm, Russia",
+    "display_name": "Пермь, Пермский городской округ, Пермский край, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-kbm": {
+    "lon": 38.77,
+    "lat": 55.09,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kolomna, Russia",
+    "display_name": "Коломна, городской округ Коломна, Московская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-votkinsk": {
+    "lon": 53.99,
+    "lat": 57.05,
+    "geocode_source": "nominatim",
+    "geocode_query": "Votkinsk, Russia",
+    "display_name": "городской округ Воткинск, Удмуртия, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-krasmash": {
+    "lon": 92.87,
+    "lat": 56.01,
+    "geocode_source": "nominatim",
+    "geocode_query": "Krasnoyarsk, Russia",
+    "display_name": "Красноярск, городской округ Красноярск, Красноярский край, Сибирский федеральный округ, 660000, Россия"
+  },
+  "ru-ind-makeyev": {
+    "lon": 60.11,
+    "lat": 55.05,
+    "geocode_source": "nominatim",
+    "geocode_query": "Miass, Russia",
+    "display_name": "Миасс, Миасский городской округ, Челябинская область, Уральский федеральный округ, Россия"
+  },
+  "ru-ind-npomash": {
+    "lon": 37.86,
+    "lat": 55.76,
+    "geocode_source": "nominatim",
+    "geocode_query": "Reutov, Russia",
+    "display_name": "Реутов, городской округ Реутов, Московская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-almaz": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-obukhov": {
+    "lon": 30.16,
+    "lat": 59.96,
+    "geocode_source": "nominatim",
+    "geocode_query": "Saint Petersburg, Russia",
+    "display_name": "Санкт-Петербург, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ind-fakel": {
+    "lon": 37.44,
+    "lat": 55.89,
+    "geocode_source": "nominatim",
+    "geocode_query": "Khimki, Russia",
+    "display_name": "Химки, городской округ Химки, Московская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-kupol": {
+    "lon": 53.21,
+    "lat": 56.85,
+    "geocode_source": "nominatim",
+    "geocode_query": "Izhevsk, Russia",
+    "display_name": "городской округ Ижевск, Удмуртия, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-sevmash": {
+    "lon": 39.82,
+    "lat": 64.56,
+    "geocode_source": "nominatim",
+    "geocode_query": "Severodvinsk, Russia",
+    "display_name": "Северодвинск, муниципальный округ Северодвинск, Архангельская область, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ind-admiralty": {
+    "lon": 30.16,
+    "lat": 59.96,
+    "geocode_source": "nominatim",
+    "geocode_query": "Saint Petersburg, Russia",
+    "display_name": "Санкт-Петербург, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ind-yantar": {
+    "lon": 20.51,
+    "lat": 54.71,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kaliningrad, Russia",
+    "display_name": "Калининград, городской округ Калининград, Калининградская область, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ind-zvezda": {
+    "lon": 132.35,
+    "lat": 43.11,
+    "geocode_source": "nominatim",
+    "geocode_query": "Bolshoy Kamen, Primorsky Krai, Russia",
+    "display_name": "Большой Камень, городской округ Большой Камень, Приморский край, Дальневосточный федеральный округ, Россия"
+  },
+  "ru-ind-amur-ship": {
+    "lon": 137,
+    "lat": 50.56,
+    "geocode_source": "nominatim",
+    "geocode_query": "Komsomolsk-on-Amur, Russia",
+    "display_name": "городской округ Комсомольск-на-Амуре, Хабаровский край, Дальневосточный федеральный округ, Россия"
+  },
+  "ru-ind-zelenodolsk": {
+    "lon": 48.57,
+    "lat": 55.86,
+    "geocode_source": "nominatim",
+    "geocode_query": "Zelenodolsk, Tatarstan, Russia",
+    "display_name": "Зеленодольск, Зеленодольский район, Татарстан, Приволжский федеральный округ, 422540-422551, Россия"
+  },
+  "ru-ind-sormovo": {
+    "lon": 44.01,
+    "lat": 56.33,
+    "geocode_source": "nominatim",
+    "geocode_query": "Nizhny Novgorod, Russia",
+    "display_name": "Нижний Новгород, городской округ Нижний Новгород, Нижегородская область, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-knaaz": {
+    "lon": 137,
+    "lat": 50.56,
+    "geocode_source": "nominatim",
+    "geocode_query": "Komsomolsk-on-Amur, Russia",
+    "display_name": "городской округ Комсомольск-на-Амуре, Хабаровский край, Дальневосточный федеральный округ, Россия"
+  },
+  "ru-ind-iapo": {
+    "lon": 104.28,
+    "lat": 52.29,
+    "geocode_source": "nominatim",
+    "geocode_query": "Irkutsk, Russia",
+    "display_name": "Иркутск, городской округ Иркутск, Иркутская область, Сибирский федеральный округ, Россия"
+  },
+  "ru-ind-napo": {
+    "lon": 82.95,
+    "lat": 54.97,
+    "geocode_source": "nominatim",
+    "geocode_query": "Novosibirsk, Russia",
+    "display_name": "Новосибирск, Новосибирская область, Сибирский федеральный округ, 630000, Россия"
+  },
+  "ru-ind-kapo": {
+    "lon": 49.11,
+    "lat": 55.79,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kazan, Russia",
+    "display_name": "Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-progress": {
+    "lon": 133.27,
+    "lat": 44.16,
+    "geocode_source": "nominatim",
+    "geocode_query": "Arsenyev, Primorsky Krai, Russia",
+    "display_name": "Арсеньев, Арсеньевский городской округ, Приморский край, Дальневосточный федеральный округ, Россия"
+  },
+  "ru-ind-rostvertol": {
+    "lon": 39.72,
+    "lat": 47.26,
+    "geocode_source": "nominatim",
+    "geocode_query": "Rostov-on-Don, Russia",
+    "display_name": "городской округ Ростов-на-Дону, Ростовская область, Южный федеральный округ, Россия"
+  },
+  "ru-ind-kazan-hel": {
+    "lon": 49.11,
+    "lat": 55.79,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kazan, Russia",
+    "display_name": "Казань, городской округ Казань, Татарстан, Приволжский федеральный округ, Россия"
+  },
+  "ru-ind-saturn": {
+    "lon": 38.86,
+    "lat": 58.05,
+    "geocode_source": "nominatim",
+    "geocode_query": "Rybinsk, Russia",
+    "display_name": "Рыбинск, городской округ Рыбинск, Ярославская область, Центральный федеральный округ, 152900, Россия"
+  },
+  "ru-ind-klimov": {
+    "lon": 30.16,
+    "lat": 59.96,
+    "geocode_source": "nominatim",
+    "geocode_query": "Saint Petersburg, Russia",
+    "display_name": "Санкт-Петербург, Северо-Западный федеральный округ, Россия"
+  },
+  "ru-ind-salyut": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-titan": {
+    "lon": 44.52,
+    "lat": 48.71,
+    "geocode_source": "nominatim",
+    "geocode_query": "Volgograd, Russia",
+    "display_name": "Волгоград, городской округ Волгоград, Волгоградская область, Южный федеральный округ, Россия"
+  },
+  "ru-ind-sozvezdie": {
+    "lon": 39.2,
+    "lat": 51.66,
+    "geocode_source": "nominatim",
+    "geocode_query": "Voronezh, Russia",
+    "display_name": "Воронеж, городской округ Воронеж, Воронежская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-kret": {
+    "lon": 37.61,
+    "lat": 55.63,
+    "geocode_source": "nominatim",
+    "geocode_query": "Moscow, Russia",
+    "display_name": "Москва, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-knirti": {
+    "lon": 36.75,
+    "lat": 55.03,
+    "geocode_source": "nominatim",
+    "geocode_query": "Zhukov, Kaluga Oblast, Russia",
+    "display_name": "Жуков, Жуковский муниципальный округ, Калужская область, Центральный федеральный округ, Россия"
+  },
+  "ru-ind-zaliv": {
+    "lon": 36.47,
+    "lat": 45.36,
+    "geocode_source": "nominatim",
+    "geocode_query": "Kerch, Crimea",
+    "display_name": "Керчь, городской округ Керчь, Автономна Республіка Крим, 98300-98399, Україна"
   }
 }

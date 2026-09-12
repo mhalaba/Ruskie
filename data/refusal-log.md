@@ -12,3 +12,6 @@ Wszystkie poniższe żądania / tropy OSINT zostały **odmówione** i nie trafi�
 | 2026-09-12 | Uśrednianie rozbieżnych współrzędnych garnizonu | Reguła OSINT: nie uśredniać | Wybrano lepiej potwierdzony punkt; wariant w `alt_garrison` |
 | 2026-09-12 | Wikimapia jako jedyne źródło współrzędnych | Trop, nie źródło współrzędnych | Współrzędne z Nominatim/GeoNames/Wikidata P625 miejscowości |
 | 2026-09-12 | Numery telefonów, media społecznościowe osób prywatnych, paszporty | PII | Nie zbierano |
+| 2026-09-12 | Częstotliwości, maszty i stanowiska zagłuszaczy WRE (pola antenowe) | Dane do namierzania / tracker | Tylko miasto garnizonu jednostki i publiczna nazwa systemu |
+| 2026-09-12 | Bramy, hale, linie produkcyjne zakładów zbrojeniowych | Precyzja poniżej centroidu miasta | Pin wyłącznie miasta siedziby |
+| 2026-09-12 | Zakłady zbrojeniowe w Ukrainie 1991 poza Krymem | Zakaz teatru / terytorium UA 1991 | Nie pinowano |

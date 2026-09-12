@@ -1,8 +1,10 @@
 # Atlas garnizonów Sił Zbrojnych Federacji Rosyjskiej
 
-Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe / publiczny sztab) oraz statyczna aplikacja mapy. Pracuje wyłącznie na źródłach otwartych.
+Weryfikowalna baza **publicznie znanych garnizonów** (miasto / osiedle wojskowe / publiczny sztab), **zakładów zbrojeniowych** (centroid miasta) i **nazwanych systemów WRE** oraz statyczna aplikacja mapy. Pracuje wyłącznie na źródłach otwartych.
 
 **To nie jest tracker pola walki. Brak danych o teatrze ukraińskim.**
+
+Języki UI: [polski](https://mhalaba.github.io/Ruskie/) · [English](https://mhalaba.github.io/Ruskie/?lang=en) · [Deutsch](https://mhalaba.github.io/Ruskie/?lang=de). Dokumentacja: [README.en.md](README.en.md), [README.de.md](README.de.md).
 
 ## GitHub Pages
 
@@ -21,7 +23,9 @@ Po merżu do `main` ten sam katalog `dist/` wdraża też workflow `.github/workf
 - Garnizony i sztaby na terytorium FR w granicach międzynarodowo uznanych.
 - Krym: pole `sovereignty_note: occupied_ukraine`, warstwa wyłączona domyślnie.
 - Bazy zagraniczne (Armenia, Abchazja, Osetia Południowa, Syria, Białoruś, Tadżykistan, Kirgistan, Naddniestrze): warstwa `extraterritorial`.
-- Szczebel: okręg → armia/korpus → dywizja/brygada/pułk niezależny. Bataliony tylko gdy mają własny, publiczny garnizon (w v1 pominięte, jeśli niepewne).
+- Szczebel: okręg → armia/korpus → dywizja/brygada/pułk niezależny. Bataliony WRE tylko gdy mają własny, publiczny garnizon miasta.
+- Wojska WRE: garnizon miejscowości jednostki + publiczne nazwy systemów (Krasucha, Murmańsk-BN, Leer-3 itd.). **Bez częstotliwości i stanowisk zagłuszaczy.**
+- Zakłady zbrojeniowe: centroid miasta siedziby / zakładu. **Bez bram, hal i linii produkcyjnych.** Zakłady w Ukrainie 1991 poza Krymem nie są pinowane.
 
 ## Czego tu nie ma (zakazy twarde)
 
@@ -34,6 +38,7 @@ Wymagania: Node.js 20+.
 ```bash
 npm install
 npm run geocode    # tylko gdy zmieniono miejscowości — Nominatim, 1 req/s
+npm run refresh    # tygodniowy agent: zdrowie URL-i i dryf garnizonu (bez przesuwania pinów)
 npm run build      # składa GeoJSON, waliduje, buduje front
 npm run dev        # Vite, http://localhost:5173
 ```
@@ -52,6 +57,8 @@ Dane statyczne dla hostingu (GitHub Pages): `public/data/*.geojson`. `vite.confi
 - `data/gaps.json` — jednostki wspomniane bez legalnego pinu
 - `data/ukraine-1991.geojson` — wielokąt walidatora
 - `data/schema.json` — enumeracje pól
+- `data/ew-systems.json` — słownik publicznych nazw systemów WRE
+- `data/refresh-policy.md` — reguły agenta tygodniowego
 
 Każdy rekord ma `sources[]` z URL, wydawcą i datą dostępu.
 
@@ -71,11 +78,25 @@ Każdy rekord ma `sources[]` z URL, wydawcą i datą dostępu.
 4. `npm run geocode && npm run build`.
 5. Jeśli Nominatim nie znajdzie miejscowości — **nie zgaduj pinu**. Wpisz lukę do `data/gaps.json`.
 
+## Agent tygodniowy
+
+Workflow `.github/workflows/weekly-osint-refresh.yml` w poniedziałek 06:15 UTC (oraz ręcznie) uruchamia `scripts/weekly-refresh.mjs`:
+
+- sprawdza HTTP wszystkich URL ze `sources.mjs`;
+- dla Wikipedii szuka w extractcie nazwy garnizonu — **nie przesuwa współrzędnych**;
+- haszuje strony z `data/watchlist.json` i zgłasza zmianę rewizji;
+- zapisuje `data/last-refresh.json` i `data/refresh-report.md`;
+- geokoduje tylko nowe miejscowości, waliduje (w tym Ukraina 1991) i otwiera PR do recenzji.
+
+Agent **nie dodaje pinów samodzielnie**. Szczegóły: `data/refresh-policy.md`.
+
 ## Aplikacja
 
-Vite + vanilla JS, Leaflet, OSM, MarkerCluster. Bez backendu, logowania i telemetrii. UI po polsku. Filtry: rodzaj sił, okręg, szczebel, status, pewność, „tylko garnizony RF”, wyszukiwarka, drzewo hierarchii, karta jednostki ze źródłami, eksport przefiltrowanego GeoJSON, tryb ciemny.
+Vite + vanilla JS, Leaflet, OSM, MarkerCluster. Bez backendu, logowania i telemetrii. UI: **PL / EN / DE** (`?lang=en` / `?lang=de`, zapamiętywane w `localStorage`). Filtry: rodzaj sił (w tym WRE i zakłady), okręg, szczebel, status, pewność, „tylko garnizony RF”, wyszukiwarka (także `name_de` i nazwy systemów), drzewo hierarchii, karta ze źródłami, słownik WRE, eksport GeoJSON, tryb ciemny.
 
-Kolor markera = rodzaj sił. Kształt = szczebel. Przezroczystość = pewność. Brak ikon celowniczych i narzędzi pomiaru do celów.
+Kolor markera = rodzaj sił. Kształt = szczebel (`plant` = kwadrat). Przezroczystość = pewność. Brak ikon celowniczych i narzędzi pomiaru do celów.
+
+SEO: `canonical`, `hreflang`, Open Graph, JSON-LD (`Dataset` + `WebApplication`), `sitemap.xml`, `robots.txt`.
 
 ## Licencja
 
@@ -83,4 +104,4 @@ Kod: MIT (`LICENSE`). Dane: zestawienie ze źródeł otwartych; teksty Wikipedii
 
 ## Fazy budowy
 
-Zob. `data/changelog/`. Kolejność: szkielet → LOW, MOW, POW, COW, WOW → WDW → piechota morska → GRU → WKS → WRPS → zagranica → deduplikacja.
+Zob. `data/changelog/`. Kolejność: szkielet → LOW, MOW, POW, COW, WOW → WDW → piechota morska → GRU → WKS → WRPS → zagranica → WRE / zakłady / PL-EN-DE.

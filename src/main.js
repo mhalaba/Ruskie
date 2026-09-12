@@ -4,6 +4,15 @@ import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import L from "leaflet";
 import "leaflet.markercluster";
+import {
+  applyStaticI18n,
+  detectLang,
+  dictLabel,
+  localizedName,
+  persistLang,
+  t,
+  updateSeo,
+} from "./i18n.js";
 
 const CONF_RANK = { unverified: 0, low: 1, medium: 2, high: 3 };
 
@@ -15,13 +24,25 @@ const BRANCH_LAYER = {
   gru_spetsnaz: "gru",
   vks: "vks",
   rvsn: "rvsn",
+  ew: "ew",
+  defense_industry: "industry",
   other: "ground",
 };
 
+let lang = detectLang();
+
 function markerSize(echelon) {
-  return { district: 18, army: 15, corps: 14, division: 12, brigade: 9, regiment: 8, base: 10, other: 8 }[
-    echelon
-  ];
+  return {
+    district: 18,
+    army: 15,
+    corps: 14,
+    division: 12,
+    brigade: 9,
+    regiment: 8,
+    base: 10,
+    plant: 9,
+    other: 8,
+  }[echelon];
 }
 
 function markerShape(echelon) {
@@ -33,13 +54,14 @@ function markerShape(echelon) {
     brigade: "circle",
     regiment: "triangle",
     base: "square",
+    plant: "square",
     other: "circle",
   }[echelon];
 }
 
 async function loadJson(path) {
   const res = await fetch(path);
-  if (!res.ok) throw new Error(`Nie można wczytać ${path}`);
+  if (!res.ok) throw new Error(path);
   return res.json();
 }
 
@@ -87,11 +109,13 @@ function matchesFilters(props, state) {
       props.name_pl,
       props.name_ru,
       props.name_en,
+      props.name_de,
       props.short,
       props.garrison_settlement,
       props.garrison_region,
       props.unit_number_vch,
       props.id,
+      ...(props.equipment_public || []),
     ]
       .filter(Boolean)
       .join(" ")
@@ -106,15 +130,25 @@ function breadcrumb(props, byId) {
   let cur = props;
   const guard = new Set();
   while (cur && !guard.has(cur.id)) {
-    parts.unshift(cur.short || cur.name_pl);
+    parts.unshift(localizedName(cur, lang, cur.short || cur.id));
     guard.add(cur.id);
     cur = cur.parent_id ? byId.get(cur.parent_id)?.properties : null;
   }
   return parts.join(" → ");
 }
 
+function notesFor(props) {
+  return props[`notes_${lang}`] || props.notes_en || props.notes_pl || "";
+}
+
+function sovereigntyLabel(note) {
+  const key = `sov_${note}`;
+  const label = t(lang, key);
+  return label === key ? note : label;
+}
+
 function renderCard(props, dict, byId) {
-  const conf = dict.confidence[props.confidence]?.name_pl || props.confidence;
+  const conf = dictLabel(dict.confidence[props.confidence], lang) || props.confidence;
   const sources = (props.sources || [])
     .map(
       (s) =>
@@ -122,33 +156,58 @@ function renderCard(props, dict, byId) {
     )
     .join("");
   const cmd = props.commander_public?.name
-    ? `${props.commander_public.rank || ""} ${props.commander_public.name} <span class="muted">(stan na ${props.commander_public.as_of})</span>`
-    : "— (poniżej progu publikacji lub brak w źródłach instytucjonalnych)";
+    ? `${props.commander_public.rank || ""} ${props.commander_public.name} <span class="muted">(${t(lang, "asOf")} ${props.commander_public.as_of})</span>`
+    : t(lang, "noCommander");
   const alt = props.alt_garrison
-    ? `<div class="notes">Alt. garnizon (nie uśredniany): ${props.alt_garrison.settlement}, ${props.alt_garrison.region}. ${props.alt_garrison.note || ""}</div>`
+    ? `<div class="notes">${t(lang, "altGarrison")}: ${props.alt_garrison.settlement}, ${props.alt_garrison.region}. ${props.alt_garrison.note || ""}</div>`
     : "";
+  const equip = (props.equipment_public || []).filter(Boolean);
+  const equipHtml = equip.length
+    ? `<h3>${t(lang, "equipment")}</h3><p class="chips">${equip.map((e) => `<span class="chip">${e}</span>`).join("")}</p>`
+    : "";
+  const title = localizedName(props, lang, props.name_pl);
+  const others = ["pl", "ru", "en", "de"]
+    .map((code) => (code === "ru" ? props.name_ru : props[`name_${code}`]))
+    .filter((n, i, arr) => n && n !== title && arr.indexOf(n) === i)
+    .join(" · ");
   return `
-    <h2>${props.name_pl}</h2>
-    <p class="ru">${props.name_ru || ""} ${props.name_en ? " · " + props.name_en : ""}</p>
+    <h2>${title}</h2>
+    <p class="ru">${others}</p>
     <div class="crumb">${breadcrumb(props, byId)}</div>
-    <span class="badge ${props.confidence}">Pewność: ${conf}</span>
+    <span class="badge ${props.confidence}">${t(lang, "confidence")}: ${conf}</span>
     <div class="meta">
-      <div>Skrót</div><div>${props.short}</div>
-      <div>Garnizon</div><div>${props.garrison_settlement}, ${props.garrison_region} (${props.country})</div>
-      <div>Precyzja</div><div>${dict.coord_precision[props.coord_precision] || props.coord_precision}</div>
-      <div>Suwerenność</div><div>${props.sovereignty_note}</div>
-      <div>Formowanie</div><div>${dict.formation_status[props.formation_status]}</div>
-      <div>Dyslokacja</div><div>${dict.deployment_status[props.deployment_status]}</div>
-      <div>w/cz</div><div>${props.unit_number_vch || "—"}</div>
-      <div>Dowódca</div><div>${cmd}</div>
-      <div>Weryfikacja</div><div>${props.last_verified}</div>
-      <div>Geokod</div><div>${props.geocode_source || "—"}</div>
+      <div>${t(lang, "short")}</div><div>${props.short}</div>
+      <div>${t(lang, "garrison")}</div><div>${props.garrison_settlement}, ${props.garrison_region} (${props.country})</div>
+      <div>${t(lang, "precision")}</div><div>${dictLabel(dict.coord_precision[props.coord_precision], lang) || props.coord_precision}</div>
+      <div>${t(lang, "sovereignty")}</div><div>${sovereigntyLabel(props.sovereignty_note)}</div>
+      <div>${t(lang, "formationRow")}</div><div>${dictLabel(dict.formation_status[props.formation_status], lang)}</div>
+      <div>${t(lang, "deployment")}</div><div>${dictLabel(dict.deployment_status[props.deployment_status], lang)}</div>
+      <div>${t(lang, "vch")}</div><div>${props.unit_number_vch || "—"}</div>
+      <div>${t(lang, "commander")}</div><div>${cmd}</div>
+      <div>${t(lang, "verified")}</div><div>${props.last_verified}</div>
+      <div>${t(lang, "geocode")}</div><div>${props.geocode_source || "—"}</div>
     </div>
-    ${props.notes_pl ? `<p class="notes">${props.notes_pl}</p>` : ""}
+    ${notesFor(props) ? `<p class="notes">${notesFor(props)}</p>` : ""}
     ${alt}
-    <h3>Źródła</h3>
+    ${equipHtml}
+    <h3>${t(lang, "sources")}</h3>
     <ul class="sources">${sources}</ul>
   `;
+}
+
+function renderGlossary(ewData) {
+  const systems = ewData.systems || [];
+  const items = systems
+    .map((s) => {
+      const name = localizedName(s, lang, s.name_en);
+      const role = s[`role_${lang}`] || s.role_en || s.role_pl || "";
+      const links = (s.sources || [])
+        .map((src) => `<a href="${src.url}" target="_blank" rel="noopener noreferrer">${src.publisher}</a>`)
+        .join(" · ");
+      return `<li><strong>${name}</strong>${s.gra ? ` <span class="muted">(${s.gra})</span>` : ""}<div class="notes">${role}</div><div class="muted">${links}</div></li>`;
+    })
+    .join("");
+  return `<h2>${t(lang, "glossary")}</h2><p class="notes">${t(lang, "glossaryLead")}</p><ul class="glossary-list">${items}</ul>`;
 }
 
 function buildTree(hierarchy, byId, onSelect) {
@@ -158,6 +217,7 @@ function buildTree(hierarchy, byId, onSelect) {
   function nodeEl(id) {
     const n = hierarchy.nodes[id];
     if (!n) return document.createTextNode("");
+    const label = localizedName(n, lang, n.short || id);
     const wrap = document.createElement("div");
     if (n.children.length) {
       const det = document.createElement("details");
@@ -165,7 +225,7 @@ function buildTree(hierarchy, byId, onSelect) {
       const btn = document.createElement("button");
       btn.className = "linkish";
       btn.type = "button";
-      btn.textContent = n.name_pl;
+      btn.textContent = label;
       btn.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -179,7 +239,7 @@ function buildTree(hierarchy, byId, onSelect) {
       const btn = document.createElement("button");
       btn.className = "linkish";
       btn.type = "button";
-      btn.textContent = n.name_pl;
+      btn.textContent = label;
       btn.addEventListener("click", () => onSelect(id));
       wrap.appendChild(btn);
     }
@@ -190,12 +250,19 @@ function buildTree(hierarchy, byId, onSelect) {
 }
 
 function fillSelect(el, entries) {
+  const current = el.value;
+  el.innerHTML = "";
+  const empty = document.createElement("option");
+  empty.value = "";
+  empty.textContent = t(lang, "all");
+  el.appendChild(empty);
   for (const [value, label] of entries) {
     const opt = document.createElement("option");
     opt.value = value;
     opt.textContent = label;
     el.appendChild(opt);
   }
+  if ([...el.options].some((o) => o.value === current)) el.value = current;
 }
 
 function downloadGeoJSON(features) {
@@ -218,6 +285,8 @@ const state = {
     gru: true,
     vks: true,
     rvsn: true,
+    ew: true,
+    industry: true,
     extraterritorial: false,
     crimea: false,
     sketch: false,
@@ -231,26 +300,37 @@ const state = {
 };
 
 async function main() {
-  const [geojson, dict, hierarchy] = await Promise.all([
+  applyStaticI18n(lang);
+  updateSeo(lang);
+  persistLang(lang);
+
+  const [geojson, dict, hierarchy, ewData] = await Promise.all([
     loadJson("./data/units.geojson"),
     loadJson("./data/dictionaries.json"),
     loadJson("./data/hierarchy.json"),
+    loadJson("./data/ew-systems.json"),
   ]);
 
   const byId = new Map(geojson.features.map((f) => [f.properties.id, f]));
 
-  fillSelect(
-    document.getElementById("filter-district"),
-    Object.values(dict.districts).map((d) => [d.id, d.name_pl])
-  );
-  fillSelect(
-    document.getElementById("filter-echelon"),
-    Object.values(dict.echelons).map((d) => [d.id, d.name_pl])
-  );
-  fillSelect(
-    document.getElementById("filter-formation"),
-    Object.entries(dict.formation_status)
-  );
+  function refillFilters() {
+    const distSel = document.getElementById("filter-district");
+    const echSel = document.getElementById("filter-echelon");
+    const formSel = document.getElementById("filter-formation");
+    fillSelect(
+      distSel,
+      Object.values(dict.districts).map((d) => [d.id, localizedName(d, lang, d.id)])
+    );
+    fillSelect(
+      echSel,
+      Object.values(dict.echelons).map((d) => [d.id, localizedName(d, lang, d.id)])
+    );
+    fillSelect(
+      formSel,
+      Object.entries(dict.formation_status).map(([id, row]) => [id, dictLabel(row, lang)])
+    );
+  }
+  refillFilters();
 
   const map = L.map("map", {
     zoomControl: true,
@@ -271,10 +351,13 @@ async function main() {
   map.addLayer(cluster);
 
   const markersById = new Map();
+  let lastCardId = null;
 
   function openCard(id) {
     const feat = byId.get(id);
     if (!feat) return;
+    lastCardId = id;
+    document.getElementById("glossary").classList.add("hidden");
     const card = document.getElementById("card");
     document.getElementById("card-body").innerHTML = renderCard(feat.properties, dict, byId);
     card.classList.remove("hidden");
@@ -286,6 +369,13 @@ async function main() {
     }
   }
 
+  function openGlossary() {
+    lastCardId = null;
+    document.getElementById("card").classList.add("hidden");
+    document.getElementById("glossary-body").innerHTML = renderGlossary(ewData);
+    document.getElementById("glossary").classList.remove("hidden");
+  }
+
   let initial = true;
 
   function rebuild() {
@@ -295,15 +385,16 @@ async function main() {
     for (const f of filtered) {
       const [lon, lat] = f.geometry.coordinates;
       const m = L.marker([lat, lon], { icon: iconFor(f.properties, dict), keyboard: true });
-      m.bindTooltip(f.properties.short || f.properties.name_pl);
+      m.bindTooltip(localizedName(f.properties, lang, f.properties.short));
       m.on("click", () => openCard(f.properties.id));
       cluster.addLayer(m);
       markersById.set(f.properties.id, m);
     }
-    document.getElementById("as-of").textContent = geojson.metadata?.generated || "2026-09-12";
+    const generated = geojson.metadata?.generated || "2026-09-12";
+    document.getElementById("footer-text").textContent = t(lang, "footer", { date: generated });
     const countEl = document.getElementById("result-count");
     if (countEl) {
-      countEl.textContent = `Widoczne: ${filtered.length} z ${geojson.features.length}`;
+      countEl.textContent = t(lang, "visible", { n: filtered.length, total: geojson.features.length });
     }
     window.__filtered = filtered;
     if (!initial && state.query.trim() && filtered.length > 0) {
@@ -313,6 +404,25 @@ async function main() {
       }
     }
     initial = false;
+  }
+
+  function applyLang(next) {
+    lang = next;
+    persistLang(lang);
+    applyStaticI18n(lang);
+    updateSeo(lang);
+    refillFilters();
+    buildTree(hierarchy, byId, openCard);
+    const themeBtn = document.getElementById("btn-theme");
+    const light = document.documentElement.getAttribute("data-theme") === "light";
+    themeBtn.textContent = light ? t(lang, "themeDark") : t(lang, "themeLight");
+    if (!document.getElementById("card").classList.contains("hidden") && lastCardId) {
+      openCard(lastCardId);
+    }
+    if (!document.getElementById("glossary").classList.contains("hidden")) {
+      openGlossary();
+    }
+    rebuild();
   }
 
   document.querySelectorAll("[data-layer]").forEach((el) => {
@@ -354,16 +464,27 @@ async function main() {
   });
   document.getElementById("card-close").addEventListener("click", () => {
     document.getElementById("card").classList.add("hidden");
+    lastCardId = null;
   });
+  document.getElementById("glossary-close").addEventListener("click", () => {
+    document.getElementById("glossary").classList.add("hidden");
+  });
+  document.getElementById("btn-glossary").addEventListener("click", openGlossary);
   document.getElementById("btn-theme").addEventListener("click", (e) => {
     const root = document.documentElement;
     const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
     if (next === "dark") root.removeAttribute("data-theme");
     else root.setAttribute("data-theme", "light");
-    e.target.textContent = next === "light" ? "Tryb ciemny" : "Tryb jasny";
+    e.target.textContent = next === "light" ? t(lang, "themeDark") : t(lang, "themeLight");
   });
   document.getElementById("btn-sidebar").addEventListener("click", () => {
     document.getElementById("sidebar").classList.toggle("open");
+  });
+  document.querySelectorAll("[data-lang]").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      applyLang(el.dataset.lang);
+    });
   });
 
   buildTree(hierarchy, byId, openCard);
@@ -371,5 +492,5 @@ async function main() {
 }
 
 main().catch((err) => {
-  document.body.innerHTML = `<p style="padding:24px">Błąd wczytywania danych: ${err.message}</p>`;
+  document.body.innerHTML = `<p style="padding:24px">${t(lang, "loadError", { msg: err.message })}</p>`;
 });

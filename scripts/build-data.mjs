@@ -9,6 +9,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATALOG } from "../data/catalog/index.mjs";
 import { SOURCES } from "../data/catalog/sources.mjs";
+import { EW_SYSTEMS } from "../data/catalog/ew-systems.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CACHE_PATH = join(ROOT, "data", "geocode-cache.json");
@@ -72,10 +73,11 @@ const geojson = {
   type: "FeatureCollection",
   name: "ru_garrisons",
   metadata: {
-    generated: "2026-09-12",
+    generated: new Date().toISOString().slice(0, 10),
     record_count: features.length,
+    languages: ["pl", "en", "de"],
     disclaimer:
-      "Źródła otwarte. To nie jest tracker pola walki. Brak danych o teatrze ukraińskim.",
+      "Open sources only. Not a battlefield tracker. No Ukrainian theater locations.",
   },
   features,
 };
@@ -87,6 +89,9 @@ for (const f of features) {
   hierarchy.nodes[p.id] = {
     id: p.id,
     name_pl: p.name_pl,
+    name_en: p.name_en,
+    name_de: p.name_de,
+    name_ru: p.name_ru,
     short: p.short,
     echelon: p.echelon,
     district: p.district,
@@ -120,7 +125,20 @@ writeFileSync(join(outData, "units.json"), JSON.stringify(geojson.features.map((
 writeFileSync(join(outData, "hierarchy.json"), JSON.stringify(hierarchy, null, 2) + "\n");
 writeFileSync(
   join(outData, "sources.json"),
-  JSON.stringify({ accessed: "2026-09-12", sources: Object.values(SOURCES) }, null, 2) + "\n"
+  JSON.stringify({ accessed: new Date().toISOString().slice(0, 10), sources: Object.values(SOURCES) }, null, 2) + "\n"
+);
+
+const ewOut = EW_SYSTEMS.map((sys) => ({
+  ...sys,
+  sources: (sys.source_keys || []).map((k) => {
+    const s = SOURCES[k];
+    if (!s) throw new Error(`Unknown EW system source: ${k}`);
+    return { ...s };
+  }),
+}));
+writeFileSync(
+  join(outData, "ew-systems.json"),
+  JSON.stringify({ accessed: new Date().toISOString().slice(0, 10), systems: ewOut }, null, 2) + "\n"
 );
 
 copyFileSync(join(outData, "units.geojson"), join(outPublic, "units.geojson"));
@@ -129,6 +147,7 @@ copyFileSync(join(outData, "hierarchy.json"), join(outPublic, "hierarchy.json"))
 copyFileSync(join(outData, "dictionaries.json"), join(outPublic, "dictionaries.json"));
 copyFileSync(join(outData, "sources.json"), join(outPublic, "sources.json"));
 copyFileSync(join(outData, "gaps.json"), join(outPublic, "gaps.json"));
+copyFileSync(join(outData, "ew-systems.json"), join(outPublic, "ew-systems.json"));
 
 const byConf = { high: 0, medium: 0, low: 0, unverified: 0 };
 for (const f of features) byConf[f.properties.confidence] += 1;
