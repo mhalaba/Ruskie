@@ -1,0 +1,434 @@
+{
+  "generated": "2026-09-14T12:55:26.424Z",
+  "policy": "data/refresh-policy.md",
+  "catalog_count": 223,
+  "ew_systems": 15,
+  "urls_checked": 147,
+  "http_errors": [
+    {
+      "url": "https://en.wikipedia.org/wiki/90th_Guards_Tank_Division_(Russian_Federation)",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Murmansk-BN",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Leer-3",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Moskva-1",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rtut-BM",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/KBM_(Kolomna)",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Progress_Arsenyev_Aviation_Company",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zvezda_(shipyard)",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zelenodolsk_Plant_named_after_A.M._Gorky",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Klimov_(company)",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kaluga_Research_Institute_of_Radio_Engineering",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Palantin",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D0%B5-21",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Divnomorye_(electronic_warfare)",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Infauna_(electronic_warfare)",
+      "ok": false,
+      "status": 404
+    }
+  ],
+  "garrison_mention_missing": [
+    {
+      "id": "ru-sv-lmd-6caa-68msd",
+      "garrison_settlement": "Vladimirsky Lager",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-6caa-9gab",
+      "garrison_settlement": "Luga",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-6caa-26rb",
+      "garrison_settlement": "Luga",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-6caa-5aab",
+      "garrison_settlement": "Gorelovo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-6caa-268gab",
+      "garrison_settlement": "Pushkin",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-6caa-95cmd",
+      "garrison_settlement": "Gorelovo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-132sig",
+      "garrison_settlement": "Agalatovo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-1cmd",
+      "garrison_settlement": "Sertolovo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-lmd-51log",
+      "garrison_settlement": "Krasnoye Selo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-1gta-60cmd",
+      "garrison_settlement": "Selyatino",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-20caa-448mb",
+      "garrison_settlement": "Kursk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-20caa-53aab",
+      "garrison_settlement": "Kursk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-20caa-236ab",
+      "garrison_settlement": "Kolomna",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-288ab",
+      "garrison_settlement": "Mulino",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-3ac",
+      "garrison_settlement": "Mulino",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-45hab",
+      "garrison_settlement": "Tambov",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-mmd-112mb",
+      "garrison_settlement": "Shuya",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa",
+      "garrison_settlement": "Samara",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa-15mrb",
+      "garrison_settlement": "Roshchinsky",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa-21mrb",
+      "garrison_settlement": "Totskoye",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa-30mrb",
+      "garrison_settlement": "Roshchinsky",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa-92mb",
+      "garrison_settlement": "Totskoye",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa-385ab",
+      "garrison_settlement": "Totskoye",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-2caa-297aab",
+      "garrison_settlement": "Leonidovka",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-41caa-55mrb",
+      "garrison_settlement": "Kyzyl",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-sv-cmd-41caa-119mb",
+      "garrison_settlement": "Elansky",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vdv-31dasb",
+      "garrison_settlement": "Ulyanovsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vdv-45spn",
+      "garrison_settlement": "Kubinka",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vdv-56dasb",
+      "garrison_settlement": "Feodosia",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vdv-38sig",
+      "garrison_settlement": "Medvezhye Ozera",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vmf-nf-536crb",
+      "garrison_settlement": "Snezhnogorsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vmf-bf-336ni",
+      "garrison_settlement": "Baltiysk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vmf-bf-25crb",
+      "garrison_settlement": "Donskoye",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vmf-pf-40ni",
+      "garrison_settlement": "Petropavlovsk-Kamchatsky",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-gru-2bde",
+      "garrison_settlement": "Promezhitsy",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-gru-3bde",
+      "garrison_settlement": "Tolyatti",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-gru-16bde",
+      "garrison_settlement": "Tambov",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-gru-24bde",
+      "garrison_settlement": "Novosibirsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-6vaa",
+      "garrison_settlement": "Saint Petersburg",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-45vaa",
+      "garrison_settlement": "Severomorsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-base-lipetsk",
+      "garrison_settlement": "Lipetsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-base-krymsk",
+      "garrison_settlement": "Krymsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-base-khotilovo",
+      "garrison_settlement": "Khotilovo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-base-voronezh",
+      "garrison_settlement": "Voronezh",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-base-ukrainka",
+      "garrison_settlement": "Uglegorsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-vks-base-belbek",
+      "garrison_settlement": "Sevastopol",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-27ma",
+      "garrison_settlement": "Vladimir",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-31ma",
+      "garrison_settlement": "Orenburg",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-33ma",
+      "garrison_settlement": "Omsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-27-28div",
+      "garrison_settlement": "Kozelsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-27-54div",
+      "garrison_settlement": "Teykovo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-27-60div",
+      "garrison_settlement": "Tatishchevo",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-27-14div",
+      "garrison_settlement": "Yoshkar-Ola",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-27-7div",
+      "garrison_settlement": "Ozerny",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-31-13div",
+      "garrison_settlement": "Yasny",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-31-42div",
+      "garrison_settlement": "Nizhny Tagil",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-33-39div",
+      "garrison_settlement": "Novosibirsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-33-29div",
+      "garrison_settlement": "Irkutsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-rvsn-33-62div",
+      "garrison_settlement": "Uzhur",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-extra-baranovichi",
+      "garrison_settlement": "Baranavichy",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-ew",
+      "garrison_settlement": "Moscow",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-ew-15bde",
+      "garrison_settlement": "Tambov",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-ew-18bde",
+      "garrison_settlement": "Yekaterinburg",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-ew-19bde",
+      "garrison_settlement": "Rassvet",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-ew-186ctr",
+      "garrison_settlement": "Severomorsk",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-uav",
+      "garrison_settlement": "Moscow",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-uav-kronstadt",
+      "garrison_settlement": "Dubna",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    },
+    {
+      "id": "ru-ind-knirti",
+      "garrison_settlement": "Zhukov",
+      "note": "Wikipedia extract did not contain garrison_settlement / region / English name — review, do not auto-move."
+    }
+  ],
+  "watchlist_changed": [],
+  "auto_changes": [],
+  "refused": [
+    "No coordinate writes",
+    "No Ukraine 1991 pins",
+    "No frequencies / jammer sites / plant gates / UAV launch pads",
+    "No satellite-derived object GPS"
+  ]
+}
