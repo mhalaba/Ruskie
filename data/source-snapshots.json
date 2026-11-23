@@ -1,0 +1,83 @@
+{
+  "generated": "2026-11-23",
+  "pages": {
+    "https://en.wikipedia.org/wiki/Russian_Ground_Forces": {
+      "hash": "c9e1e5b924d964fe",
+      "revid": 1386384191,
+      "timestamp": "2026-11-18T06:09:08Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Leningrad_Military_District": {
+      "hash": "94f3112ddd2ff7f7",
+      "revid": 1383203162,
+      "timestamp": "2026-11-01T14:26:15Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Moscow_Military_District": {
+      "hash": "96904277a94ebf32",
+      "revid": 1383203210,
+      "timestamp": "2026-11-01T14:26:37Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Southern_Military_District": {
+      "hash": "c2875d6710b97d6d",
+      "revid": 1383203127,
+      "timestamp": "2026-11-01T14:25:56Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Central_Military_District": {
+      "hash": "2745e8240e972a75",
+      "revid": 1386058788,
+      "timestamp": "2026-11-16T18:00:04Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Eastern_Military_District": {
+      "hash": "7adc0c9979aeeb2a",
+      "revid": 1383203083,
+      "timestamp": "2026-11-01T14:25:19Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Russian_Airborne_Forces": {
+      "hash": "da589a4b53038981",
+      "revid": 1386460060,
+      "timestamp": "2026-11-18T17:42:15Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Electronic_Warfare_Troops_of_the_Russian_Federation": {
+      "hash": "48ecb387dd9084d6",
+      "revid": 1361689581,
+      "timestamp": "2026-06-29T14:09:07Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Strategic_Rocket_Forces": {
+      "hash": "c71ec7c98df212dd",
+      "revid": 1379454715,
+      "timestamp": "2026-10-10T02:42:51Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Russian_Aerospace_Forces": {
+      "hash": "f9f69f3feef34472",
+      "revid": 1376489347,
+      "timestamp": "2026-09-24T13:04:31Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Russian_Naval_Infantry": {
+      "hash": "b47f6bcc9e949eb5",
+      "revid": 1383753933,
+      "timestamp": "2026-11-04T17:11:13Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Uralvagonzavod": {
+      "hash": "640a45fe0a606108",
+      "revid": 1377579574,
+      "timestamp": "2026-09-30T01:58:55Z",
+      "accessed": "2026-11-23"
+    },
+    "https://en.wikipedia.org/wiki/Almaz-Antey": {
+      "hash": "a80aa9babdcc2834",
+      "revid": 1367318852,
+      "timestamp": "2026-08-02T10:24:34Z",
+      "accessed": "2026-11-23"
+    }
+  }
+}
